@@ -270,7 +270,7 @@ export default {
     "Seed Shop",
 
   "shop.p1":
-    "The Seed Shop is run by a sleepy Andalusian farmer and offers a rotating selection of phytoplankton seeds. The shop refreshes its available seeds every <strong>2 days</strong>.",
+    "The Seed Shop is run by Dahlia and offers a rotating selection of phytoplankton seeds. The shop refreshes its available seeds every <strong>2 days</strong>.",
 
   "shop.howTitle":
     "How the Shop Works",

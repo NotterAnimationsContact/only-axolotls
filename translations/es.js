@@ -270,7 +270,7 @@ export default {
     "Tienda de Semillas",
 
   "shop.p1":
-    "La Tienda de Semillas está gestionada por un granjero andaluz adormilado y ofrece una selección rotativa de semillas de fitoplancton. La tienda renueva sus semillas disponibles cada <strong>2 días</strong>.",
+    "La Tienda de Semillas está gestionada por Dahlia y ofrece una selección rotativa de semillas de fitoplancton. La tienda renueva sus semillas disponibles cada <strong>2 días</strong>.",
 
   "shop.howTitle":
     "Cómo funciona la tienda",
