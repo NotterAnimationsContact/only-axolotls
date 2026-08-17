@@ -1,234 +1,363 @@
-export default {
-  "lang": "es",
-  "languageLabel": "Idioma",
-  "pageTitle": "Only Axolotls — Guía oficial del juego",
-  "description": "Guía oficial de Only Axolotls — mecánicas, reproducción, probabilidades, niveles, habilidades, efectos y más.",
+  /*
+  ========================================================
+  CONTENIDO DINÁMICO
+  ========================================================
+  */
 
-  "hero.eyebrow": "GUÍA OFICIAL DEL JUEGO",
-  "hero.title": "Only Axolotls",
-  "hero.subtitle": "Todo lo que necesitas saber sobre tu acuario, ajolotes, reproducción, combates, progresión y probabilidades.",
-  "hero.note": "Esta guía describe los sistemas y valores actuales de la versión final del juego.",
+  "dynamic.gameplayLevels": "Niveles jugables",
+  "dynamic.food": "Comida",
+  "dynamic.capacity": "Capacidad",
+  "dynamic.axolotls": "ajolotes",
 
-  "basics.title": "Cómo funciona Only Axolotls",
-  "basics.p1": "Only Axolotls gira en torno a coleccionar, reproducir y desarrollar ajolotes. Cada ajolote está formado por <strong>8 piezas individuales</strong>. Las piezas tienen su propia rareza y pueden aportar estadísticas, efectos o habilidades especiales.",
-  "basics.grid1.title": "8 piezas",
-  "basics.grid1.p": "Cada ajolote está formado por ocho piezas determinadas de forma independiente.",
-  "basics.grid2.title": "6 rarezas",
-  "basics.grid2.p": "Común, Poco común, Rara, Épica, Legendaria y Xólotl.",
-  "basics.grid3.title": "Progresión",
-  "basics.grid3.p": "Los niveles del acuario desbloquean nuevos ajolotes, semillas, capacidad y ampliaciones.",
-  "basics.grid4.title": "Combate",
-  "basics.grid4.p": "Las piezas pueden otorgar estadísticas y efectos de estado que determinan el rendimiento de los ajolotes.",
+  /*
+  ========================================================
+  NIVELES DEL ACUARIO
+  ========================================================
+  */
 
-  "breeding.title": "Reproducción y herencia de piezas",
-  "breeding.p1": "Cuando dos ajolotes se reproducen, cada una de sus ocho piezas se resuelve de forma independiente.",
-  "breeding.mother": "35% Madre",
-  "breeding.father": "35% Padre",
-  "breeding.mutation": "30% Mutación",
-  "breeding.p2": "Para cada pieza hay un <strong>35%</strong> de heredar la pieza de la madre, un <strong>35%</strong> de heredar la del padre y un <strong>30%</strong> de que la pieza mute.",
-  "breeding.mutationTitle": "Rareza de la mutación",
-  "breeding.mutationP": "Si ambas piezas parentales tienen la misma rareza, la mutación usa necesariamente esa rareza. Si sus rarezas son distintas, la mutación reparte su probabilidad por igual entre cada paso de rareza entre ambas piezas, incluidos los extremos. Después se elige aleatoriamente la pieza dentro de la rareza seleccionada.",
-  "breeding.example": "<b>Ejemplo:</b> Madre Legendaria + padre Común = seis pasos de rareza: Común, Poco común, Rara, Épica, Legendaria y Xólotl. Una mutación tiene la misma probabilidad de caer en cada una de esas seis rarezas.",
-  "breeding.genderTitle": "Sexo al nacer",
-  "breeding.genderP": "Cada ajolote recién nacido tiene un <strong>50% de probabilidad de ser hembra</strong> y un <strong>50% de probabilidad de ser macho</strong>.",
+  "level.1.title": "Acuario 1 — Primeros residentes",
+  "level.2.title": "Acuario 2 — Primeros instintos",
+  "level.3.title": "Acuario 3 — Pequeñas posibilidades",
+  "level.4.title": "Acuario 4 — Primeros beneficios",
+  "level.5.title": "Acuario 5 — Impulso",
+  "level.6.title": "Acuario 6 — Primeros efectos",
+  "level.7.title": "Acuario 7 — Debilitamiento",
+  "level.8.title": "Acuario 8 — El punto débil",
+  "level.9.title": "Acuario 9 — Materiales superiores",
+  "level.10.title": "Acuario 10 — Fuerza y velocidad",
+  "level.11.title": "Acuario 11 — Fortuna",
+  "level.12.title": "Acuario 12 — Luz y veneno",
+  "level.13.title": "Acuario 13 — Estados debilitantes",
+  "level.14.title": "Acuario 14 — Poder del héroe",
+  "level.15.title": "Acuario 15 — Poder superior",
+  "level.16.title": "Acuario 16 — Fuerzas extraordinarias",
+  "level.17.title": "Acuario 17 — Poder ofensivo",
+  "level.18.title": "Acuario 18 — Límite mortal",
+  "level.19.title": "Acuario 19 — Poder legendario",
+  "level.20.title": "Acuario 20 — Fuerza legendaria",
+  "level.21.title": "Acuario 21 — Poder divino",
+  "level.22.title": "Acuario 22 — Dualidad",
+  "level.23.title": "Acuario 23 — Reflexiones",
+  "level.24.title": "Acuario 24 — Poder desatado",
+  "level.25.title": "Acuario 25 — EL GRAN ACUARIO",
 
-  "timers.title": "Tiempo de reproducción y coste en gemas",
-  "timers.p": "La <strong>rareza más alta entre las dos piezas parentales</strong> determina tanto el tiempo de reproducción/eclosión como el número de gemas necesario para saltarse el evento.",
-  "timers.rarity": "Rareza más alta",
-  "timers.time": "Tiempo",
-  "timers.cost": "Coste de omitir",
+  /*
+  ========================================================
+  HABILIDADES
+  ========================================================
+  */
 
-  "coins.title": "Monedas",
-  "coins.p1": "Las monedas son la moneda principal utilizada en varios sistemas de progresión. Se necesitan para mantener el acuario, comprar semillas y desbloquear espacio adicional de cultivo.",
-  "coins.earnTitle": "Cómo conseguir monedas",
-  "coins.earnP": "Puedes obtener monedas mediante varias actividades:",
-  "coins.earn1": "Ganar combates.",
-  "coins.earn2": "Completar conjuntos de ajolotes.",
-  "coins.earn3": "Cosechar plantas de fitoplancton completamente desarrolladas.",
-  "coins.breedTitle": "Coste de reproducción",
-  "coins.breedP": "Se necesitan monedas para permitir que dos ajolotes se reproduzcan. El coste depende de las rarezas de <strong>las ocho piezas de la madre</strong> y <strong>las ocho piezas del padre</strong>. Las rarezas de ambos padres se consideran conjuntamente al calcular el coste final.",
-  "coins.example": "<b>Importante:</b> La reproducción no da monedas. El jugador debe gastar monedas para comenzar la reproducción porque los ajolotes necesitan cuidados durante el proceso.",
-  "coins.otherTitle": "Otros usos",
-  "coins.otherP": "Las monedas también pueden gastarse en compras de progresión, incluidas semillas de la <strong>Tienda de semillas</strong> y <strong>espacios de maceta</strong> adicionales para cultivar fitoplancton.",
+  "abilityGroup.0.title": "❤️ Amor",
+  "abilityGroup.0.piece.0": "Hoja: +1/+2/+3/+5 Amor",
+  "abilityGroup.0.piece.1": "Miel: 1/2/3/4 cargas de Vitalizado al equipo",
+  "abilityGroup.0.piece.2": "Manzana: +2/+4/+6/+10 Amor",
+  "abilityGroup.0.piece.3": "Netfil25: 2/3/4/5 cargas de Vitalizado al equipo",
+  "abilityGroup.0.piece.4": "Corazón: 2/3/4/5 Vitalizado + 5/5/5/10 Amor",
 
-  "gems.title": "Gemas",
-  "gems.p1": "Las gemas son un recurso premium de progresión utilizado exclusivamente para <strong>acelerar procesos en curso del juego</strong>.",
-  "gems.earnTitle": "Cómo conseguir gemas",
-  "gems.earn1": "Desbloquear una pieza da <strong>1 gema</strong>.",
-  "gems.earn2": "Cada subida de nivel de un ajolote da <strong>1 gema</strong>.",
-  "gems.earn3": "Completar por primera vez un nivel de estrellas da <strong>1 gema</strong>.",
-  "gems.spendTitle": "Cómo se gastan las gemas",
-  "gems.spendP": "Las gemas pueden utilizarse para completar o acelerar instantáneamente los siguientes procesos:",
-  "gems.spend1": "<strong>Reproducción</strong> — acelerar una reproducción en curso.",
-  "gems.spend2": "<strong>Eclosión del huevo</strong> — completar instantáneamente el tiempo restante.",
-  "gems.spend3": "<strong>Crecimiento de plantas</strong> — terminar instantáneamente el tiempo restante de crecimiento.",
-  "gems.spend4": "<strong>Renovación de la Tienda de semillas</strong> — actualizar la tienda al instante en lugar de esperar su reinicio normal.",
-  "gems.example": "<b>Importante:</b> Las gemas no sustituyen a las monedas ni se usan para compras normales. Existen específicamente para saltarse tiempos de espera y acelerar la progresión.",
+  "abilityGroup.1.title": "🛡️ Defensa",
+  "abilityGroup.1.piece.0": "Piedra: +1/+2/+3/+5 Defensa",
+  "abilityGroup.1.piece.1": "Cobre: 1/2/3/4 cargas de Reforzado al equipo",
+  "abilityGroup.1.piece.2": "Hierro: +2/+4/+6/+10 Defensa",
+  "abilityGroup.1.piece.3": "Diamante: 2/3/4/5 cargas de Reforzado al equipo",
+  "abilityGroup.1.piece.4": "Lonsdaleíta: 2/3/4/5 Reforzado + 5/5/5/10 Defensa",
 
-  "food.title": "Fitoplancton, comida y crecimiento",
-  "food.p1": "Cada cosecha produce <strong>2 unidades de fitoplancton</strong> del cultivo plantado. Un ajolote necesita 2 unidades de su alimento vegetal requerido para subir de nivel. Cada nivel adicional necesita 2 unidades más que el nivel anterior.",
-  "food.p2": "Cada ajolote comienza con una permanencia base de <strong>10 días</strong>. Cada nivel añade <strong>4 días</strong> a esa duración.",
-  "food.example": "<b>Ejemplo:</b> Un ajolote de nivel 1 permanece 10 días. El nivel 2 pasa a 14 días, el nivel 3 a 18 días, y así sucesivamente.",
-  "food.favTitle": "Comida favorita",
-  "food.favP": "Cada una de las 8 piezas tiene independientemente un <strong>12,5% de probabilidad</strong> de asignar como comida favorita el cultivo asociado al conjunto de esa pieza. Esto puede hacer que un ajolote con piezas de alta rareza sea más fácil de alimentar de lo esperado.",
-  "food.seedTitle": "Desbloqueo de semillas",
-  "food.aquarium": "Acuario",
-  "food.seed": "Semilla",
-  "food.note": "El tiempo de crecimiento depende de la rareza interna de la planta. Esta rareza no se muestra al jugador.",
+  "abilityGroup.2.title": "💨 Velocidad",
+  "abilityGroup.2.piece.0": "Pluma: +1/+2/+3/+5 Velocidad",
+  "abilityGroup.2.piece.1": "Viento: 1/2/3/4 cargas de Acelerado al equipo",
+  "abilityGroup.2.piece.2": "Carmesí: +2/+4/+6/+10 Velocidad",
+  "abilityGroup.2.piece.3": "Tornado: 2/3/4/5 cargas de Acelerado al equipo",
+  "abilityGroup.2.piece.4": "Estrella: 2/3/4/5 Acelerado + 5/5/5/10 Velocidad",
 
-  "shop.title": "Tienda de semillas",
-  "shop.p1": "La Tienda de semillas está dirigida por un granjero andaluz dormilón y ofrece una selección rotatoria de semillas de fitoplancton. La tienda renueva sus semillas disponibles cada <strong>2 días</strong>.",
-  "shop.howTitle": "Cómo funciona la tienda",
-  "shop.p2": "La tienda tiene hasta <strong>6 espacios de semillas</strong>. Cada espacio puede contener una semilla aleatoria entre las que hayas desbloqueado. Las semillas pueden repetirse, por lo que una misma semilla puede ocupar varios espacios.",
-  "shop.p3": "Cada pila disponible recibe también una cantidad aleatoria. La cantidad empieza entre <strong>1 y 2 semillas</strong> y aumenta con el progreso del acuario. Cada nivel del acuario aumenta en <strong>2</strong> tanto el mínimo como el máximo disponibles.",
-  "shop.example": "<b>Ejemplo:</b> Al principio, un espacio puede contener 1–2 semillas. A medida que aumenta el nivel del acuario, la cantidad posible aumenta en 2 tanto para el mínimo como para el máximo.",
-  "shop.groupsTitle": "Grupos de semillas",
-  "shop.p4": "La tienda no elige aleatoriamente entre todas las semillas desbloqueadas mediante un único grupo de probabilidades. Los seis espacios están separados en diferentes grupos de semillas. Cada espacio selecciona entre las semillas asignadas a su grupo.",
-  "shop.p5": "Esto significa que las semillas recién desbloqueadas no compiten por igual contra todas las semillas de la colección. Una semilla rara de fase avanzada puede seleccionarse de un grupo mucho más pequeño asignado a ese espacio.",
-  "shop.example2": "<b>Ejemplo:</b> Si un espacio tiene solo 3 semillas posibles en su grupo, cada una tiene una probabilidad mucho más significativa que si el juego eligiera entre las 15 semillas desbloqueadas a la vez.",
-  "shop.slotsTitle": "Espacios de la tienda",
-  "shop.p6": "La Tienda de semillas comienza con <strong>1 espacio disponible</strong>. A medida que avanzas por los niveles del acuario se desbloquean espacios adicionales en hitos concretos, hasta un máximo de <strong>6 espacios</strong>.",
-  "shop.level": "Nivel del acuario",
-  "shop.slots": "Espacios de tienda",
-  "shop.example3": "<b>Progresión de espacios:</b> Se desbloquea un espacio adicional en los niveles de acuario <strong>4, 8, 14, 20 y 24</strong>. Esto aumenta la tienda desde sus <strong>1 espacio</strong> inicial hasta un máximo de <strong>6</strong>.",
-  "shop.p7": "Como la selección cambia solo cada dos días, el jugador no puede comprar cualquier semilla cuando quiera. Revisar la tienda regularmente y gastar monedas cuando aparezcan semillas útiles es una parte importante de la progresión.",
+  "abilityGroup.3.title": "⚔️ Ataque",
+  "abilityGroup.3.piece.0": "Garras: +1/+2/+3/+5 Ataque",
+  "abilityGroup.3.piece.1": "Colmillos: 1/2/3/4 cargas de Potenciado al equipo",
+  "abilityGroup.3.piece.2": "Espinas: +2/+4/+6/+10 Ataque",
+  "abilityGroup.3.piece.3": "Espadas: 2/3/4/5 cargas de Potenciado al equipo",
+  "abilityGroup.3.piece.4": "Demonio: 2/3/4/5 Potenciado + 5/5/5/10 Ataque",
 
-  "visitors.title": "El visitante diario",
-  "visitors.p1": "Un nuevo visitante ajolote está <strong>garantizado una vez al día</strong>. Su aparición nunca depende del azar.",
-  "visitors.p2": "Los ajolotes visitantes pueden adoptarse o dejarse atrás. Si no adoptas a un visitante, se marcha al día siguiente.",
-  "visitors.p3": "Si tu acuario está a máxima capacidad, no puedes adoptar otro ajolote hasta trasladar algunos fuera del acuario y crear espacio libre.",
-  "visitors.genTitle": "Cómo se genera el visitante diario",
-  "visitors.genP": "Sus ocho piezas se generan de forma independiente. Para cada pieza, el juego comprueba primero qué rarezas has desbloqueado. Cada rareza desbloqueada tiene exactamente la misma probabilidad.",
-  "visitors.unlocked": "Rarezas desbloqueadas",
-  "visitors.chance": "Probabilidad por rareza",
-  "visitors.commonUncommon": "Común + Poco común",
-  "visitors.plusRare": "+ Rara",
-  "visitors.plusEpic": "+ Épica",
-  "visitors.plusLegendary": "+ Legendaria",
-  "visitors.plusXolotl": "+ Xólotl",
-  "visitors.example": "<b>Ejemplo:</b> Si las seis rarezas están desbloqueadas, cada rareza tiene un 16,67% para cada pieza. Una vez elegida una rareza, todas las piezas desbloqueadas dentro de esa rareza son igualmente probables. Dos piezas Comunes significan 50% cada una; cinco Raras, 20% cada una; diez Épicas, 10% cada una.",
-  "visitors.p4": "El proceso se repite ocho veces, una por cada pieza. A medida que crece tu colección, pueden aparecer más piezas individuales en el visitante diario, mientras que la probabilidad de obtener una pieza concreta disminuye.",
+  "abilityGroup.4.title": "🎯 Crítico",
+  "abilityGroup.4.piece.0": "Dado: +1/+2/+3/+5% Probabilidad de crítico",
+  "abilityGroup.4.piece.1": "Fortuna: +10/+15/+20/+40% Probabilidad de crítico",
+  "abilityGroup.4.piece.2": "Meteorito: +2/+4/+6/+10% Daño crítico",
+  "abilityGroup.4.piece.3": "Notter: +10/+30/+60/+100% Daño crítico",
+  "abilityGroup.4.piece.4": "Planeta: +15/+50/+75/+100% Probabilidad de crítico y +30/+90/+200/+300% Daño crítico",
 
-  "love.title": "El ajolote enamorado",
-  "love.p1": "Después de un combate, cada ajolote enemigo comprueba independientemente si quiere unirse a ti. Su probabilidad depende de la rareza de cada una de sus ocho piezas.",
-  "love.rarity": "Rareza de pieza",
-  "love.contribution": "Aporte",
-  "love.p2": "Cada una de las ocho piezas aporta según su rareza. La probabilidad final se calcula a partir de las ocho contribuciones.",
-  "love.example": "<b>Ejemplo:</b> Un enemigo con Común + Común + Rara + Rara + Épica + Épica + Legendaria + Xólotl aporta las ocho contribuciones de rareza al cálculo final.",
-  "love.multipleTitle": "Cuando varios enemigos aceptan",
-  "love.multipleP": "Puede no aceptar ninguno, uno o varios. Si varios aceptan, el gestor selecciona <strong>uno</strong> al azar, con la misma probabilidad para cada ajolote aceptado.",
-  "love.two": "2 aceptan<br><strong>50% cada uno</strong>",
-  "love.three": "3 aceptan<br><strong>33,33% cada uno</strong>",
-  "love.four": "4 aceptan<br><strong>25% cada uno</strong>",
+  "abilityGroup.5.title": "🧪 Efectos",
+  "abilityGroup.5.piece.0": "Fuego → 1/2/3/5 Asfixiado",
+  "abilityGroup.5.piece.1": "Hielo → 1/2/3/5 Entumecido",
+  "abilityGroup.5.piece.2": "Veneno → 1/2/3/5 Confundido",
+  "abilityGroup.5.piece.3": "Electricidad → 1/2/3/5 Electrificado",
+  "abilityGroup.5.piece.4": "Luz → 1/2/3/5 Deslumbrado",
 
-  "levels.title": "Niveles del acuario y progresión",
-  "levels.p": "Hay <strong>25 niveles de acuario</strong>, que contienen 50 niveles jugables. Cada nivel del acuario desbloquea nuevos ajolotes y aumenta progresivamente la capacidad.",
+  "abilityGroup.6.title": "🧪 Efectos",
+  "abilityGroup.6.piece.0": "Frío → 1/2/3/5 Debilitado",
+  "abilityGroup.6.piece.1": "Burbuja → 1/2/3/5 Desprotegido",
+  "abilityGroup.6.piece.2": "Barro → 1/2/3/5 Lento",
+  "abilityGroup.6.piece.3": "Objetivo → 1/2/3/5 Expuesto",
+  "abilityGroup.6.piece.4": "Triste → 1/2/3/5 Resentido",
 
-  "effects.title": "Efectos de estado",
-  "effects.p": "Los efectos de estado modifican estadísticas de combate o probabilidades de acción. Los efectos pueden acumularse cuando una habilidad aplica varias cargas.",
-  "effects.effect": "Efecto",
-  "effects.result": "Resultado",
+  "abilityGroup.7.title": "🧪 Efectos",
+  "abilityGroup.7.piece.0": "Sueño → 1/2/3/5 Cansado",
+  "abilityGroup.7.piece.1": "Sombra → 1/2/3/5 Apagado",
+  "abilityGroup.7.piece.2": "IA → 1/2/3/5 Inactivo",
+  "abilityGroup.7.piece.3": "Perezoso → 1/2/3/5 Desanimado",
+  "abilityGroup.7.piece.4": "Medusa → 1/2/3/5 Tambaleante",
 
-  "abilities.title": "Habilidades de las piezas de los ajolotes",
-  "abilities.p": "Los efectos de las piezas se activan según cuántas copias de la misma pieza haya en un ajolote. Los valores siguientes se alcanzan con 2/8, 4/8, 6/8 y 8/8 copias.",
+  "abilityGroup.8.title": "🧪 Efectos",
+  "abilityGroup.8.piece.0": "Divino → 1/2/3/5 Enamorado",
 
-  "worlds.title": "Niveles jugables",
-  "worlds.p": "El juego contiene cinco mundos y 50 niveles. Cada nivel muestra las combinaciones de enemigos encontradas y el requisito de acuario.",
+  "abilityGroup.9.title": "🪄 Efectos dobles",
+  "abilityGroup.9.piece.0": "Fantasma → Cansado + Desprotegido (1/2/3/5 cada uno)",
+  "abilityGroup.9.piece.1": "Escarcha → Debilitado + Lento (1/2/3/5 cada uno)",
+  "abilityGroup.9.piece.2": "Arena → Tambaleante + Entumecido (1/2/3/5 cada uno)",
+  "abilityGroup.9.piece.3": "Espejo → Expuesto + Desanimado (1/2/3/5 cada uno)",
+  "abilityGroup.9.piece.4": "Magma → Asfixiado + Deslumbrado (1/2/3/5 cada uno)",
 
-  "legal.title": "Política de privacidad y copyright",
-  "legal.privacyTitle": "Política de privacidad",
-  "legal.privacy1": "Only Axolotls respeta tu privacidad. Esta web es una guía informativa del juego. No solicita intencionadamente información personal, crea cuentas de usuario ni requiere que envíes datos personales.",
-  "legal.privacy2": "Si esta web se conecta posteriormente a analíticas, servicios externos, formularios, cookies u otras tecnologías que procesen datos personales, esta política se actualizará antes de introducir esas funciones.",
-  "legal.copyTitle": "Copyright y propiedad intelectual",
-  "legal.copy1": "<strong>Only Axolotls</strong>, su contenido de juego, personajes, ilustraciones, gráficos, logotipos, animaciones, música, sonidos, contenido escrito y software son propiedad intelectual protegida de sus respectivos titulares y no se publican para su redistribución comercial no autorizada.",
-  "legal.copy2": "Esta guía se proporciona únicamente para ayudar a los jugadores a comprender y disfrutar del juego. No se permite reproducir, redistribuir, utilizar comercialmente ni modificar activos protegidos del juego sin autorización previa.",
-  "legal.copy3": "© 2026 Notter Animations.",
+  "abilityGroup.10.title": "🪄 Efectos dobles",
+  "abilityGroup.10.piece.0": "Radiactivo → Confundido + Inactivo (1/2/3/5 cada uno)",
+  "abilityGroup.10.piece.1": "Flamenco → Enamorado + Vitalizado al equipo (1/2/3/5 cada uno)",
+  "abilityGroup.10.piece.2": "Arcade → Electrificado + Acelerado al equipo (1/2/3/5 cada uno)",
+  "abilityGroup.10.piece.3": "Eclipse → Apagado + Reforzado al equipo (1/2/3/5 cada uno)",
+  "abilityGroup.10.piece.4": "Soldado → Resentido + Potenciado al equipo (1/2/3/5 cada uno)",
 
-  "rarity.common": "Común",
-  "rarity.uncommon": "Poco común",
-  "rarity.rare": "Rara",
-  "rarity.epic": "Épica",
-  "rarity.legendary": "Legendaria",
-  "rarity.xolotl": "Xólotl",
+  /*
+  ========================================================
+  MUNDOS
+  ========================================================
+  */
 
-  "unit.day": "día",
-  "unit.days": "días",
-  "unit.gem": "gema",
-  "unit.gems": "gemas",
+  "world.0.title": "MUNDO 1 — EL PEQUEÑO ESTANQUE",
+  "world.1.title": "MUNDO 2 — AGUAS SALVAJES",
+  "world.2.title": "MUNDO 3 — LAS PROFUNDIDADES",
+  "world.3.title": "MUNDO 4 — EL REINO GIGANTE",
+  "world.4.title": "MUNDO 5 — EL GRAN ACUARIO",
 
-  "seed.algae": "Algas",
-  "seed.potatoes": "Patatas",
-  "seed.corn": "Maíz",
-  "seed.coral": "Coral",
-  "seed.tomatoes": "Tomates",
-  "seed.wheat": "Trigo",
-  "seed.onions": "Cebollas",
-  "seed.carrots": "Zanahorias",
-  "seed.bananas": "Plátanos",
-  "seed.beans": "Judías",
-  "seed.strawberries": "Fresas",
-  "seed.oranges": "Naranjas",
-  "seed.grapes": "Uvas",
-  "seed.chocolate": "Chocolate",
-  "seed.peppers": "Pimientos",
+  /*
+  ========================================================
+  MUNDO 1
+  ========================================================
+  */
 
-  "effect.suffocated": "Asfixiado",
-  "effect.suffocated.r": "Pierde 2 de vida base al final del turno.",
+  "world.0.level.0.title": "1 — Un nuevo hogar",
+  "world.0.level.0.aquarium": "Acuario 1",
+  "world.0.level.0.enemies": "Rosa",
 
-  "effect.numb": "Entumecido",
-  "effect.numb.r": "4% de probabilidad base de no realizar ninguna acción durante ese turno.",
+  "world.0.level.1.title": "2 — Primer movimiento",
+  "world.0.level.1.aquarium": "Acuario 1",
+  "world.0.level.1.enemies": "Hoja",
 
-  "effect.confused": "Confundido",
-  "effect.confused.r": "Pierde 1 de vida base y -1 de Defensa base al final del turno.",
+  "world.0.level.2.title": "3 — Primeras diferencias",
+  "world.0.level.2.aquarium": "—",
+  "world.0.level.2.enemies": "Hoja + Pluma",
 
-  "effect.sparkling": "Electrificado",
-  "effect.sparkling.r": "2% de probabilidad base de no realizar ninguna acción y -1 de Velocidad base.",
+  "world.0.level.3.title": "4 — Pequeñas garras",
+  "world.0.level.3.aquarium": "Acuario 2",
+  "world.0.level.3.enemies": "Pluma + Garras",
 
-  "effect.dazzled": "Deslumbrado",
-  "effect.dazzled.r": "4% de probabilidad base de fallar el ataque seleccionado.",
+  "world.0.level.4.title": "5 — Dos contra dos",
+  "world.0.level.4.aquarium": "Acuario 3",
+  "world.0.level.4.enemies": "Hoja + Dado · Piedra + Meteorito",
 
-  "effect.weakened": "Debilitado",
-  "effect.weakened.r": "-2 de Ataque base.",
+  "world.0.level.5.title": "6 — Primeros efectos",
+  "world.0.level.5.aquarium": "Acuario 3",
+  "world.0.level.5.enemies": "Fuego + Garras · Frío + Pluma",
 
-  "effect.unprotected": "Desprotegido",
-  "effect.unprotected.r": "-2 de Defensa base.",
+  "world.0.level.6.title": "7 — Debilitamiento",
+  "world.0.level.6.aquarium": "Acuario 4",
+  "world.0.level.6.enemies": "Piedra + Burbuja · Garras + Barro",
 
-  "effect.slow": "Lento",
-  "effect.slow.r": "-2 de Velocidad base.",
+  "world.0.level.7.title": "8 — El punto débil",
+  "world.0.level.7.aquarium": "Acuario 4",
+  "world.0.level.7.enemies": "Hoja + Objetivo · Triste + Piedra",
 
-  "effect.exposed": "Expuesto",
-  "effect.exposed.r": "+4% de probabilidad base de recibir un golpe crítico.",
+  "world.0.level.8.title": "9 — Materiales superiores",
+  "world.0.level.8.aquarium": "Acuario 5",
+  "world.0.level.8.enemies": "Manzana + Viento · Hierro + Colmillos",
 
-  "effect.resentful": "Resentido",
-  "effect.resentful.r": "+10% de daño crítico base recibido.",
+  "world.0.level.9.title": "10 — El primer desafío",
+  "world.0.level.9.aquarium": "Acuario 5",
+  "world.0.level.9.enemies": "Manzana + Colmillos · Viento + Hierro",
 
-  "effect.tired": "Cansado",
-  "effect.tired.r": "-1 de Ataque base y -1 de Velocidad base.",
+  /*
+  ========================================================
+  MUNDO 2
+  ========================================================
+  */
 
-  "effect.dimmed": "Apagado",
-  "effect.dimmed.r": "-1 de Ataque base y -1 de Defensa base.",
+  "world.1.level.0.title": "11 — La fortuna despierta",
+  "world.1.level.0.aquarium": "Acuario 6",
+  "world.1.level.0.enemies": "Fortuna + Fuego · Frío + Electricidad",
 
-  "effect.shutDown": "Inactivo",
-  "effect.shutDown.r": "-1 de Velocidad base y -1 de Defensa base.",
+  "world.1.level.1.title": "12 — Descargas",
+  "world.1.level.1.aquarium": "—",
+  "world.1.level.1.enemies": "Electricidad + Garras · Fuego + Pluma",
 
-  "effect.discouraged": "Desanimado",
-  "effect.discouraged.r": "2% de probabilidad base de no realizar ninguna acción y -1 de Ataque base.",
+  "world.1.level.2.title": "13 — Veneno en el agua",
+  "world.1.level.2.aquarium": "Acuario 7",
+  "world.1.level.2.enemies": "Veneno + Barro · Burbuja + Objetivo · Fuego + Garras",
 
-  "effect.staggering": "Tambaleante",
-  "effect.staggering.r": "2% de probabilidad base de no realizar ninguna acción y -1 de Defensa base.",
+  "world.1.level.3.title": "14 — La mirada perdida",
+  "world.1.level.3.aquarium": "Acuario 7",
+  "world.1.level.3.enemies": "Barro + Piedra · Objetivo + Pluma · Triste + Garras",
 
-  "effect.enamored": "Enamorado",
-  "effect.enamored.r": "+2% de probabilidad base de recibir un golpe crítico y +8% de daño crítico base recibido.",
+  "world.1.level.4.title": "15 — Manzana venenosa",
+  "world.1.level.4.aquarium": "Acuario 8",
+  "world.1.level.4.enemies": "Manzana + Veneno · Burbuja + Hierro · Viento + Colmillos",
 
-  "effect.vitalized": "Vitalizado",
-  "effect.vitalized.r": "+1 de Amor.",
+  "world.1.level.5.title": "16 — El ojo eléctrico",
+  "world.1.level.5.aquarium": "Acuario 8",
+  "world.1.level.5.enemies": "Electricidad + Objetivo · Triste + Barro · Burbuja + Garras",
 
-  "effect.reinforced": "Reforzado",
-  "effect.reinforced.r": "+1 de Defensa.",
+  "world.1.level.6.title": "17 — Corazón de batalla",
+  "world.1.level.6.aquarium": "Acuario 9",
+  "world.1.level.6.enemies": "Manzana + Hierro · Viento + Espinas · Objetivo + Colmillos",
 
-  "effect.accelerated": "Acelerado",
-  "effect.accelerated.r": "+1 de Velocidad.",
+  "world.1.level.7.title": "18 — Acero y veneno",
+  "world.1.level.7.aquarium": "Acuario 9",
+  "world.1.level.7.enemies": "Veneno + Hierro · Manzana + Espinas · Barro + Garras",
 
-  "effect.powered": "Potenciado",
-  "effect.powered.r": "+1 de Ataque."
-};
+  "world.1.level.8.title": "19 — Velocidad crítica",
+  "world.1.level.8.aquarium": "Acuario 10",
+  "world.1.level.8.enemies": "Viento + Carmesí · Fortuna + Espinas · Manzana + Electricidad",
+
+  "world.1.level.9.title": "20 — La tormenta",
+  "world.1.level.9.aquarium": "Acuario 10",
+  "world.1.level.9.enemies": "Viento + Espinas · Electricidad + Carmesí · Fortuna + Garras",
+
+  /*
+  ========================================================
+  MUNDO 3
+  ========================================================
+  */
+
+  "world.2.level.0.title": "21 — Sueño profundo",
+  "world.2.level.0.aquarium": "Acuario 11",
+  "world.2.level.0.enemies": "Sueño + Fortuna · Electricidad + Manzana · Objetivo + Hierro",
+
+  "world.2.level.1.title": "22 — Luz peligrosa",
+  "world.2.level.1.aquarium": "Acuario 11",
+  "world.2.level.1.enemies": "Luz + Espinas · Veneno + Carmesí · Fortuna + Barro",
+
+  "world.2.level.2.title": "23 — Cuatro sombras",
+  "world.2.level.2.aquarium": "Acuario 12",
+  "world.2.level.2.enemies": "Luz + Garras · Veneno + Hierro · Sueño + Pluma · Electricidad + Espinas",
+
+  "world.2.level.3.title": "24 — Veneno y velocidad",
+  "world.2.level.3.aquarium": "Acuario 12",
+  "world.2.level.3.enemies": "Veneno + Carmesí · Luz + Pluma · Electricidad + Garras · Sueño + Hierro",
+
+  "world.2.level.4.title": "25 — El poder de Notter",
+  "world.2.level.4.aquarium": "Acuario 13",
+  "world.2.level.4.enemies": "Sueño + Notter · Sombra + Manzana · Fortuna + Espinas · Luz + Carmesí",
+
+  "world.2.level.5.title": "26 — Sombras rápidas",
+  "world.2.level.5.aquarium": "Acuario 13",
+  "world.2.level.5.enemies": "Sombra + Pluma · Sueño + Espinas · Luz + Hierro · Veneno + Garras",
+
+  "world.2.level.6.title": "27 — Inteligencia artificial",
+  "world.2.level.6.aquarium": "Acuario 14",
+  "world.2.level.6.enemies": "IA + Fortuna · Sombra + Espinas · Sueño + Carmesí · Luz + Hierro",
+
+  "world.2.level.7.title": "28 — El reino oscurecido",
+  "world.2.level.7.aquarium": "Acuario 14",
+  "world.2.level.7.enemies": "IA + Pluma · Sombra + Garras · Veneno + Espinas · Fortuna + Hierro",
+
+  "world.2.level.8.title": "29 — Los primeros gigantes",
+  "world.2.level.8.aquarium": "Acuario 15",
+  "world.2.level.8.enemies": "Netfil25 + Hierro · Diamante + Espinas · Tornado + Fortuna · IA + Manzana",
+
+  "world.2.level.9.title": "30 — Corazón de las profundidades",
+  "world.2.level.9.aquarium": "Acuario 15",
+  "world.2.level.9.enemies": "Netfil25 + Espinas · Diamante + Carmesí · Tornado + Garras · IA + Fortuna",
+
+  /*
+  ========================================================
+  MUNDO 4
+  ========================================================
+  */
+
+  "world.3.level.0.title": "31 — Hielo eterno",
+  "world.3.level.0.aquarium": "Acuario 16",
+  "world.3.level.0.enemies": "Hielo + Espinas · Tornado + Hierro · Netfil25 + Carmesí · IA + Garras",
+
+  "world.3.level.1.title": "32 — Tormenta congelada",
+  "world.3.level.1.aquarium": "Acuario 16",
+  "world.3.level.1.enemies": "Hielo + Tornado · Diamante + Espinas · IA + Carmesí · Netfil25 + Garras",
+
+  "world.3.level.2.title": "33 — Espadas",
+  "world.3.level.2.aquarium": "Acuario 17",
+  "world.3.level.2.enemies": "Espadas + Espinas · Perezoso + Hierro · Hielo + Fortuna · Tornado + Carmesí",
+
+  "world.3.level.3.title": "34 — El enemigo perfecto",
+  "world.3.level.3.aquarium": "Acuario 17",
+  "world.3.level.3.enemies": "Espadas + Hierro · Perezoso + Espinas · Hielo + Carmesí · Tornado + Fortuna",
+
+  "world.3.level.4.title": "35 — Límite mortal",
+  "world.3.level.4.aquarium": "Acuario 18",
+  "world.3.level.4.enemies": "Medusa + Espinas · Corazón + Hierro · Espadas + Carmesí · Hielo + Fortuna",
+
+  "world.3.level.5.title": "36 — Amor y destrucción",
+  "world.3.level.5.aquarium": "Acuario 18",
+  "world.3.level.5.enemies": "Corazón + Espinas · Medusa + Hierro · Espadas + Fortuna · Perezoso + Carmesí",
+
+  "world.3.level.6.title": "37 — Poder legendario",
+  "world.3.level.6.aquarium": "Acuario 19",
+  "world.3.level.6.enemies": "Lonsdaleíta + Espadas · Estrella + Espinas · Corazón + Carmesí · Medusa + Fortuna",
+
+  "world.3.level.7.title": "38 — Cuatro poderes",
+  "world.3.level.7.aquarium": "Acuario 19",
+  "world.3.level.7.enemies": "Lonsdaleíta + Hierro · Estrella + Carmesí · Espadas + Espinas · Corazón + Manzana",
+
+  "world.3.level.8.title": "39 — Poder del héroe",
+  "world.3.level.8.aquarium": "Acuario 20",
+  "world.3.level.8.enemies": "Demonio + Espinas · Planeta + Fortuna · Estrella + Hierro · Corazón + Carmesí",
+
+  "world.3.level.9.title": "40 — El coloso",
+  "world.3.level.9.aquarium": "Acuario 20",
+  "world.3.level.9.enemies": "Demonio + Espadas · Planeta + Espinas · Estrella + Hierro · Corazón + Lonsdaleíta",
+
+  /*
+  ========================================================
+  MUNDO 5
+  ========================================================
+  */
+
+  "world.4.level.0.title": "41 — Presencia divina",
+  "world.4.level.0.aquarium": "Acuario 21",
+  "world.4.level.0.enemies": "Divino + Espinas · Fantasma + Hierro · Planeta + Carmesí · Estrella + Fortuna",
+
+  "world.4.level.1.title": "42 — Maldición",
+  "world.4.level.1.aquarium": "Acuario 21",
+  "world.4.level.1.enemies": "Fantasma + Espinas · Divino + Hierro · Demonio + Carmesí · Planeta + Fortuna",
+
+  "world.4.level.2.title": "43 — Escarcha",
+  "world.4.level.2.aquarium": "Acuario 22",
+  "world.4.level.2.enemies": "Escarcha + Espinas · Arena + Hierro · Fantasma + Carmesí · Divino + Fortuna",
+
+  "world.4.level.3.title": "44 — Arena y hielo",
+  "world.4.level.3.aquarium": "Acuario 22",
+  "world.4.level.3.enemies": "Arena + Espinas · Escarcha + Carmesí · Divino + Hierro · Planeta + Demonio",
+
+  "world.4.level.4.title": "45 — El espejo",
+  "world.4.level.4.aquarium": "Acuario 23",
+  "world.4.level.4.enemies": "Espejo + Espinas · Magma + Hierro · Escarcha + Carmesí · Arena + Fortuna",
+
+  "world.4.level.5.title": "46 — Reflejo de fuerza",
+  "world.4.level.5.aquarium": "Acuario 23",
+  "world.4.level.5.enemies": "Espejo + Demonio · Magma + Estrella · Arena + Lonsdaleíta · Planeta + Corazón",
+
+  "world.4.level.6.title": "47 — Radiación",
+  "world.4.level.6.aquarium": "Acuario 24",
+  "world.4.level.6.enemies": "Radiactivo + Espinas · Flamenco + Hierro · Espejo + Carmesí · Magma + Fortuna",
+
+  "world.4.level.7.title": "48 — El elemento final",
+  "world.4.level.7.aquarium": "Acuario 24",
+  "world.4.level.7.enemies": "Radiactivo + Demonio · Flamenco + Estrella · Espejo + Lonsdaleíta · Magma + Planeta",
+
+  "world.4.level.8.title": "49 — El gran acuario",
+  "world.4.level.8.aquarium": "Acuario 25",
+  "world.4.level.8.enemies": "Arcade + Espinas · Eclipse + Hierro · Soldado + Carmesí · Planeta + Demonio",
+
+  "world.4.level.9.title": "50 — EL FINAL",
+  "world.4.level.9.aquarium": "Acuario 25",
+  "world.4.level.9.enemies": "Soldado + Planeta · Arcade + Estrella · Eclipse + Lonsdaleíta · Flamenco + Divino"
