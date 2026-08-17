@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official Only Axolotls game guide — mechanics, breeding, probabilities, levels, axolotl abilities, effects and more.">
+  <meta name="theme-color" content="#3850b9">
+  <title>Only Axolotls — Official Game Guide</title>
+  <link rel="icon" type="image/png" href="images/game-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Only Axolotls">
+      <img src="images/game-icon.png" alt="Only Axolotls">
+      <span>Only Axolotls</span>
+    </a>
+    <div class="language">
+      <label for="languageSelect">Language</label>
+      <select id="languageSelect">
+        <option value="en">🇬🇧 English</option>
+        <option value="fr">🇫🇷 Français</option>
+        <option value="it">🇮🇹 Italiano</option>
+        <option value="de">🇩🇪 Deutsch</option>
+        <option value="es">🇪🇸 Español (Spain)</option>
+        <option value="bg">🇧🇬 Bulgarian</option>
+        <option value="cs">🇨🇿 Czech</option>
+        <option value="zh-CN">🇨🇳 简体中文</option>
+        <option value="zh-TW">🇹🇼 繁體中文</option>
+        <option value="ko">🇰🇷 Korean</option>
+        <option value="da">🇩🇰 Danish</option>
+        <option value="es-419">🌎 Latin American Spanish</option>
+        <option value="fi">🇫🇮 Finnish</option>
+        <option value="el">🇬🇷 Greek</option>
+        <option value="nl">🇳🇱 Dutch</option>
+        <option value="hu">🇭🇺 Hungarian</option>
+        <option value="id">🇮🇩 Indonesian</option>
+        <option value="ja">🇯🇵 Japanese</option>
+        <option value="ms">🇲🇾 Malay</option>
+        <option value="no">🇳🇴 Norwegian</option>
+        <option value="pl">🇵🇱 Polish</option>
+        <option value="pt-BR">🇧🇷 Brazilian Portuguese</option>
+        <option value="pt-PT">🇵🇹 Portuguese</option>
+        <option value="ro">🇷🇴 Romanian</option>
+        <option value="ru">🇷🇺 Russian</option>
+        <option value="sv">🇸🇪 Swedish</option>
+        <option value="th">🇹🇭 Thai</option>
+        <option value="tr">🇹🇷 Turkish</option>
+        <option value="uk">🇺🇦 Ukrainian</option>
+        <option value="vi">🇻🇳 Vietnamese</option>
+        <option value="ar">🇸🇦 Arabic</option>
+      </select>
+    </div>
+  </header>
+
+  <main id="top" class="page">
+    <section class="hero">
+      <img class="hero-icon" src="images/game-logo.png" alt="Only Axolotls logo">
+      <p class="eyebrow" data-i18n="hero.eyebrow">OFFICIAL GAME GUIDE</p>
+      <h1 data-i18n="hero.title">Only Axolotls</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Everything you need to know about your aquarium, axolotls, breeding, battles, progression and probabilities.</p>
+      <div class="hero-note" data-i18n="hero.note">This guide describes the current final game systems and values.</div>
+    </section>
+
+    <section class="guide-card" id="basics">
+      <div class="section-number">01</div><h2 data-i18n="basics.title">How Only Axolotls Works</h2>
+      <p data-i18n="basics.p1">Only Axolotls is built around collecting, breeding and developing axolotls. Each axolotl is made from <strong>8 individual pieces</strong>. Pieces have their own rarity and can contribute statistics, effects or special abilities.</p>
+      <div class="info-grid">
+        <div><h3 data-i18n="basics.grid1.title">8 Pieces</h3><p data-i18n="basics.grid1.p">Every axolotl is assembled from eight independently determined pieces.</p></div>
+        <div><h3 data-i18n="basics.grid2.title">6 Rarities</h3><p data-i18n="basics.grid2.p">Common, Uncommon, Rare, Epic, Legendary and Xólotl.</p></div>
+        <div><h3 data-i18n="basics.grid3.title">Progression</h3><p data-i18n="basics.grid3.p">Aquarium levels unlock new axolotls, seeds, capacity and expansions.</p></div>
+        <div><h3 data-i18n="basics.grid4.title">Combat</h3><p data-i18n="basics.grid4.p">Pieces can grant statistics and status effects that shape how axolotls perform.</p></div>
+      </div>
+    </section>
+
+    <section class="guide-card" id="breeding">
+      <div class="section-number">02</div><h2 data-i18n="breeding.title">Breeding &amp; Piece Inheritance</h2>
+      <p data-i18n="breeding.p1">When two axolotls reproduce, every one of their eight pieces is resolved independently.</p>
+      <div class="probability-box"><strong data-i18n="breeding.mother">35% Mother</strong><span data-i18n="breeding.father">35% Father</span><b data-i18n="breeding.mutation">30% Mutation</b></div>
+      <p data-i18n="breeding.p2">For each piece, there is a <strong>35% chance</strong> to inherit the mother's piece, a <strong>35% chance</strong> to inherit the father's piece, and a <strong>30% chance</strong> that the piece mutates.</p>
+      <h3 data-i18n="breeding.mutationTitle">Mutation rarity</h3>
+      <p data-i18n="breeding.mutationP">If both parent pieces have the same rarity, a mutation is guaranteed to use that rarity. If their rarities differ, the mutation distributes its chance evenly across every rarity step between the two pieces, including both endpoints. The resulting piece is then selected randomly from the chosen rarity.</p>
+      <div class="example" data-i18n="breeding.example"><b>Example:</b> Legendary mother + Common father = six rarity steps: Common, Uncommon, Rare, Epic, Legendary and Xólotl. A mutation has an equal chance of landing on each of those six rarity levels.</div>
+      <h3 data-i18n="breeding.genderTitle">Gender at birth</h3><p data-i18n="breeding.genderP">Every newborn axolotl has a <strong>50% chance to be female</strong> and a <strong>50% chance to be male</strong>.</p>
+    </section>
+
+    <section class="guide-card" id="timers">
+      <div class="section-number">03</div><h2 data-i18n="timers.title">Breeding Time &amp; Gem Cost</h2>
+      <p data-i18n="timers.p">The <strong>highest rarity among the two parent pieces</strong> determines both the breeding/hatching time and the number of gems required to skip the event.</p>
+      <table><thead><tr><th data-i18n="timers.rarity">Highest rarity</th><th data-i18n="timers.time">Time</th><th data-i18n="timers.cost">Skip cost</th></tr></thead><tbody>
+        <tr><td data-i18n="rarity.common">Common</td><td>1 <span data-i18n="unit.day">day</span></td><td>1 <span data-i18n="unit.gem">gem</span></td></tr>
+        <tr><td data-i18n="rarity.uncommon">Uncommon</td><td>1 <span data-i18n="unit.day">day</span></td><td>2 <span data-i18n="unit.gem">gems</span></td></tr>
+        <tr><td data-i18n="rarity.rare">Rare</td><td>2 <span data-i18n="unit.days">days</span></td><td>3 <span data-i18n="unit.gems">gems</span></td></tr>
+        <tr><td data-i18n="rarity.epic">Epic</td><td>2 <span data-i18n="unit.days">days</span></td><td>4 <span data-i18n="unit.gems">gems</span></td></tr>
+        <tr><td data-i18n="rarity.legendary">Legendary</td><td>3 <span data-i18n="unit.days">days</span></td><td>5 <span data-i18n="unit.gems">gems</span></td></tr>
+        <tr><td data-i18n="rarity.xolotl">Xólotl</td><td>3 <span data-i18n="unit.days">days</span></td><td>6 <span data-i18n="unit.gems">gems</span></td></tr>
+      </tbody></table>
+    </section>
+
+    <section class="guide-card" id="coins">
+      <div class="section-number">04</div><h2 data-i18n="coins.title">Coins</h2>
+      <p data-i18n="coins.p1">Coins are the main currency used for several progression-related systems. They are required to maintain your aquarium, purchase seeds and unlock additional growing space.</p>
+      <h3 data-i18n="coins.earnTitle">How to earn Coins</h3>
+      <p data-i18n="coins.earnP">Coins can be obtained through several activities:</p>
+      <ul class="clean">
+        <li data-i18n="coins.earn1">Winning battles.</li>
+        <li data-i18n="coins.earn2">Completing axolotl sets.</li>
+        <li data-i18n="coins.earn3">Harvesting fully grown phytoplankton plants.</li>
+      </ul>
+      <h3 data-i18n="coins.breedTitle">Breeding cost</h3>
+      <p data-i18n="coins.breedP">Coins are required to allow two axolotls to reproduce. The cost depends on the rarities of <strong>all eight pieces of the mother</strong> and <strong>all eight pieces of the father</strong>. The rarities of both parents are considered together when calculating the final breeding cost.</p>
+      <div class="example" data-i18n="coins.example"><b>Important:</b> Breeding does not reward Coins. The player must spend Coins to begin the reproduction because the axolotls require care during the breeding process.</div>
+      <h3 data-i18n="coins.otherTitle">Other uses</h3>
+      <p data-i18n="coins.otherP">Coins can also be spent on useful progression-related purchases, including seeds from the <strong>Seed Shop</strong> and additional <strong>pot slots</strong> for growing phytoplankton.</p>
+    </section>
+
+    <section class="guide-card" id="gems">
+      <div class="section-number">05</div><h2 data-i18n="gems.title">Gems</h2>
+      <p data-i18n="gems.p1">Gems are a premium progression resource used exclusively to <strong>accelerate ongoing game processes</strong>.</p>
+      <h3 data-i18n="gems.earnTitle">How to earn Gems</h3>
+      <ul class="clean">
+        <li data-i18n="gems.earn1">Unlocking a piece gives <strong>1 gem</strong>.</li>
+        <li data-i18n="gems.earn2">Every axolotl level-up gives <strong>1 gem</strong>.</li>
+        <li data-i18n="gems.earn3">Completing a star level for the first time gives <strong>1 gem</strong>.</li>
+      </ul>
+      <h3 data-i18n="gems.spendTitle">How Gems are spent</h3>
+      <p data-i18n="gems.spendP">Gems can be used to instantly complete or accelerate the following processes:</p>
+      <ul class="clean">
+        <li data-i18n="gems.spend1"><strong>Breeding</strong> — accelerate an ongoing reproduction.</li>
+        <li data-i18n="gems.spend2"><strong>Egg hatching</strong> — instantly complete the egg's remaining time.</li>
+        <li data-i18n="gems.spend3"><strong>Plant growth</strong> — instantly finish the remaining growth time of a plant.</li>
+        <li data-i18n="gems.spend4"><strong>Seed Shop refresh</strong> — instantly refresh the shop instead of waiting for its normal reset.</li>
+      </ul>
+      <div class="example" data-i18n="gems.example"><b>Important:</b> Gems do not replace Coins and are not used for normal purchases. They exist specifically to let the player skip waiting times and accelerate progression.</div>
+    </section>
+
+    <section class="guide-card" id="food">
+      <div class="section-number">06</div><h2 data-i18n="food.title">Phytoplankton, Food &amp; Growth</h2>
+      <p data-i18n="food.p1">Each harvest produces <strong>2 phytoplankton</strong> of the planted crop. An axolotl needs 2 units of its required plant food to level up. Every additional level requires 2 more units than the previous level.</p>
+      <p data-i18n="food.p2">Each axolotl starts with a base stay duration of <strong>10 days</strong>. Every level adds <strong>4 days</strong> to that duration.</p>
+      <div class="example" data-i18n="food.example"><b>Example:</b> A level 1 axolotl stays for 10 days. Level 2 becomes 14 days, level 3 becomes 18 days, and so on.</div>
+      <h3 data-i18n="food.favTitle">Favourite food</h3>
+      <p data-i18n="food.favP">Each of the 8 pieces independently has a <strong>12.5% chance</strong> of assigning the crop associated with that piece's set as the axolotl's favourite food. This can make an axolotl with high-rarity pieces easier to feed than expected.</p>
+      <h3 data-i18n="food.seedTitle">Seed unlocks</h3>
+      <table><thead><tr><th data-i18n="food.aquarium">Aquarium</th><th data-i18n="food.seed">Seed</th></tr></thead><tbody>
+        <tr><td>1</td><td data-i18n="seed.algae">Algae</td></tr><tr><td>2</td><td data-i18n="seed.potatoes">Potatoes</td></tr><tr><td>3</td><td data-i18n="seed.corn">Corn</td></tr><tr><td>4</td><td data-i18n="seed.coral">Coral</td></tr>
+        <tr><td>5</td><td data-i18n="seed.tomatoes">Tomatoes</td></tr><tr><td>6</td><td data-i18n="seed.wheat">Wheat</td></tr><tr><td>8</td><td data-i18n="seed.onions">Onions</td></tr><tr><td>10</td><td data-i18n="seed.carrots">Carrots</td></tr>
+        <tr><td>12</td><td data-i18n="seed.bananas">Bananas</td></tr><tr><td>14</td><td data-i18n="seed.beans">Beans</td></tr><tr><td>16</td><td data-i18n="seed.strawberries">Strawberries</td></tr><tr><td>18</td><td data-i18n="seed.oranges">Oranges</td></tr>
+        <tr><td>20</td><td data-i18n="seed.grapes">Grapes</td></tr><tr><td>22</td><td data-i18n="seed.chocolate">Chocolate</td></tr><tr><td>24</td><td data-i18n="seed.peppers">Peppers</td></tr>
+      </tbody></table>
+      <p class="small-note" data-i18n="food.note">Plant growth time depends on the plant's internal rarity. This rarity is not displayed to the player.</p>
+    </section>
+
+    <section class="guide-card" id="shop">
+      <div class="section-number">07</div><h2 data-i18n="shop.title">Seed Shop</h2>
+      <p data-i18n="shop.p1">The Seed Shop is run by a sleepy Andalusian farmer and offers a rotating selection of phytoplankton seeds. The shop refreshes its available seeds every <strong>2 days</strong>.</p>
+      <h3 data-i18n="shop.howTitle">How the shop works</h3>
+      <p data-i18n="shop.p2">The shop has up to <strong>6 seed slots</strong>. Each slot can contain a random seed from the seeds you have currently unlocked. Seeds can appear repeatedly, so the same seed may occupy more than one slot.</p>
+      <p data-i18n="shop.p3">Each available seed stack also receives a random quantity. The quantity starts between <strong>1 and 2 seeds</strong> and increases as your aquarium progresses. Every aquarium level increases both the minimum and maximum available quantity by <strong>2</strong>.</p>
+      <div class="example" data-i18n="shop.example"><b>Example:</b> At the starting level, a seed slot can contain 1–2 seeds. As your aquarium level increases, the possible quantity rises by 2 for both the minimum and maximum.</div>
+      <h3 data-i18n="shop.groupsTitle">Seed groups</h3>
+      <p data-i18n="shop.p4">The shop does not choose randomly from all unlocked seeds with one single probability pool. The six slots are separated into different seed groups. Each slot selects from the seeds assigned to its group.</p>
+      <p data-i18n="shop.p5">This means that newly unlocked seeds are not competing equally against every seed in the entire collection. A rare late-game seed can instead be selected from a much smaller group of possible seeds assigned to that shop slot.</p>
+      <div class="example" data-i18n="shop.example2"><b>Example:</b> If a slot has only 3 possible seeds in its group, each of those seeds has a much more meaningful chance to appear than if the game selected from all 15 unlocked seeds at once.</div>
+      <h3 data-i18n="shop.slotsTitle">Shop slots</h3>
+      <p data-i18n="shop.p6">The Seed Shop starts with <strong>1 available slot</strong>. As you progress through the aquarium levels, additional slots are unlocked at specific milestones, up to a maximum of <strong>6 slots</strong>.</p>
+      <table><thead><tr><th data-i18n="shop.level">Aquarium level</th><th data-i18n="shop.slots">Shop slots</th></tr></thead><tbody>
+        <tr><td>1–3</td><td>1</td></tr><tr><td>4–7</td><td>2</td></tr><tr><td>8–13</td><td>3</td></tr><tr><td>14–19</td><td>4</td></tr><tr><td>20–23</td><td>5</td></tr><tr><td>24–25</td><td>6</td></tr>
+      </tbody></table>
+      <div class="example" data-i18n="shop.example3"><b>Shop slot progression:</b> An additional shop slot is unlocked at aquarium levels <strong>4, 8, 14, 20 and 24</strong>. This increases the shop from its initial <strong>1 slot</strong> to the maximum of <strong>6 slots</strong>.</div>
+      <p data-i18n="shop.p7">Because the selection changes only every two days, the player cannot simply buy any seed whenever they want. Checking the shop regularly and spending coins when useful seeds appear is an important part of progression.</p>
+    </section>
+
+    <section class="guide-card" id="visitors">
+      <div class="section-number">08</div><h2 data-i18n="visitors.title">The Daily Visitor</h2>
+      <p data-i18n="visitors.p1">A new axolotl visitor is <strong>guaranteed once per day</strong>. Its appearance never depends on chance.</p>
+      <p data-i18n="visitors.p2">Visiting axolotls can be adopted or left behind. If you do not adopt a visitor, it leaves the following day.</p>
+      <p data-i18n="visitors.p3">If your aquarium is at maximum capacity, you cannot adopt another axolotl until you transfer axolotls out of the aquarium and create free space.</p>
+      <h3 data-i18n="visitors.genTitle">How the Daily Visitor is generated</h3>
+      <p data-i18n="visitors.genP">Its eight pieces are generated independently. For each piece, the game first checks which rarities you have unlocked. Every unlocked rarity has exactly the same probability.</p>
+      <table><thead><tr><th data-i18n="visitors.unlocked">Unlocked rarities</th><th data-i18n="visitors.chance">Chance per rarity</th></tr></thead><tbody>
+        <tr><td data-i18n="rarity.common">Common</td><td>100%</td></tr>
+        <tr><td data-i18n="visitors.commonUncommon">Common + Uncommon</td><td>50% / 50%</td></tr>
+        <tr><td data-i18n="visitors.plusRare">+ Rare</td><td>33.33% each</td></tr>
+        <tr><td data-i18n="visitors.plusEpic">+ Epic</td><td>25% each</td></tr>
+        <tr><td data-i18n="visitors.plusLegendary">+ Legendary</td><td>20% each</td></tr>
+        <tr><td data-i18n="visitors.plusXolotl">+ Xólotl</td><td>16.67% each</td></tr>
+      </tbody></table>
+      <div class="example" data-i18n="visitors.example"><b>Example:</b> If all six rarities are unlocked, every rarity has a 16.67% chance for each piece. Once a rarity is chosen, all unlocked pieces within that rarity are equally likely. Two Common pieces means 50% each; five Rare pieces means 20% each; ten Epic pieces means 10% each.</div>
+      <p data-i18n="visitors.p4">The process is repeated eight times, once for every piece. As your collection grows, more individual pieces can appear in the Daily Visitor, while the chance of obtaining any specific piece becomes smaller.</p>
+    </section>
+
+    <section class="guide-card" id="love">
+      <div class="section-number">09</div><h2 data-i18n="love.title">The Enamored Axolotl</h2>
+      <p data-i18n="love.p1">After a battle, every enemy axolotl independently checks whether it wants to join you. Its chance is determined by the rarity of each of its eight pieces.</p>
+      <table><thead><tr><th data-i18n="love.rarity">Piece rarity</th><th data-i18n="love.contribution">Contribution</th></tr></thead><tbody>
+        <tr><td data-i18n="rarity.common">Common</td><td>10%</td></tr><tr><td data-i18n="rarity.uncommon">Uncommon</td><td>8%</td></tr><tr><td data-i18n="rarity.rare">Rare</td><td>4%</td></tr>
+        <tr><td data-i18n="rarity.epic">Epic</td><td>3%</td></tr><tr><td data-i18n="rarity.legendary">Legendary</td><td>2%</td></tr><tr><td data-i18n="rarity.xolotl">Xólotl</td><td>1%</td></tr>
+      </tbody></table>
+      <p data-i18n="love.p2">Each of the eight pieces contributes according to its rarity. The final chance is calculated from all eight contributions.</p>
+      <div class="example" data-i18n="love.example"><b>Example:</b> An enemy with Common + Common + Rare + Rare + Epic + Epic + Legendary + Xólotl sends all eight rarity contributions into the final calculation.</div>
+      <h3 data-i18n="love.multipleTitle">When multiple enemies accept</h3>
+      <p data-i18n="love.multipleP">None may accept, one may accept, or several may accept. If several accept, the manager randomly selects <strong>one</strong> of them, with every accepted axolotl having the same chance.</p>
+      <div class="mini-grid"><div data-i18n="love.two">2 accepted<br><strong>50% each</strong></div><div data-i18n="love.three">3 accepted<br><strong>33.33% each</strong></div><div data-i18n="love.four">4 accepted<br><strong>25% each</strong></div></div>
+    </section>
+
+    <section class="guide-card" id="levels">
+      <div class="section-number">10</div><h2 data-i18n="levels.title">Aquarium Levels &amp; Progression</h2>
+      <p data-i18n="levels.p">There are <strong>25 aquarium levels</strong>, containing 50 gameplay levels. Each aquarium level unlocks new axolotls and progressively increases capacity.</p>
+      <div class="level-list" id="levelList"></div>
+    </section>
+
+    <section class="guide-card" id="effects">
+      <div class="section-number">11</div><h2 data-i18n="effects.title">Status Effects</h2>
+      <p data-i18n="effects.p">Status effects alter combat statistics or action probabilities. Effects can be stacked when an ability applies multiple charges.</p>
+      <table><thead><tr><th>#</th><th data-i18n="effects.effect">Effect</th><th data-i18n="effects.result">Result</th></tr></thead><tbody>
+        <tr><td>1</td><td>🔥 <span data-i18n="effect.suffocated">Suffocated</span></td><td data-i18n="effect.suffocated.r">Loses 2 base HP at the end of the turn.</td></tr>
+        <tr><td>2</td><td>❄️ <span data-i18n="effect.numb">Numb</span></td><td data-i18n="effect.numb.r">4% base chance to take no action that turn.</td></tr>
+        <tr><td>3</td><td>☠️ <span data-i18n="effect.confused">Confused</span></td><td data-i18n="effect.confused.r">Loses 1 base HP and -1 base Defense at the end of the turn.</td></tr>
+        <tr><td>4</td><td>⚡ <span data-i18n="effect.sparkling">Sparkling</span></td><td data-i18n="effect.sparkling.r">2% base chance to take no action and -1 base Speed.</td></tr>
+        <tr><td>5</td><td>👁️ <span data-i18n="effect.dazzled">Dazzled</span></td><td data-i18n="effect.dazzled.r">4% base chance to miss the selected attack.</td></tr>
+        <tr><td>6</td><td>🗡️ <span data-i18n="effect.weakened">Weakened</span></td><td data-i18n="effect.weakened.r">-2 base Attack.</td></tr>
+        <tr><td>7</td><td>🛡️ <span data-i18n="effect.unprotected">Unprotected</span></td><td data-i18n="effect.unprotected.r">-2 base Defense.</td></tr>
+        <tr><td>8</td><td>🐌 <span data-i18n="effect.slow">Slow</span></td><td data-i18n="effect.slow.r">-2 base Speed.</td></tr>
+        <tr><td>9</td><td>🎯 <span data-i18n="effect.exposed">Exposed</span></td><td data-i18n="effect.exposed.r">+4% base chance to receive a critical hit.</td></tr>
+        <tr><td>10</td><td>💥 <span data-i18n="effect.resentful">Resentful</span></td><td data-i18n="effect.resentful.r">+10% base critical damage received.</td></tr>
+        <tr><td>11</td><td>🩶 <span data-i18n="effect.tired">Tired</span></td><td data-i18n="effect.tired.r">-1 base Attack and -1 base Speed.</td></tr>
+        <tr><td>12</td><td>☣️ <span data-i18n="effect.dimmed">Dimmed</span></td><td data-i18n="effect.dimmed.r">-1 base Attack and -1 base Defense.</td></tr>
+        <tr><td>13</td><td>🪫 <span data-i18n="effect.shutDown">Shut Down</span></td><td data-i18n="effect.shutDown.r">-1 base Speed and -1 base Defense.</td></tr>
+        <tr><td>14</td><td>😵‍💫 <span data-i18n="effect.discouraged">Discouraged</span></td><td data-i18n="effect.discouraged.r">2% base chance to take no action and -1 base Attack.</td></tr>
+        <tr><td>15</td><td>🪨 <span data-i18n="effect.staggering">Staggering</span></td><td data-i18n="effect.staggering.r">2% base chance to take no action and -1 base Defense.</td></tr>
+        <tr><td>16</td><td>🫂 <span data-i18n="effect.enamored">Enamored</span></td><td data-i18n="effect.enamored.r">+2% base chance to receive a critical hit and +8% base critical damage received.</td></tr>
+        <tr><td>17</td><td>♥️ <span data-i18n="effect.vitalized">Vitalized</span></td><td data-i18n="effect.vitalized.r">+1 Love.</td></tr>
+        <tr><td>18</td><td>🛡️ <span data-i18n="effect.reinforced">Reinforced</span></td><td data-i18n="effect.reinforced.r">+1 Defense.</td></tr>
+        <tr><td>19</td><td>👟 <span data-i18n="effect.accelerated">Accelerated</span></td><td data-i18n="effect.accelerated.r">+1 Speed.</td></tr>
+        <tr><td>20</td><td>⚔️ <span data-i18n="effect.powered">Powered</span></td><td data-i18n="effect.powered.r">+1 Attack.</td></tr>
+      </tbody></table>
+    </section>
+
+    <section class="guide-card" id="abilities">
+      <div class="section-number">12</div><h2 data-i18n="abilities.title">Axolotl Piece Abilities</h2>
+      <p data-i18n="abilities.p">Piece effects activate according to how many copies of the same piece are present in an axolotl. The following values are reached at 2/8, 4/8, 6/8 and 8/8 copies.</p>
+      <div class="ability-groups" id="abilityGroups"></div>
+    </section>
+
+    <section class="guide-card" id="worlds">
+      <div class="section-number">13</div><h2 data-i18n="worlds.title">Gameplay Levels</h2>
+      <p data-i18n="worlds.p">The game contains five worlds and 50 levels. Each level lists the enemy combinations encountered and the aquarium requirement.</p>
+      <div id="worldList"></div>
+    </section>
+
+    <section class="guide-card legal" id="legal">
+      <div class="section-number">14</div><h2 data-i18n="legal.title">Privacy Policy &amp; Copyright</h2>
+      <h3 data-i18n="legal.privacyTitle">Privacy Policy</h3>
+      <p data-i18n="legal.privacy1">Only Axolotls respects your privacy. This website is an informational guide for the game. It does not intentionally request personal information, create user accounts, or require you to submit personal data.</p>
+      <p data-i18n="legal.privacy2">If this website is later connected to analytics, external services, forms, cookies or other technologies that process personal data, this policy will be updated before those features are introduced.</p>
+      <h3 data-i18n="legal.copyTitle">Copyright &amp; Intellectual Property</h3>
+      <p data-i18n="legal.copy1"><strong>Only Axolotls</strong>, its game content, characters, artwork, graphics, logos, animations, music, sounds, written content and software are protected intellectual property of their respective rights holder(s) and are not released for unauthorized commercial redistribution.</p>
+      <p data-i18n="legal.copy2">This guide is provided solely to help players understand and enjoy the game. Reproduction, redistribution, commercial use or modification of protected game assets is not permitted without prior authorization.</p>
+      <p class="small-note" data-i18n="legal.copy3">© 2026 Notter Animations.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
