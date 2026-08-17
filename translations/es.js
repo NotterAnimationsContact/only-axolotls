@@ -3,10 +3,12 @@ export default {
   "languageLabel": "Idioma",
   "pageTitle": "Only Axolotls — Guía oficial del juego",
   "description": "Guía oficial de Only Axolotls — mecánicas, reproducción, probabilidades, niveles, habilidades, efectos y más.",
+
   "hero.eyebrow": "GUÍA OFICIAL DEL JUEGO",
   "hero.title": "Only Axolotls",
   "hero.subtitle": "Todo lo que necesitas saber sobre tu acuario, ajolotes, reproducción, combates, progresión y probabilidades.",
   "hero.note": "Esta guía describe los sistemas y valores actuales de la versión final del juego.",
+
   "basics.title": "Cómo funciona Only Axolotls",
   "basics.p1": "Only Axolotls gira en torno a coleccionar, reproducir y desarrollar ajolotes. Cada ajolote está formado por <strong>8 piezas individuales</strong>. Las piezas tienen su propia rareza y pueden aportar estadísticas, efectos o habilidades especiales.",
   "basics.grid1.title": "8 piezas",
@@ -17,6 +19,7 @@ export default {
   "basics.grid3.p": "Los niveles del acuario desbloquean nuevos ajolotes, semillas, capacidad y ampliaciones.",
   "basics.grid4.title": "Combate",
   "basics.grid4.p": "Las piezas pueden otorgar estadísticas y efectos de estado que determinan el rendimiento de los ajolotes.",
+
   "breeding.title": "Reproducción y herencia de piezas",
   "breeding.p1": "Cuando dos ajolotes se reproducen, cada una de sus ocho piezas se resuelve de forma independiente.",
   "breeding.mother": "35% Madre",
@@ -27,12 +30,14 @@ export default {
   "breeding.mutationP": "Si ambas piezas parentales tienen la misma rareza, la mutación usa necesariamente esa rareza. Si sus rarezas son distintas, la mutación reparte su probabilidad por igual entre cada paso de rareza entre ambas piezas, incluidos los extremos. Después se elige aleatoriamente la pieza dentro de la rareza seleccionada.",
   "breeding.example": "<b>Ejemplo:</b> Madre Legendaria + padre Común = seis pasos de rareza: Común, Poco común, Rara, Épica, Legendaria y Xólotl. Una mutación tiene la misma probabilidad de caer en cada una de esas seis rarezas.",
   "breeding.genderTitle": "Sexo al nacer",
-  "breeding.genderP": "Cada ajolote recién nacido tiene un <strong>50% de probabilidad de ser hembra</strong> y un <strong>50% de ser macho</strong>.",
+  "breeding.genderP": "Cada ajolote recién nacido tiene un <strong>50% de probabilidad de ser hembra</strong> y un <strong>50% de probabilidad de ser macho</strong>.",
+
   "timers.title": "Tiempo de reproducción y coste en gemas",
   "timers.p": "La <strong>rareza más alta entre las dos piezas parentales</strong> determina tanto el tiempo de reproducción/eclosión como el número de gemas necesario para saltarse el evento.",
   "timers.rarity": "Rareza más alta",
   "timers.time": "Tiempo",
   "timers.cost": "Coste de omitir",
+
   "coins.title": "Monedas",
   "coins.p1": "Las monedas son la moneda principal utilizada en varios sistemas de progresión. Se necesitan para mantener el acuario, comprar semillas y desbloquear espacio adicional de cultivo.",
   "coins.earnTitle": "Cómo conseguir monedas",
@@ -45,6 +50,7 @@ export default {
   "coins.example": "<b>Importante:</b> La reproducción no da monedas. El jugador debe gastar monedas para comenzar la reproducción porque los ajolotes necesitan cuidados durante el proceso.",
   "coins.otherTitle": "Otros usos",
   "coins.otherP": "Las monedas también pueden gastarse en compras de progresión, incluidas semillas de la <strong>Tienda de semillas</strong> y <strong>espacios de maceta</strong> adicionales para cultivar fitoplancton.",
+
   "gems.title": "Gemas",
   "gems.p1": "Las gemas son un recurso premium de progresión utilizado exclusivamente para <strong>acelerar procesos en curso del juego</strong>.",
   "gems.earnTitle": "Cómo conseguir gemas",
@@ -58,6 +64,7 @@ export default {
   "gems.spend3": "<strong>Crecimiento de plantas</strong> — terminar instantáneamente el tiempo restante de crecimiento.",
   "gems.spend4": "<strong>Renovación de la Tienda de semillas</strong> — actualizar la tienda al instante en lugar de esperar su reinicio normal.",
   "gems.example": "<b>Importante:</b> Las gemas no sustituyen a las monedas ni se usan para compras normales. Existen específicamente para saltarse tiempos de espera y acelerar la progresión.",
+
   "food.title": "Fitoplancton, comida y crecimiento",
   "food.p1": "Cada cosecha produce <strong>2 unidades de fitoplancton</strong> del cultivo plantado. Un ajolote necesita 2 unidades de su alimento vegetal requerido para subir de nivel. Cada nivel adicional necesita 2 unidades más que el nivel anterior.",
   "food.p2": "Cada ajolote comienza con una permanencia base de <strong>10 días</strong>. Cada nivel añade <strong>4 días</strong> a esa duración.",
@@ -68,6 +75,7 @@ export default {
   "food.aquarium": "Acuario",
   "food.seed": "Semilla",
   "food.note": "El tiempo de crecimiento depende de la rareza interna de la planta. Esta rareza no se muestra al jugador.",
+
   "shop.title": "Tienda de semillas",
   "shop.p1": "La Tienda de semillas está dirigida por un granjero andaluz dormilón y ofrece una selección rotatoria de semillas de fitoplancton. La tienda renueva sus semillas disponibles cada <strong>2 días</strong>.",
   "shop.howTitle": "Cómo funciona la tienda",
@@ -84,6 +92,7 @@ export default {
   "shop.slots": "Espacios de tienda",
   "shop.example3": "<b>Progresión de espacios:</b> Se desbloquea un espacio adicional en los niveles de acuario <strong>4, 8, 14, 20 y 24</strong>. Esto aumenta la tienda desde sus <strong>1 espacio</strong> inicial hasta un máximo de <strong>6</strong>.",
   "shop.p7": "Como la selección cambia solo cada dos días, el jugador no puede comprar cualquier semilla cuando quiera. Revisar la tienda regularmente y gastar monedas cuando aparezcan semillas útiles es una parte importante de la progresión.",
+
   "visitors.title": "El visitante diario",
   "visitors.p1": "Un nuevo visitante ajolote está <strong>garantizado una vez al día</strong>. Su aparición nunca depende del azar.",
   "visitors.p2": "Los ajolotes visitantes pueden adoptarse o dejarse atrás. Si no adoptas a un visitante, se marcha al día siguiente.",
@@ -99,6 +108,7 @@ export default {
   "visitors.plusXolotl": "+ Xólotl",
   "visitors.example": "<b>Ejemplo:</b> Si las seis rarezas están desbloqueadas, cada rareza tiene un 16,67% para cada pieza. Una vez elegida una rareza, todas las piezas desbloqueadas dentro de esa rareza son igualmente probables. Dos piezas Comunes significan 50% cada una; cinco Raras, 20% cada una; diez Épicas, 10% cada una.",
   "visitors.p4": "El proceso se repite ocho veces, una por cada pieza. A medida que crece tu colección, pueden aparecer más piezas individuales en el visitante diario, mientras que la probabilidad de obtener una pieza concreta disminuye.",
+
   "love.title": "El ajolote enamorado",
   "love.p1": "Después de un combate, cada ajolote enemigo comprueba independientemente si quiere unirse a ti. Su probabilidad depende de la rareza de cada una de sus ocho piezas.",
   "love.rarity": "Rareza de pieza",
@@ -110,16 +120,21 @@ export default {
   "love.two": "2 aceptan<br><strong>50% cada uno</strong>",
   "love.three": "3 aceptan<br><strong>33,33% cada uno</strong>",
   "love.four": "4 aceptan<br><strong>25% cada uno</strong>",
+
   "levels.title": "Niveles del acuario y progresión",
   "levels.p": "Hay <strong>25 niveles de acuario</strong>, que contienen 50 niveles jugables. Cada nivel del acuario desbloquea nuevos ajolotes y aumenta progresivamente la capacidad.",
+
   "effects.title": "Efectos de estado",
   "effects.p": "Los efectos de estado modifican estadísticas de combate o probabilidades de acción. Los efectos pueden acumularse cuando una habilidad aplica varias cargas.",
   "effects.effect": "Efecto",
   "effects.result": "Resultado",
+
   "abilities.title": "Habilidades de las piezas de los ajolotes",
   "abilities.p": "Los efectos de las piezas se activan según cuántas copias de la misma pieza haya en un ajolote. Los valores siguientes se alcanzan con 2/8, 4/8, 6/8 y 8/8 copias.",
+
   "worlds.title": "Niveles jugables",
   "worlds.p": "El juego contiene cinco mundos y 50 niveles. Cada nivel muestra las combinaciones de enemigos encontradas y el requisito de acuario.",
+
   "legal.title": "Política de privacidad y copyright",
   "legal.privacyTitle": "Política de privacidad",
   "legal.privacy1": "Only Axolotls respeta tu privacidad. Esta web es una guía informativa del juego. No solicita intencionadamente información personal, crea cuentas de usuario ni requiere que envíes datos personales.",
@@ -128,69 +143,92 @@ export default {
   "legal.copy1": "<strong>Only Axolotls</strong>, su contenido de juego, personajes, ilustraciones, gráficos, logotipos, animaciones, música, sonidos, contenido escrito y software son propiedad intelectual protegida de sus respectivos titulares y no se publican para su redistribución comercial no autorizada.",
   "legal.copy2": "Esta guía se proporciona únicamente para ayudar a los jugadores a comprender y disfrutar del juego. No se permite reproducir, redistribuir, utilizar comercialmente ni modificar activos protegidos del juego sin autorización previa.",
   "legal.copy3": "© 2026 Notter Animations.",
-  "rarity.common": "Common",
-  "rarity.uncommon": "Uncommon",
-  "rarity.rare": "Rare",
-  "rarity.epic": "Epic",
-  "rarity.legendary": "Legendary",
+
+  "rarity.common": "Común",
+  "rarity.uncommon": "Poco común",
+  "rarity.rare": "Rara",
+  "rarity.epic": "Épica",
+  "rarity.legendary": "Legendaria",
   "rarity.xolotl": "Xólotl",
-  "unit.day": "day",
-  "unit.days": "days",
-  "unit.gem": "gem",
-  "unit.gems": "gems",
-  "seed.algae": "Algae",
-  "seed.potatoes": "Potatoes",
-  "seed.corn": "Corn",
+
+  "unit.day": "día",
+  "unit.days": "días",
+  "unit.gem": "gema",
+  "unit.gems": "gemas",
+
+  "seed.algae": "Algas",
+  "seed.potatoes": "Patatas",
+  "seed.corn": "Maíz",
   "seed.coral": "Coral",
-  "seed.tomatoes": "Tomatoes",
-  "seed.wheat": "Wheat",
-  "seed.onions": "Onions",
-  "seed.carrots": "Carrots",
-  "seed.bananas": "Bananas",
-  "seed.beans": "Beans",
-  "seed.strawberries": "Strawberries",
-  "seed.oranges": "Oranges",
-  "seed.grapes": "Grapes",
+  "seed.tomatoes": "Tomates",
+  "seed.wheat": "Trigo",
+  "seed.onions": "Cebollas",
+  "seed.carrots": "Zanahorias",
+  "seed.bananas": "Plátanos",
+  "seed.beans": "Judías",
+  "seed.strawberries": "Fresas",
+  "seed.oranges": "Naranjas",
+  "seed.grapes": "Uvas",
   "seed.chocolate": "Chocolate",
-  "seed.peppers": "Peppers",
-  "effect.suffocated": "Suffocated",
-  "effect.suffocated.r": "Loses 2 base HP at the end of the turn.",
-  "effect.numb": "Numb",
-  "effect.numb.r": "4% base chance to take no action that turn.",
-  "effect.confused": "Confused",
-  "effect.confused.r": "Loses 1 base HP and -1 base Defense at the end of the turn.",
-  "effect.sparkling": "Sparkling",
-  "effect.sparkling.r": "2% base chance to take no action and -1 base Speed.",
-  "effect.dazzled": "Dazzled",
-  "effect.dazzled.r": "4% base chance to miss the selected attack.",
-  "effect.weakened": "Weakened",
-  "effect.weakened.r": "-2 base Attack.",
-  "effect.unprotected": "Unprotected",
-  "effect.unprotected.r": "-2 base Defense.",
-  "effect.slow": "Slow",
-  "effect.slow.r": "-2 base Speed.",
-  "effect.exposed": "Exposed",
-  "effect.exposed.r": "+4% base chance to receive a critical hit.",
-  "effect.resentful": "Resentful",
-  "effect.resentful.r": "+10% base critical damage received.",
-  "effect.tired": "Tired",
-  "effect.tired.r": "-1 base Attack and -1 base Speed.",
-  "effect.dimmed": "Dimmed",
-  "effect.dimmed.r": "-1 base Attack and -1 base Defense.",
-  "effect.shutDown": "Shut Down",
-  "effect.shutDown.r": "-1 base Speed and -1 base Defense.",
-  "effect.discouraged": "Discouraged",
-  "effect.discouraged.r": "2% base chance to take no action and -1 base Attack.",
-  "effect.staggering": "Staggering",
-  "effect.staggering.r": "2% base chance to take no action and -1 base Defense.",
-  "effect.enamored": "Enamored",
-  "effect.enamored.r": "+2% base chance to receive a critical hit and +8% base critical damage received.",
-  "effect.vitalized": "Vitalized",
-  "effect.vitalized.r": "+1 Love.",
-  "effect.reinforced": "Reinforced",
-  "effect.reinforced.r": "+1 Defense.",
-  "effect.accelerated": "Accelerated",
-  "effect.accelerated.r": "+1 Speed.",
-  "effect.powered": "Powered",
-  "effect.powered.r": "+1 Attack."
+  "seed.peppers": "Pimientos",
+
+  "effect.suffocated": "Asfixiado",
+  "effect.suffocated.r": "Pierde 2 de vida base al final del turno.",
+
+  "effect.numb": "Entumecido",
+  "effect.numb.r": "4% de probabilidad base de no realizar ninguna acción durante ese turno.",
+
+  "effect.confused": "Confundido",
+  "effect.confused.r": "Pierde 1 de vida base y -1 de Defensa base al final del turno.",
+
+  "effect.sparkling": "Electrificado",
+  "effect.sparkling.r": "2% de probabilidad base de no realizar ninguna acción y -1 de Velocidad base.",
+
+  "effect.dazzled": "Deslumbrado",
+  "effect.dazzled.r": "4% de probabilidad base de fallar el ataque seleccionado.",
+
+  "effect.weakened": "Debilitado",
+  "effect.weakened.r": "-2 de Ataque base.",
+
+  "effect.unprotected": "Desprotegido",
+  "effect.unprotected.r": "-2 de Defensa base.",
+
+  "effect.slow": "Lento",
+  "effect.slow.r": "-2 de Velocidad base.",
+
+  "effect.exposed": "Expuesto",
+  "effect.exposed.r": "+4% de probabilidad base de recibir un golpe crítico.",
+
+  "effect.resentful": "Resentido",
+  "effect.resentful.r": "+10% de daño crítico base recibido.",
+
+  "effect.tired": "Cansado",
+  "effect.tired.r": "-1 de Ataque base y -1 de Velocidad base.",
+
+  "effect.dimmed": "Apagado",
+  "effect.dimmed.r": "-1 de Ataque base y -1 de Defensa base.",
+
+  "effect.shutDown": "Inactivo",
+  "effect.shutDown.r": "-1 de Velocidad base y -1 de Defensa base.",
+
+  "effect.discouraged": "Desanimado",
+  "effect.discouraged.r": "2% de probabilidad base de no realizar ninguna acción y -1 de Ataque base.",
+
+  "effect.staggering": "Tambaleante",
+  "effect.staggering.r": "2% de probabilidad base de no realizar ninguna acción y -1 de Defensa base.",
+
+  "effect.enamored": "Enamorado",
+  "effect.enamored.r": "+2% de probabilidad base de recibir un golpe crítico y +8% de daño crítico base recibido.",
+
+  "effect.vitalized": "Vitalizado",
+  "effect.vitalized.r": "+1 de Amor.",
+
+  "effect.reinforced": "Reforzado",
+  "effect.reinforced.r": "+1 de Defensa.",
+
+  "effect.accelerated": "Acelerado",
+  "effect.accelerated.r": "+1 de Velocidad.",
+
+  "effect.powered": "Potenciado",
+  "effect.powered.r": "+1 de Ataque."
 };
