@@ -1,196 +1,1451 @@
 export default {
+
+  /*
+  ========================================================
+  LANGUAGE
+  ========================================================
+  */
+
   "lang": "uk",
-  "languageLabel": "Language",
-  "pageTitle": "Only Axolotls — Official Game Guide",
-  "description": "Official Only Axolotls game guide — mechanics, breeding, probabilities, levels, axolotl abilities, effects and more.",
-  "hero.eyebrow": "OFFICIAL GAME GUIDE",
-  "hero.title": "Only Axolotls",
-  "hero.subtitle": "Everything you need to know about your aquarium, axolotls, breeding, battles, progression and probabilities.",
-  "hero.note": "This guide describes the current final game systems and values.",
-  "basics.title": "How Only Axolotls Works",
-  "basics.p1": "Only Axolotls is built around collecting, breeding and developing axolotls. Each axolotl is made from <strong>8 individual pieces</strong>. Pieces have their own rarity and can contribute statistics, effects or special abilities.",
-  "basics.grid1.title": "8 Pieces",
-  "basics.grid1.p": "Every axolotl is assembled from eight independently determined pieces.",
-  "basics.grid2.title": "6 Rarities",
-  "basics.grid2.p": "Common, Uncommon, Rare, Epic, Legendary and Xólotl.",
-  "basics.grid3.title": "Progression",
-  "basics.grid3.p": "Aquarium levels unlock new axolotls, seeds, capacity and expansions.",
-  "basics.grid4.title": "Combat",
-  "basics.grid4.p": "Pieces can grant statistics and status effects that shape how axolotls perform.",
-  "breeding.title": "Breeding &amp; Piece Inheritance",
-  "breeding.p1": "When two axolotls reproduce, every one of their eight pieces is resolved independently.",
-  "breeding.mother": "35% Mother",
-  "breeding.father": "35% Father",
-  "breeding.mutation": "30% Mutation",
-  "breeding.p2": "For each piece, there is a <strong>35% chance</strong> to inherit the mother's piece, a <strong>35% chance</strong> to inherit the father's piece, and a <strong>30% chance</strong> that the piece mutates.",
-  "breeding.mutationTitle": "Mutation rarity",
-  "breeding.mutationP": "If both parent pieces have the same rarity, a mutation is guaranteed to use that rarity. If their rarities differ, the mutation distributes its chance evenly across every rarity step between the two pieces, including both endpoints. The resulting piece is then selected randomly from the chosen rarity.",
-  "breeding.example": "<b>Example:</b> Legendary mother + Common father = six rarity steps: Common, Uncommon, Rare, Epic, Legendary and Xólotl. A mutation has an equal chance of landing on each of those six rarity levels.",
-  "breeding.genderTitle": "Gender at birth",
-  "breeding.genderP": "Every newborn axolotl has a <strong>50% chance to be female</strong> and a <strong>50% chance to be male</strong>.",
-  "timers.title": "Breeding Time &amp; Gem Cost",
-  "timers.p": "The <strong>highest rarity among the two parent pieces</strong> determines both the breeding/hatching time and the number of gems required to skip the event.",
-  "timers.rarity": "Highest rarity",
-  "timers.time": "Time",
-  "timers.cost": "Skip cost",
-  "coins.title": "Coins",
-  "coins.p1": "Coins are the main currency used for several progression-related systems. They are required to maintain your aquarium, purchase seeds and unlock additional growing space.",
-  "coins.earnTitle": "How to earn Coins",
-  "coins.earnP": "Coins can be obtained through several activities:",
-  "coins.earn1": "Winning battles.",
-  "coins.earn2": "Completing axolotl sets.",
-  "coins.earn3": "Harvesting fully grown phytoplankton plants.",
-  "coins.breedTitle": "Breeding cost",
-  "coins.breedP": "Coins are required to allow two axolotls to reproduce. The cost depends on the rarities of <strong>all eight pieces of the mother</strong> and <strong>all eight pieces of the father</strong>. The rarities of both parents are considered together when calculating the final breeding cost.",
-  "coins.example": "<b>Important:</b> Breeding does not reward Coins. The player must spend Coins to begin the reproduction because the axolotls require care during the breeding process.",
-  "coins.otherTitle": "Other uses",
-  "coins.otherP": "Coins can also be spent on useful progression-related purchases, including seeds from the <strong>Seed Shop</strong> and additional <strong>pot slots</strong> for growing phytoplankton.",
-  "gems.title": "Gems",
-  "gems.p1": "Gems are a premium progression resource used exclusively to <strong>accelerate ongoing game processes</strong>.",
-  "gems.earnTitle": "How to earn Gems",
-  "gems.earn1": "Unlocking a piece gives <strong>1 gem</strong>.",
-  "gems.earn2": "Every axolotl level-up gives <strong>1 gem</strong>.",
-  "gems.earn3": "Completing a star level for the first time gives <strong>1 gem</strong>.",
-  "gems.spendTitle": "How Gems are spent",
-  "gems.spendP": "Gems can be used to instantly complete or accelerate the following processes:",
-  "gems.spend1": "<strong>Breeding</strong> — accelerate an ongoing reproduction.",
-  "gems.spend2": "<strong>Egg hatching</strong> — instantly complete the egg's remaining time.",
-  "gems.spend3": "<strong>Plant growth</strong> — instantly finish the remaining growth time of a plant.",
-  "gems.spend4": "<strong>Seed Shop refresh</strong> — instantly refresh the shop instead of waiting for its normal reset.",
-  "gems.example": "<b>Important:</b> Gems do not replace Coins and are not used for normal purchases. They exist specifically to let the player skip waiting times and accelerate progression.",
-  "food.title": "Phytoplankton, Food &amp; Growth",
-  "food.p1": "Each harvest produces <strong>2 phytoplankton</strong> of the planted crop. An axolotl needs 2 units of its required plant food to level up. Every additional level requires 2 more units than the previous level.",
-  "food.p2": "Each axolotl starts with a base stay duration of <strong>10 days</strong>. Every level adds <strong>4 days</strong> to that duration.",
-  "food.example": "<b>Example:</b> A level 1 axolotl stays for 10 days. Level 2 becomes 14 days, level 3 becomes 18 days, and so on.",
-  "food.favTitle": "Favourite food",
-  "food.favP": "Each of the 8 pieces independently has a <strong>12.5% chance</strong> of assigning the crop associated with that piece's set as the axolotl's favourite food. This can make an axolotl with high-rarity pieces easier to feed than expected.",
-  "food.seedTitle": "Seed unlocks",
-  "food.aquarium": "Aquarium",
-  "food.seed": "Seed",
-  "food.note": "Plant growth time depends on the plant's internal rarity. This rarity is not displayed to the player.",
-  "shop.title": "Seed Shop",
-  "shop.p1": "The Seed Shop is run by a sleepy Andalusian farmer and offers a rotating selection of phytoplankton seeds. The shop refreshes its available seeds every <strong>2 days</strong>.",
-  "shop.howTitle": "How the shop works",
-  "shop.p2": "The shop has up to <strong>6 seed slots</strong>. Each slot can contain a random seed from the seeds you have currently unlocked. Seeds can appear repeatedly, so the same seed may occupy more than one slot.",
-  "shop.p3": "Each available seed stack also receives a random quantity. The quantity starts between <strong>1 and 2 seeds</strong> and increases as your aquarium progresses. Every aquarium level increases both the minimum and maximum available quantity by <strong>2</strong>.",
-  "shop.example": "<b>Example:</b> At the starting level, a seed slot can contain 1–2 seeds. As your aquarium level increases, the possible quantity rises by 2 for both the minimum and maximum.",
-  "shop.groupsTitle": "Seed groups",
-  "shop.p4": "The shop does not choose randomly from all unlocked seeds with one single probability pool. The six slots are separated into different seed groups. Each slot selects from the seeds assigned to its group.",
-  "shop.p5": "This means that newly unlocked seeds are not competing equally against every seed in the entire collection. A rare late-game seed can instead be selected from a much smaller group of possible seeds assigned to that shop slot.",
-  "shop.example2": "<b>Example:</b> If a slot has only 3 possible seeds in its group, each of those seeds has a much more meaningful chance to appear than if the game selected from all 15 unlocked seeds at once.",
-  "shop.slotsTitle": "Shop slots",
-  "shop.p6": "The Seed Shop starts with <strong>1 available slot</strong>. As you progress through the aquarium levels, additional slots are unlocked at specific milestones, up to a maximum of <strong>6 slots</strong>.",
-  "shop.level": "Aquarium level",
-  "shop.slots": "Shop slots",
-  "shop.example3": "<b>Shop slot progression:</b> An additional shop slot is unlocked at aquarium levels <strong>4, 8, 14, 20 and 24</strong>. This increases the shop from its initial <strong>1 slot</strong> to the maximum of <strong>6 slots</strong>.",
-  "shop.p7": "Because the selection changes only every two days, the player cannot simply buy any seed whenever they want. Checking the shop regularly and spending coins when useful seeds appear is an important part of progression.",
-  "visitors.title": "The Daily Visitor",
-  "visitors.p1": "A new axolotl visitor is <strong>guaranteed once per day</strong>. Its appearance never depends on chance.",
-  "visitors.p2": "Visiting axolotls can be adopted or left behind. If you do not adopt a visitor, it leaves the following day.",
-  "visitors.p3": "If your aquarium is at maximum capacity, you cannot adopt another axolotl until you transfer axolotls out of the aquarium and create free space.",
-  "visitors.genTitle": "How the Daily Visitor is generated",
-  "visitors.genP": "Its eight pieces are generated independently. For each piece, the game first checks which rarities you have unlocked. Every unlocked rarity has exactly the same probability.",
-  "visitors.unlocked": "Unlocked rarities",
-  "visitors.chance": "Chance per rarity",
-  "visitors.commonUncommon": "Common + Uncommon",
-  "visitors.plusRare": "+ Rare",
-  "visitors.plusEpic": "+ Epic",
-  "visitors.plusLegendary": "+ Legendary",
-  "visitors.plusXolotl": "+ Xólotl",
-  "visitors.example": "<b>Example:</b> If all six rarities are unlocked, every rarity has a 16.67% chance for each piece. Once a rarity is chosen, all unlocked pieces within that rarity are equally likely. Two Common pieces means 50% each; five Rare pieces means 20% each; ten Epic pieces means 10% each.",
-  "visitors.p4": "The process is repeated eight times, once for every piece. As your collection grows, more individual pieces can appear in the Daily Visitor, while the chance of obtaining any specific piece becomes smaller.",
-  "love.title": "The Enamored Axolotl",
-  "love.p1": "After a battle, every enemy axolotl independently checks whether it wants to join you. Its chance is determined by the rarity of each of its eight pieces.",
-  "love.rarity": "Piece rarity",
-  "love.contribution": "Contribution",
-  "love.p2": "Each of the eight pieces contributes according to its rarity. The final chance is calculated from all eight contributions.",
-  "love.example": "<b>Example:</b> An enemy with Common + Common + Rare + Rare + Epic + Epic + Legendary + Xólotl sends all eight rarity contributions into the final calculation.",
-  "love.multipleTitle": "When multiple enemies accept",
-  "love.multipleP": "None may accept, one may accept, or several may accept. If several accept, the manager randomly selects <strong>one</strong> of them, with every accepted axolotl having the same chance.",
-  "love.two": "2 accepted<br><strong>50% each</strong>",
-  "love.three": "3 accepted<br><strong>33.33% each</strong>",
-  "love.four": "4 accepted<br><strong>25% each</strong>",
-  "levels.title": "Aquarium Levels &amp; Progression",
-  "levels.p": "There are <strong>25 aquarium levels</strong>, containing 50 gameplay levels. Each aquarium level unlocks new axolotls and progressively increases capacity.",
-  "effects.title": "Status Effects",
-  "effects.p": "Status effects alter combat statistics or action probabilities. Effects can be stacked when an ability applies multiple charges.",
-  "effects.effect": "Effect",
-  "effects.result": "Result",
-  "abilities.title": "Axolotl Piece Abilities",
-  "abilities.p": "Piece effects activate according to how many copies of the same piece are present in an axolotl. The following values are reached at 2/8, 4/8, 6/8 and 8/8 copies.",
-  "worlds.title": "Gameplay Levels",
-  "worlds.p": "The game contains five worlds and 50 levels. Each level lists the enemy combinations encountered and the aquarium requirement.",
-  "legal.title": "Privacy Policy &amp; Copyright",
-  "legal.privacyTitle": "Privacy Policy",
-  "legal.privacy1": "Only Axolotls respects your privacy. This website is an informational guide for the game. It does not intentionally request personal information, create user accounts, or require you to submit personal data.",
-  "legal.privacy2": "If this website is later connected to analytics, external services, forms, cookies or other technologies that process personal data, this policy will be updated before those features are introduced.",
-  "legal.copyTitle": "Copyright &amp; Intellectual Property",
-  "legal.copy1": "<strong>Only Axolotls</strong>, its game content, characters, artwork, graphics, logos, animations, music, sounds, written content and software are protected intellectual property of their respective rights holder(s) and are not released for unauthorized commercial redistribution.",
-  "legal.copy2": "This guide is provided solely to help players understand and enjoy the game. Reproduction, redistribution, commercial use or modification of protected game assets is not permitted without prior authorization.",
-  "legal.copy3": "© 2026 Notter Animations.",
-  "rarity.common": "Common",
-  "rarity.uncommon": "Uncommon",
-  "rarity.rare": "Rare",
-  "rarity.epic": "Epic",
-  "rarity.legendary": "Legendary",
-  "rarity.xolotl": "Xólotl",
-  "unit.day": "day",
-  "unit.days": "days",
-  "unit.gem": "gem",
-  "unit.gems": "gems",
-  "seed.algae": "Algae",
-  "seed.potatoes": "Potatoes",
-  "seed.corn": "Corn",
-  "seed.coral": "Coral",
-  "seed.tomatoes": "Tomatoes",
-  "seed.wheat": "Wheat",
-  "seed.onions": "Onions",
-  "seed.carrots": "Carrots",
-  "seed.bananas": "Bananas",
-  "seed.beans": "Beans",
-  "seed.strawberries": "Strawberries",
-  "seed.oranges": "Oranges",
-  "seed.grapes": "Grapes",
-  "seed.chocolate": "Chocolate",
-  "seed.peppers": "Peppers",
-  "effect.suffocated": "Suffocated",
-  "effect.suffocated.r": "Loses 2 base HP at the end of the turn.",
-  "effect.numb": "Numb",
-  "effect.numb.r": "4% base chance to take no action that turn.",
-  "effect.confused": "Confused",
-  "effect.confused.r": "Loses 1 base HP and -1 base Defense at the end of the turn.",
-  "effect.sparkling": "Sparkling",
-  "effect.sparkling.r": "2% base chance to take no action and -1 base Speed.",
-  "effect.dazzled": "Dazzled",
-  "effect.dazzled.r": "4% base chance to miss the selected attack.",
-  "effect.weakened": "Weakened",
-  "effect.weakened.r": "-2 base Attack.",
-  "effect.unprotected": "Unprotected",
-  "effect.unprotected.r": "-2 base Defense.",
-  "effect.slow": "Slow",
-  "effect.slow.r": "-2 base Speed.",
-  "effect.exposed": "Exposed",
-  "effect.exposed.r": "+4% base chance to receive a critical hit.",
-  "effect.resentful": "Resentful",
-  "effect.resentful.r": "+10% base critical damage received.",
-  "effect.tired": "Tired",
-  "effect.tired.r": "-1 base Attack and -1 base Speed.",
-  "effect.dimmed": "Dimmed",
-  "effect.dimmed.r": "-1 base Attack and -1 base Defense.",
-  "effect.shutDown": "Shut Down",
-  "effect.shutDown.r": "-1 base Speed and -1 base Defense.",
-  "effect.discouraged": "Discouraged",
-  "effect.discouraged.r": "2% base chance to take no action and -1 base Attack.",
-  "effect.staggering": "Staggering",
-  "effect.staggering.r": "2% base chance to take no action and -1 base Defense.",
-  "effect.enamored": "Enamored",
-  "effect.enamored.r": "+2% base chance to receive a critical hit and +8% base critical damage received.",
-  "effect.vitalized": "Vitalized",
-  "effect.vitalized.r": "+1 Love.",
-  "effect.reinforced": "Reinforced",
-  "effect.reinforced.r": "+1 Defense.",
-  "effect.accelerated": "Accelerated",
-  "effect.accelerated.r": "+1 Speed.",
-  "effect.powered": "Powered",
-  "effect.powered.r": "+1 Attack."
+  "languageLabel": "Мова",
+
+  "pageTitle":
+    "Only Axolotls — Офіційний посібник гри",
+
+  "description":
+    "Офіційний посібник гри Only Axolotls — механіки, розмноження, ймовірності, рівні, здібності аксолотлів, ефекти та багато іншого.",
+
+
+  /*
+  ========================================================
+  HERO
+  ========================================================
+  */
+
+  "hero.eyebrow":
+    "ОФІЦІЙНИЙ ПОСІБНИК ГРИ",
+
+  "hero.title":
+    "Only Axolotls",
+
+  "hero.subtitle":
+    "Усе, що потрібно знати про ваш акваріум, аксолотлів, розмноження, битви, прогресію та ймовірності.",
+
+  "hero.note":
+    "Цей посібник описує поточні фінальні системи та значення гри.",
+
+
+  /*
+  ========================================================
+  BASICS
+  ========================================================
+  */
+
+  "basics.title":
+    "Як працює Only Axolotls",
+
+  "basics.p1":
+    "Only Axolotls побудована навколо колекціонування, розмноження та розвитку аксолотлів. Кожен аксолотль складається з <strong>8 окремих частин</strong>. Частини мають власну рідкісність і можуть впливати на характеристики, ефекти або спеціальні здібності.",
+
+  "basics.grid1.title":
+    "8 частин",
+
+  "basics.grid1.p":
+    "Кожен аксолотль складається з восьми незалежно визначених частин.",
+
+  "basics.grid2.title":
+    "6 рівнів рідкісності",
+
+  "basics.grid2.p":
+    "Звичайний, Незвичайний, Рідкісний, Епічний, Легендарний та Xólotl.",
+
+  "basics.grid3.title":
+    "Прогресія",
+
+  "basics.grid3.p":
+    "Рівні акваріума відкривають нових аксолотлів, насіння, місткість та розширення.",
+
+  "basics.grid4.title":
+    "Битви",
+
+  "basics.grid4.p":
+    "Частини можуть надавати характеристики та статусні ефекти, які визначають ефективність аксолотлів.",
+
+
+  /*
+  ========================================================
+  BREEDING
+  ========================================================
+  */
+
+  "breeding.title":
+    "Розмноження та успадкування частин",
+
+  "breeding.p1":
+    "Коли два аксолотлі розмножуються, кожна з їхніх восьми частин визначається незалежно.",
+
+  "breeding.mother":
+    "35% Мати",
+
+  "breeding.father":
+    "35% Батько",
+
+  "breeding.mutation":
+    "30% Мутація",
+
+  "breeding.p2":
+    "Для кожної частини існує <strong>35% шанс</strong> успадкувати частину матері, <strong>35% шанс</strong> успадкувати частину батька та <strong>30% шанс</strong>, що частина мутує.",
+
+  "breeding.mutationTitle":
+    "Рідкісність мутації",
+
+  "breeding.mutationP":
+    "Якщо обидві батьківські частини мають однакову рідкісність, мутація гарантовано використовує цю рідкісність. Якщо їхня рідкісність відрізняється, мутація рівномірно розподіляє свій шанс між кожним рівнем рідкісності між двома частинами, включно з обома крайніми значеннями. Після цього частина випадково обирається з обраної рідкісності.",
+
+  "breeding.example":
+    "<b>Приклад:</b> Легендарна мати + Звичайний батько = шість рівнів рідкісності: Звичайний, Незвичайний, Рідкісний, Епічний, Легендарний та Xólotl. Мутація має однаковий шанс потрапити на кожен із цих шести рівнів рідкісності.",
+
+  "breeding.genderTitle":
+    "Стать при народженні",
+
+  "breeding.genderP":
+    "Кожен новонароджений аксолотль має <strong>50% шанс бути самкою</strong> та <strong>50% шанс бути самцем</strong>.",
+
+
+  /*
+  ========================================================
+  BREEDING TIME
+  ========================================================
+  */
+
+  "timers.title":
+    "Час розмноження та вартість у самоцвітах",
+
+  "timers.p":
+    "<strong>Найвища рідкісність серед двох батьківських частин</strong> визначає як час розмноження/вилуплення, так і кількість самоцвітів, необхідних для пропуску події.",
+
+  "timers.rarity":
+    "Найвища рідкісність",
+
+  "timers.time":
+    "Час",
+
+  "timers.cost":
+    "Вартість пропуску",
+
+
+  /*
+  ========================================================
+  COINS
+  ========================================================
+  */
+
+  "coins.title":
+    "Монети",
+
+  "coins.p1":
+    "Монети — основна валюта, яка використовується в кількох системах прогресії. Вони необхідні для утримання акваріума, придбання насіння та відкриття додаткового місця для вирощування.",
+
+  "coins.earnTitle":
+    "Як отримувати монети",
+
+  "coins.earnP":
+    "Монети можна отримати за кілька видів діяльності:",
+
+  "coins.earn1":
+    "Перемога в битвах.",
+
+  "coins.earn2":
+    "Завершення наборів аксолотлів.",
+
+  "coins.earn3":
+    "Збір повністю вирощених рослин фітопланктону.",
+
+  "coins.breedTitle":
+    "Вартість розмноження",
+
+  "coins.breedP":
+    "Монети необхідні, щоб дозволити двом аксолотлям розмножуватися. Вартість залежить від рідкісності <strong>всіх восьми частин матері</strong> та <strong>всіх восьми частин батька</strong>. Рідкісність обох батьків враховується разом під час розрахунку кінцевої вартості розмноження.",
+
+  "coins.example":
+    "<b>Важливо:</b> Розмноження не приносить монет. Гравець повинен витратити монети, щоб розпочати розмноження, оскільки аксолотлі потребують догляду під час цього процесу.",
+
+  "coins.otherTitle":
+    "Інші використання",
+
+  "coins.otherP":
+    "Монети також можна витрачати на корисні покупки, пов'язані з прогресією, зокрема насіння у <strong>Магазині насіння</strong> та додаткові <strong>місця для горщиків</strong> для вирощування фітопланктону.",
+
+
+  /*
+  ========================================================
+  GEMS
+  ========================================================
+  */
+
+  "gems.title":
+    "Самоцвіти",
+
+  "gems.p1":
+    "Самоцвіти — преміальний ресурс прогресії, який використовується виключно для <strong>прискорення поточних ігрових процесів</strong>.",
+
+  "gems.earnTitle":
+    "Як отримувати самоцвіти",
+
+  "gems.earn1":
+    "Відкриття частини дає <strong>1 самоцвіт</strong>.",
+
+  "gems.earn2":
+    "Кожне підвищення рівня аксолотля дає <strong>1 самоцвіт</strong>.",
+
+  "gems.earn3":
+    "Перше проходження зоряного рівня дає <strong>1 самоцвіт</strong>.",
+
+  "gems.spendTitle":
+    "Як витрачати самоцвіти",
+
+  "gems.spendP":
+    "Самоцвіти можна використовувати для миттєвого завершення або прискорення таких процесів:",
+
+  "gems.spend1":
+    "<strong>Розмноження</strong> — прискорення поточного процесу розмноження.",
+
+  "gems.spend2":
+    "<strong>Вилуплення яйця</strong> — миттєве завершення часу, що залишився до вилуплення.",
+
+  "gems.spend3":
+    "<strong>Ріст рослини</strong> — миттєве завершення часу, що залишився до завершення росту рослини.",
+
+  "gems.spend4":
+    "<strong>Оновлення Магазину насіння</strong> — миттєве оновлення магазину замість очікування його звичайного скидання.",
+
+  "gems.example":
+    "<b>Важливо:</b> Самоцвіти не замінюють монети та не використовуються для звичайних покупок. Вони існують спеціально для того, щоб дозволити гравцеві пропускати час очікування та прискорювати прогресію.",
+
+
+  /*
+  ========================================================
+  FOOD
+  ========================================================
+  */
+
+  "food.title":
+    "Фітопланктон, їжа та розвиток",
+
+  "food.p1":
+    "Кожен збір дає <strong>2 одиниці фітопланктону</strong> посадженої культури. Для підвищення рівня аксолотлю потрібно 2 одиниці необхідної рослинної їжі. Кожен наступний рівень потребує на 2 одиниці більше, ніж попередній.",
+
+  "food.p2":
+    "Кожен аксолотль починає з базовою тривалістю перебування <strong>10 днів</strong>. Кожен рівень додає до цієї тривалості <strong>4 дні</strong>.",
+
+  "food.example":
+    "<b>Приклад:</b> Аксолотль 1-го рівня залишається на 10 днів. На 2-му рівні це вже 14 днів, на 3-му — 18 днів і так далі.",
+
+  "food.favTitle":
+    "Улюблена їжа",
+
+  "food.favP":
+    "Кожна з 8 частин незалежно має <strong>12,5% шанс</strong> призначити культуру, пов'язану з набором цієї частини, як улюблену їжу аксолотля. Завдяки цьому аксолотля з частинами високої рідкісності може бути легше годувати, ніж очікувалося.",
+
+  "food.seedTitle":
+    "Відкриття насіння",
+
+  "food.aquarium":
+    "Акваріум",
+
+  "food.seed":
+    "Насіння",
+
+  "food.note":
+    "Час росту рослини залежить від внутрішньої рідкісності рослини. Ця рідкісність не відображається для гравця.",
+
+
+  /*
+  ========================================================
+  SEED SHOP
+  ========================================================
+  */
+
+  "shop.title":
+    "Магазин насіння",
+
+  "shop.p1":
+    "Магазином насіння керує Далія, і він пропонує змінний вибір насіння фітопланктону. Магазин оновлює доступне насіння кожні <strong>2 дні</strong>.",
+
+  "shop.howTitle":
+    "Як працює магазин",
+
+  "shop.p2":
+    "У магазині є до <strong>6 слотів насіння</strong>. Кожен слот може містити випадкове насіння з тих, які ви вже відкрили. Насіння може повторюватися, тому одне й те саме насіння може займати більше одного слота.",
+
+  "shop.p3":
+    "Кожен доступний набір насіння також отримує випадкову кількість. Кількість починається з <strong>1–2 насінин</strong> і збільшується в міру розвитку вашого акваріума. Кожен рівень акваріума збільшує як мінімальну, так і максимальну доступну кількість на <strong>2</strong>.",
+
+  "shop.example":
+    "<b>Приклад:</b> На початковому рівні слот насіння може містити 1–2 насінини. У міру підвищення рівня акваріума можлива кількість збільшується на 2 як для мінімального, так і для максимального значення.",
+
+  "shop.groupsTitle":
+    "Групи насіння",
+
+  "shop.p4":
+    "Магазин не обирає випадково з усіх відкритих насінин за допомогою одного спільного пулу ймовірностей. Шість слотів розділені на різні групи насіння. Кожен слот обирає насіння зі своєї групи.",
+
+  "shop.p5":
+    "Це означає, що нововідкриті насінини не змагаються на рівних умовах з кожним насінням у всій колекції. Рідкісне насіння пізньої гри натомість може обиратися з набагато меншої групи можливих насінин, призначених для цього слота магазину.",
+
+  "shop.example2":
+    "<b>Приклад:</b> Якщо слот має лише 3 можливі насінини у своїй групі, кожна з них має значно вищий шанс з'явитися, ніж якби гра обирала серед усіх 15 відкритих насінин одночасно.",
+
+  "shop.slotsTitle":
+    "Слоти магазину",
+
+  "shop.p6":
+    "Магазин насіння починає з <strong>1 доступного слота</strong>. У міру проходження рівнів акваріума додаткові слоти відкриваються на певних етапах, аж до максимуму в <strong>6 слотів</strong>.",
+
+  "shop.level":
+    "Рівень акваріума",
+
+  "shop.slots":
+    "Слоти магазину",
+
+  "shop.example3":
+    "<b>Прогресія слотів магазину:</b> Додатковий слот магазину відкривається на рівнях акваріума <strong>4, 8, 14, 20 та 24</strong>. Це збільшує магазин із початкового <strong>1 слота</strong> до максимуму в <strong>6 слотів</strong>.",
+
+  "shop.p7":
+    "Оскільки вибір змінюється лише кожні два дні, гравець не може просто купити будь-яке насіння, коли захоче. Регулярно перевіряти магазин і витрачати монети, коли з'являється корисне насіння, — важлива частина прогресії.",
+
+
+  /*
+  ========================================================
+  DAILY VISITOR
+  ========================================================
+  */
+
+  "visitors.title":
+    "Щоденний відвідувач",
+
+  "visitors.p1":
+    "Новий аксолотль-відвідувач <strong>гарантовано з'являється раз на день</strong>. Його поява ніколи не залежить від випадковості.",
+
+  "visitors.p2":
+    "Аксолотлів-відвідувачів можна усиновити або залишити. Якщо ви не усиновите відвідувача, наступного дня він піде.",
+
+  "visitors.p3":
+    "Якщо ваш акваріум заповнений до максимальної місткості, ви не можете усиновити іншого аксолотля, доки не переведете аксолотлів з акваріума та не звільните місце.",
+
+  "visitors.genTitle":
+    "Як створюється щоденний відвідувач",
+
+  "visitors.genP":
+    "Його вісім частин генеруються незалежно. Для кожної частини гра спочатку перевіряє, які рівні рідкісності ви відкрили. Кожен відкритий рівень рідкісності має абсолютно однакову ймовірність.",
+
+  "visitors.unlocked":
+    "Відкриті рівні рідкісності",
+
+  "visitors.chance":
+    "Шанс на кожну рідкісність",
+
+  "visitors.commonUncommon":
+    "Звичайний + Незвичайний",
+
+  "visitors.plusRare":
+    "+ Рідкісний",
+
+  "visitors.plusEpic":
+    "+ Епічний",
+
+  "visitors.plusLegendary":
+    "+ Легендарний",
+
+  "visitors.plusXolotl":
+    "+ Xólotl",
+
+  "visitors.example":
+    "<b>Приклад:</b> Якщо всі шість рівнів рідкісності відкриті, кожен рівень має 16,67% шанс для кожної частини. Після вибору рідкісності всі відкриті частини в межах цієї рідкісності мають однаковий шанс. Дві Звичайні частини означають 50% для кожної; п'ять Рідкісних частин — 20% для кожної; десять Епічних частин — 10% для кожної.",
+
+  "visitors.p4":
+    "Процес повторюється вісім разів — по одному разу для кожної частини. У міру зростання вашої колекції у Щоденного відвідувача може з'являтися більше окремих частин, тоді як шанс отримати конкретну частину стає меншим.",
+
+
+  /*
+  ========================================================
+  ENAMORED AXOLOTL
+  ========================================================
+  */
+
+  "love.title":
+    "Закоханий аксолотль",
+
+  "love.p1":
+    "Після битви кожен ворожий аксолотль незалежно перевіряє, чи хоче він приєднатися до вас. Його шанс визначається рідкісністю кожної з восьми його частин.",
+
+  "love.rarity":
+    "Рідкісність частини",
+
+  "love.contribution":
+    "Внесок",
+
+  "love.p2":
+    "Кожна з восьми частин робить внесок відповідно до своєї рідкісності. Кінцевий шанс розраховується на основі всіх восьми внесків.",
+
+  "love.example":
+    "<b>Приклад:</b> Ворог із Звичайною + Звичайною + Рідкісною + Рідкісною + Епічною + Епічною + Легендарною + Xólotl частинами передає всі вісім внесків рідкісності до фінального розрахунку.",
+
+  "love.multipleTitle":
+    "Коли погоджуються кілька ворогів",
+
+  "love.multipleP":
+    "Не може погодитися жоден, може погодитися один або можуть погодитися кілька. Якщо погоджуються кілька, менеджер випадково обирає <strong>одного</strong> з них, причому кожен прийнятий аксолотль має однаковий шанс.",
+
+  "love.two":
+    "2 погодилися<br><strong>50% кожному</strong>",
+
+  "love.three":
+    "3 погодилися<br><strong>33,33% кожному</strong>",
+
+  "love.four":
+    "4 погодилися<br><strong>25% кожному</strong>",
+
+
+  /*
+  ========================================================
+  LEVELS
+  ========================================================
+  */
+
+  "levels.title":
+    "Рівні акваріума та прогресія",
+
+  "levels.p":
+    "Є <strong>25 рівнів акваріума</strong>, що містять 50 ігрових рівнів. Кожен рівень акваріума відкриває нових аксолотлів і поступово збільшує місткість.",
+
+
+  /*
+  ========================================================
+  EFFECTS
+  ========================================================
+  */
+
+  "effects.title":
+    "Статусні ефекти",
+
+  "effects.p":
+    "Статусні ефекти змінюють бойові характеристики або ймовірності дій. Ефекти можуть накопичуватися, коли здібність застосовує кілька зарядів.",
+
+  "effects.effect":
+    "Ефект",
+
+  "effects.result":
+    "Результат",
+
+
+  /*
+  ========================================================
+  ABILITIES
+  ========================================================
+  */
+
+  "abilities.title":
+    "Здібності частин аксолотля",
+
+  "abilities.p":
+    "Ефекти частин активуються залежно від кількості однакових частин, присутніх в аксолотля. Наведені нижче значення досягаються при 2/8, 4/8, 6/8 та 8/8 однакових частинах.",
+
+
+  /*
+  ========================================================
+  WORLDS
+  ========================================================
+  */
+
+  "worlds.title":
+    "Ігрові рівні",
+
+  "worlds.p":
+    "Гра містить п'ять світів і 50 рівнів. Для кожного рівня вказано комбінації ворогів та вимогу до акваріума.",
+
+
+  /*
+  ========================================================
+  DYNAMIC CONTENT
+  ========================================================
+  */
+
+  "dynamic.gameplayLevels":
+    "Ігрові рівні",
+
+  "dynamic.food":
+    "Їжа",
+
+  "dynamic.capacity":
+    "Місткість",
+
+  "dynamic.axolotls":
+    "аксолотлів",
+
+
+  /*
+  ========================================================
+  AQUARIUM LEVELS
+  ========================================================
+  */
+
+  "level.1.title":
+    "Акваріум 1 — Перші мешканці",
+
+  "level.2.title":
+    "Акваріум 2 — Перші інстинкти",
+
+  "level.3.title":
+    "Акваріум 3 — Маленькі можливості",
+
+  "level.4.title":
+    "Акваріум 4 — Перші переваги",
+
+  "level.5.title":
+    "Акваріум 5 — Посилення",
+
+  "level.6.title":
+    "Акваріум 6 — Перші ефекти",
+
+  "level.7.title":
+    "Акваріум 7 — Ослаблення",
+
+  "level.8.title":
+    "Акваріум 8 — Слабке місце",
+
+  "level.9.title":
+    "Акваріум 9 — Вищі матеріали",
+
+  "level.10.title":
+    "Акваріум 10 — Сила та швидкість",
+
+  "level.11.title":
+    "Акваріум 11 — Удача",
+
+  "level.12.title":
+    "Акваріум 12 — Світло та отрута",
+
+  "level.13.title":
+    "Акваріум 13 — Виснажливі стани",
+
+  "level.14.title":
+    "Акваріум 14 — Сила героя",
+
+  "level.15.title":
+    "Акваріум 15 — Вища сила",
+
+  "level.16.title":
+    "Акваріум 16 — Надзвичайні сили",
+
+  "level.17.title":
+    "Акваріум 17 — Атакувальна сила",
+
+  "level.18.title":
+    "Акваріум 18 — Смертельна межа",
+
+  "level.19.title":
+    "Акваріум 19 — Легендарна сила",
+
+  "level.20.title":
+    "Акваріум 20 — Легендарна міць",
+
+  "level.21.title":
+    "Акваріум 21 — Божественна сила",
+
+  "level.22.title":
+    "Акваріум 22 — Дуальність",
+
+  "level.23.title":
+    "Акваріум 23 — Відображення",
+
+  "level.24.title":
+    "Акваріум 24 — Вивільнена сила",
+
+  "level.25.title":
+    "Акваріум 25 — ВЕЛИКИЙ АКВАРІУМ",
+
+
+  /*
+  ========================================================
+  ABILITY GROUPS
+  ========================================================
+  */
+
+  "abilityGroup.0.title":
+    "❤️ Любов",
+
+  "abilityGroup.0.piece.0":
+    "Листок: +1/+2/+3/+5 Любові",
+
+  "abilityGroup.0.piece.1":
+    "Мед: 1/2/3/4 заряди Життєвої сили для команди",
+
+  "abilityGroup.0.piece.2":
+    "Яблуко: +2/+4/+6/+10 Любові",
+
+  "abilityGroup.0.piece.3":
+    "Netfil25: 2/3/4/5 зарядів Життєвої сили для команди",
+
+  "abilityGroup.0.piece.4":
+    "Серце: 2/3/4/5 Життєвої сили + 5/5/5/10 Любові",
+
+
+  "abilityGroup.1.title":
+    "🛡️ Захист",
+
+  "abilityGroup.1.piece.0":
+    "Камінь: +1/+2/+3/+5 Захисту",
+
+  "abilityGroup.1.piece.1":
+    "Мідь: 1/2/3/4 заряди Посилення для команди",
+
+  "abilityGroup.1.piece.2":
+    "Залізо: +2/+4/+6/+10 Захисту",
+
+  "abilityGroup.1.piece.3":
+    "Алмаз: 2/3/4/5 зарядів Посилення для команди",
+
+  "abilityGroup.1.piece.4":
+    "Лонсдейліт: 2/3/4/5 Посилення + 5/5/5/10 Захисту",
+
+
+  "abilityGroup.2.title":
+    "💨 Швидкість",
+
+  "abilityGroup.2.piece.0":
+    "Перо: +1/+2/+3/+5 Швидкості",
+
+  "abilityGroup.2.piece.1":
+    "Вітер: 1/2/3/4 заряди Прискорення для команди",
+
+  "abilityGroup.2.piece.2":
+    "Багряний: +2/+4/+6/+10 Швидкості",
+
+  "abilityGroup.2.piece.3":
+    "Торнадо: 2/3/4/5 зарядів Прискорення для команди",
+
+  "abilityGroup.2.piece.4":
+    "Зірка: 2/3/4/5 Прискорення + 5/5/5/10 Швидкості",
+
+
+  "abilityGroup.3.title":
+    "⚔️ Атака",
+
+  "abilityGroup.3.piece.0":
+    "Кігті: +1/+2/+3/+5 Атаки",
+
+  "abilityGroup.3.piece.1":
+    "Ікла: 1/2/3/4 заряди Посилення для команди",
+
+  "abilityGroup.3.piece.2":
+    "Шипи: +2/+4/+6/+10 Атаки",
+
+  "abilityGroup.3.piece.3":
+    "Мечі: 2/3/4/5 зарядів Посилення для команди",
+
+  "abilityGroup.3.piece.4":
+    "Диявол: 2/3/4/5 Посилення + 5/5/5/10 Атаки",
+
+
+  "abilityGroup.4.title":
+    "🎯 Критичний удар",
+
+  "abilityGroup.4.piece.0":
+    "Кості: +1/+2/+3/+5% шансу критичного удару",
+
+  "abilityGroup.4.piece.1":
+    "Удача: +10/+15/+20/+40% шансу критичного удару",
+
+  "abilityGroup.4.piece.2":
+    "Метеорит: +2/+4/+6/+10% критичної шкоди",
+
+  "abilityGroup.4.piece.3":
+    "Notter: +10/+30/+60/+100% критичної шкоди",
+
+  "abilityGroup.4.piece.4":
+    "Планета: +15/+50/+75/+100% шансу критичного удару та +30/+90/+200/+300% критичної шкоди",
+
+
+  "abilityGroup.5.title":
+    "🧪 Ефекти",
+
+  "abilityGroup.5.piece.0":
+    "Вогонь → 1/2/3/5 Задушених",
+
+  "abilityGroup.5.piece.1":
+    "Лід → 1/2/3/5 Онімілих",
+
+  "abilityGroup.5.piece.2":
+    "Отрута → 1/2/3/5 Спантеличених",
+
+  "abilityGroup.5.piece.3":
+    "Електрика → 1/2/3/5 Іскристих",
+
+  "abilityGroup.5.piece.4":
+    "Світло → 1/2/3/5 Засліплених",
+
+
+  "abilityGroup.6.title":
+    "🧪 Ефекти",
+
+  "abilityGroup.6.piece.0":
+    "Холод → 1/2/3/5 Ослаблених",
+
+  "abilityGroup.6.piece.1":
+    "Бульбашка → 1/2/3/5 Незахищених",
+
+  "abilityGroup.6.piece.2":
+    "Бруд → 1/2/3/5 Уповільнених",
+
+  "abilityGroup.6.piece.3":
+    "Ціль → 1/2/3/5 Вразливих",
+
+  "abilityGroup.6.piece.4":
+    "Сум → 1/2/3/5 Ображених",
+
+
+  "abilityGroup.7.title":
+    "🧪 Ефекти",
+
+  "abilityGroup.7.piece.0":
+    "Сон → 1/2/3/5 Втомлених",
+
+  "abilityGroup.7.piece.1":
+    "Тінь → 1/2/3/5 Затемнених",
+
+  "abilityGroup.7.piece.2":
+    "ШІ → 1/2/3/5 Вимкнених",
+
+  "abilityGroup.7.piece.3":
+    "Лінощі → 1/2/3/5 Знеохочених",
+
+  "abilityGroup.7.piece.4":
+    "Медуза → 1/2/3/5 Приголомшених",
+
+
+  "abilityGroup.8.title":
+    "🧪 Ефекти",
+
+  "abilityGroup.8.piece.0":
+    "Божественне → 1/2/3/5 Закоханих",
+
+
+  "abilityGroup.9.title":
+    "🪄 Подвійні ефекти",
+
+  "abilityGroup.9.piece.0":
+    "Привид → Втомлений + Незахищений (1/2/3/5 кожного)",
+
+  "abilityGroup.9.piece.1":
+    "Іній → Ослаблений + Уповільнений (1/2/3/5 кожного)",
+
+  "abilityGroup.9.piece.2":
+    "Пісок → Приголомшений + Онімілий (1/2/3/5 кожного)",
+
+  "abilityGroup.9.piece.3":
+    "Дзеркало → Вразливий + Знеохочений (1/2/3/5 кожного)",
+
+  "abilityGroup.9.piece.4":
+    "Магма → Задушений + Засліплений (1/2/3/5 кожного)",
+
+
+  "abilityGroup.10.title":
+    "🪄 Подвійні ефекти",
+
+  "abilityGroup.10.piece.0":
+    "Радіоактивний → Спантеличений + Вимкнений (1/2/3/5 кожного)",
+
+  "abilityGroup.10.piece.1":
+    "Фламінго → Закоханий + Життєва сила для команди (1/2/3/5 кожного)",
+
+  "abilityGroup.10.piece.2":
+    "Аркада → Іскристий + Прискорений для команди (1/2/3/5 кожного)",
+
+  "abilityGroup.10.piece.3":
+    "Затемнення → Затемнений + Посилений для команди (1/2/3/5 кожного)",
+
+  "abilityGroup.10.piece.4":
+    "Солдат → Ображений + Посилений для команди (1/2/3/5 кожного)",
+
+
+  /*
+  ========================================================
+  WORLDS
+  ========================================================
+  */
+
+  "world.0.title":
+    "СВІТ 1 — МАЛЕНЬКИЙ СТАВОК",
+
+  "world.1.title":
+    "СВІТ 2 — ДИКІ ВОДИ",
+
+  "world.2.title":
+    "СВІТ 3 — ГЛИБИНИ",
+
+  "world.3.title":
+    "СВІТ 4 — ВЕЛЕТЕНСЬКЕ КОРОЛІВСТВО",
+
+  "world.4.title":
+    "СВІТ 5 — ВЕЛИКИЙ АКВАРІУМ",
+
+
+  /*
+  ========================================================
+  WORLD 1
+  ========================================================
+  */
+
+  "world.0.level.0.title":
+    "1 — Новий дім",
+  "world.0.level.0.aquarium":
+    "Акваріум 1",
+  "world.0.level.0.enemies":
+    "Рожевий",
+
+  "world.0.level.1.title":
+    "2 — Перший рух",
+  "world.0.level.1.aquarium":
+    "Акваріум 1",
+  "world.0.level.1.enemies":
+    "Листок",
+
+  "world.0.level.2.title":
+    "3 — Перші відмінності",
+  "world.0.level.2.aquarium":
+    "—",
+  "world.0.level.2.enemies":
+    "Листок + Перо",
+
+  "world.0.level.3.title":
+    "4 — Маленькі кігті",
+  "world.0.level.3.aquarium":
+    "Акваріум 2",
+  "world.0.level.3.enemies":
+    "Перо + Кігті",
+
+  "world.0.level.4.title":
+    "5 — Двоє проти двох",
+  "world.0.level.4.aquarium":
+    "Акваріум 3",
+  "world.0.level.4.enemies":
+    "Листок + Кості · Камінь + Метеорит",
+
+  "world.0.level.5.title":
+    "6 — Перші ефекти",
+  "world.0.level.5.aquarium":
+    "Акваріум 3",
+  "world.0.level.5.enemies":
+    "Вогонь + Кігті · Холод + Перо",
+
+  "world.0.level.6.title":
+    "7 — Ослаблення",
+  "world.0.level.6.aquarium":
+    "Акваріум 4",
+  "world.0.level.6.enemies":
+    "Камінь + Бульбашка · Кігті + Бруд",
+
+  "world.0.level.7.title":
+    "8 — Слабке місце",
+  "world.0.level.7.aquarium":
+    "Акваріум 4",
+  "world.0.level.7.enemies":
+    "Листок + Ціль · Сум + Камінь",
+
+  "world.0.level.8.title":
+    "9 — Кращі матеріали",
+  "world.0.level.8.aquarium":
+    "Акваріум 5",
+  "world.0.level.8.enemies":
+    "Яблуко + Вітер · Залізо + Ікла",
+
+  "world.0.level.9.title":
+    "10 — Перший виклик",
+  "world.0.level.9.aquarium":
+    "Акваріум 5",
+  "world.0.level.9.enemies":
+    "Яблуко + Ікла · Вітер + Залізо",
+
+
+  /*
+  ========================================================
+  WORLD 2
+  ========================================================
+  */
+
+  "world.1.level.0.title":
+    "11 — Пробудження удачі",
+  "world.1.level.0.aquarium":
+    "Акваріум 6",
+  "world.1.level.0.enemies":
+    "Удача + Вогонь · Холод + Електрика",
+
+  "world.1.level.1.title":
+    "12 — Розряди",
+  "world.1.level.1.aquarium":
+    "—",
+  "world.1.level.1.enemies":
+    "Електрика + Кігті · Вогонь + Перо",
+
+  "world.1.level.2.title":
+    "13 — Отрута у воді",
+  "world.1.level.2.aquarium":
+    "Акваріум 7",
+  "world.1.level.2.enemies":
+    "Отрута + Бруд · Бульбашка + Ціль · Вогонь + Кігті",
+
+  "world.1.level.3.title":
+    "14 — Втрачений погляд",
+  "world.1.level.3.aquarium":
+    "Акваріум 7",
+  "world.1.level.3.enemies":
+    "Бруд + Камінь · Ціль + Перо · Сум + Кігті",
+
+  "world.1.level.4.title":
+    "15 — Отруйне яблуко",
+  "world.1.level.4.aquarium":
+    "Акваріум 8",
+  "world.1.level.4.enemies":
+    "Яблуко + Отрута · Бульбашка + Залізо · Вітер + Ікла",
+
+  "world.1.level.5.title":
+    "16 — Електричне око",
+  "world.1.level.5.aquarium":
+    "Акваріум 8",
+  "world.1.level.5.enemies":
+    "Електрика + Ціль · Сум + Бруд · Бульбашка + Кігті",
+
+  "world.1.level.6.title":
+    "17 — Серце битви",
+  "world.1.level.6.aquarium":
+    "Акваріум 9",
+  "world.1.level.6.enemies":
+    "Яблуко + Залізо · Вітер + Шипи · Ціль + Ікла",
+
+  "world.1.level.7.title":
+    "18 — Сталь та отрута",
+  "world.1.level.7.aquarium":
+    "Акваріум 9",
+  "world.1.level.7.enemies":
+    "Отрута + Залізо · Яблуко + Шипи · Бруд + Кігті",
+
+  "world.1.level.8.title":
+    "19 — Критична швидкість",
+  "world.1.level.8.aquarium":
+    "Акваріум 10",
+  "world.1.level.8.enemies":
+    "Вітер + Багряний · Удача + Шипи · Яблуко + Електрика",
+
+  "world.1.level.9.title":
+    "20 — Буря",
+  "world.1.level.9.aquarium":
+    "Акваріум 10",
+  "world.1.level.9.enemies":
+    "Вітер + Шипи · Електрика + Багряний · Удача + Кігті",
+
+
+  /*
+  ========================================================
+  WORLD 3
+  ========================================================
+  */
+
+  "world.2.level.0.title":
+    "21 — Глибокий сон",
+  "world.2.level.0.aquarium":
+    "Акваріум 11",
+  "world.2.level.0.enemies":
+    "Сон + Удача · Електрика + Яблуко · Ціль + Залізо",
+
+  "world.2.level.1.title":
+    "22 — Небезпечне світло",
+  "world.2.level.1.aquarium":
+    "Акваріум 11",
+  "world.2.level.1.enemies":
+    "Світло + Шипи · Отрута + Багряний · Удача + Бруд",
+
+  "world.2.level.2.title":
+    "23 — Чотири тіні",
+  "world.2.level.2.aquarium":
+    "Акваріум 12",
+  "world.2.level.2.enemies":
+    "Світло + Кігті · Отрута + Залізо · Сон + Перо · Електрика + Шипи",
+
+  "world.2.level.3.title":
+    "24 — Отрута та швидкість",
+  "world.2.level.3.aquarium":
+    "Акваріум 12",
+  "world.2.level.3.enemies":
+    "Отрута + Багряний · Світло + Перо · Електрика + Кігті · Сон + Залізо",
+
+  "world.2.level.4.title":
+    "25 — Сила Notter",
+  "world.2.level.4.aquarium":
+    "Акваріум 13",
+  "world.2.level.4.enemies":
+    "Сон + Notter · Тінь + Яблуко · Удача + Шипи · Світло + Багряний",
+
+  "world.2.level.5.title":
+    "26 — Швидкі тіні",
+  "world.2.level.5.aquarium":
+    "Акваріум 13",
+  "world.2.level.5.enemies":
+    "Тінь + Перо · Сон + Шипи · Світло + Залізо · Отрута + Кігті",
+
+  "world.2.level.6.title":
+    "27 — Штучний інтелект",
+  "world.2.level.6.aquarium":
+    "Акваріум 14",
+  "world.2.level.6.enemies":
+    "ШІ + Удача · Тінь + Шипи · Сон + Багряний · Світло + Залізо",
+
+  "world.2.level.7.title":
+    "28 — Затемнене королівство",
+  "world.2.level.7.aquarium":
+    "Акваріум 14",
+  "world.2.level.7.enemies":
+    "ШІ + Перо · Тінь + Кігті · Отрута + Шипи · Удача + Залізо",
+
+  "world.2.level.8.title":
+    "29 — Перші велетні",
+  "world.2.level.8.aquarium":
+    "Акваріум 15",
+  "world.2.level.8.enemies":
+    "Netfil25 + Залізо · Алмаз + Шипи · Торнадо + Удача · ШІ + Яблуко",
+
+  "world.2.level.9.title":
+    "30 — Серце глибин",
+  "world.2.level.9.aquarium":
+    "Акваріум 15",
+  "world.2.level.9.enemies":
+    "Netfil25 + Шипи · Алмаз + Багряний · Торнадо + Кігті · ШІ + Удача",
+
+
+  /*
+  ========================================================
+  WORLD 4
+  ========================================================
+  */
+
+  "world.3.level.0.title":
+    "31 — Вічний лід",
+  "world.3.level.0.aquarium":
+    "Акваріум 16",
+  "world.3.level.0.enemies":
+    "Лід + Шипи · Торнадо + Залізо · Netfil25 + Багряний · ШІ + Кігті",
+
+  "world.3.level.1.title":
+    "32 — Крижана буря",
+  "world.3.level.1.aquarium":
+    "Акваріум 16",
+  "world.3.level.1.enemies":
+    "Лід + Торнадо · Алмаз + Шипи · ШІ + Багряний · Netfil25 + Кігті",
+
+  "world.3.level.2.title":
+    "33 — Мечі",
+  "world.3.level.2.aquarium":
+    "Акваріум 17",
+  "world.3.level.2.enemies":
+    "Мечі + Шипи · Лінощі + Залізо · Лід + Удача · Торнадо + Багряний",
+
+  "world.3.level.3.title":
+    "34 — Ідеальний ворог",
+  "world.3.level.3.aquarium":
+    "Акваріум 17",
+  "world.3.level.3.enemies":
+    "Мечі + Залізо · Лінощі + Шипи · Лід + Багряний · Торнадо + Удача",
+
+  "world.3.level.4.title":
+    "35 — Смертельна межа",
+  "world.3.level.4.aquarium":
+    "Акваріум 18",
+  "world.3.level.4.enemies":
+    "Медуза + Шипи · Серце + Залізо · Мечі + Багряний · Лід + Удача",
+
+  "world.3.level.5.title":
+    "36 — Любов та руйнування",
+  "world.3.level.5.aquarium":
+    "Акваріум 18",
+  "world.3.level.5.enemies":
+    "Серце + Шипи · Медуза + Залізо · Мечі + Удача · Лінощі + Багряний",
+
+  "world.3.level.6.title":
+    "37 — Легендарна сила",
+  "world.3.level.6.aquarium":
+    "Акваріум 19",
+  "world.3.level.6.enemies":
+    "Лонсдейліт + Мечі · Зірка + Шипи · Серце + Багряний · Медуза + Удача",
+
+  "world.3.level.7.title":
+    "38 — Чотири сили",
+  "world.3.level.7.aquarium":
+    "Акваріум 19",
+  "world.3.level.7.enemies":
+    "Лонсдейліт + Залізо · Зірка + Багряний · Мечі + Шипи · Серце + Яблуко",
+
+  "world.3.level.8.title":
+    "39 — Сила героя",
+  "world.3.level.8.aquarium":
+    "Акваріум 20",
+  "world.3.level.8.enemies":
+    "Диявол + Шипи · Планета + Удача · Зірка + Залізо · Серце + Багряний",
+
+  "world.3.level.9.title":
+    "40 — Колос",
+  "world.3.level.9.aquarium":
+    "Акваріум 20",
+  "world.3.level.9.enemies":
+    "Диявол + Мечі · Планета + Шипи · Зірка + Залізо · Серце + Лонсдейліт",
+
+
+  /*
+  ========================================================
+  WORLD 5
+  ========================================================
+  */
+
+  "world.4.level.0.title":
+    "41 — Божественна присутність",
+  "world.4.level.0.aquarium":
+    "Акваріум 21",
+  "world.4.level.0.enemies":
+    "Божественне + Шипи · Привид + Залізо · Планета + Багряний · Зірка + Удача",
+
+  "world.4.level.1.title":
+    "42 — Прокляття",
+  "world.4.level.1.aquarium":
+    "Акваріум 21",
+  "world.4.level.1.enemies":
+    "Привид + Шипи · Божественне + Залізо · Диявол + Багряний · Планета + Удача",
+
+  "world.4.level.2.title":
+    "43 — Іній",
+  "world.4.level.2.aquarium":
+    "Акваріум 22",
+  "world.4.level.2.enemies":
+    "Іній + Шипи · Пісок + Залізо · Привид + Багряний · Божественне + Удача",
+
+  "world.4.level.3.title":
+    "44 — Пісок та лід",
+  "world.4.level.3.aquarium":
+    "Акваріум 22",
+  "world.4.level.3.enemies":
+    "Пісок + Шипи · Іній + Багряний · Божественне + Залізо · Планета + Диявол",
+
+  "world.4.level.4.title":
+    "45 — Дзеркало",
+  "world.4.level.4.aquarium":
+    "Акваріум 23",
+  "world.4.level.4.enemies":
+    "Дзеркало + Шипи · Магма + Залізо · Іній + Багряний · Пісок + Удача",
+
+  "world.4.level.5.title":
+    "46 — Відображення сили",
+  "world.4.level.5.aquarium":
+    "Акваріум 23",
+  "world.4.level.5.enemies":
+    "Дзеркало + Диявол · Магма + Зірка · Пісок + Лонсдейліт · Планета + Серце",
+
+  "world.4.level.6.title":
+    "47 — Радіація",
+  "world.4.level.6.aquarium":
+    "Акваріум 24",
+  "world.4.level.6.enemies":
+    "Радіоактивний + Шипи · Фламінго + Залізо · Дзеркало + Багряний · Магма + Удача",
+
+  "world.4.level.7.title":
+    "48 — Остання стихія",
+  "world.4.level.7.aquarium":
+    "Акваріум 24",
+  "world.4.level.7.enemies":
+    "Радіоактивний + Диявол · Фламінго + Зірка · Дзеркало + Лонсдейліт · Магма + Планета",
+
+  "world.4.level.8.title":
+    "49 — Великий акваріум",
+  "world.4.level.8.aquarium":
+    "Акваріум 25",
+  "world.4.level.8.enemies":
+    "Аркада + Шипи · Затемнення + Залізо · Солдат + Багряний · Планета + Диявол",
+
+  "world.4.level.9.title":
+    "50 — КІНЕЦЬ",
+  "world.4.level.9.aquarium":
+    "Акваріум 25",
+  "world.4.level.9.enemies":
+    "Солдат + Планета · Аркада + Зірка · Затемнення + Лонсдейліт · Фламінго + Божественне",
+
+
+  /*
+  ========================================================
+  LEGAL
+  ========================================================
+  */
+
+  "legal.title":
+    "Політика конфіденційності та авторські права",
+
+  "legal.privacyTitle":
+    "Політика конфіденційності",
+
+  "legal.privacy1":
+    "Only Axolotls поважає вашу конфіденційність. Цей вебсайт є інформаційним посібником для гри. Він навмисно не запитує особисту інформацію, не створює облікових записів користувачів і не вимагає від вас надання персональних даних.",
+
+  "legal.privacy2":
+    "Якщо цей вебсайт у майбутньому буде підключено до аналітики, зовнішніх сервісів, форм, файлів cookie або інших технологій, що обробляють персональні дані, цю політику буде оновлено до впровадження таких функцій.",
+
+  "legal.copyTitle":
+    "Авторські права та інтелектуальна власність",
+
+  "legal.copy1":
+    "<strong>Only Axolotls</strong>, його ігровий контент, персонажі, ілюстрації, графіка, логотипи, анімації, музика, звуки, письмовий контент і програмне забезпечення є захищеною інтелектуальною власністю відповідних правовласників і не призначені для несанкціонованого комерційного розповсюдження.",
+
+  "legal.copy2":
+    "Цей посібник надається виключно для того, щоб допомогти гравцям зрозуміти гру та отримувати від неї задоволення. Відтворення, розповсюдження, комерційне використання або модифікація захищених ігрових матеріалів без попереднього дозволу не допускаються.",
+
+  "legal.copy3":
+    "© 2026 Notter Animations.",
+
+
+  /*
+  ========================================================
+  RARITIES
+  ========================================================
+  */
+
+  "rarity.common":
+    "Звичайний",
+
+  "rarity.uncommon":
+    "Незвичайний",
+
+  "rarity.rare":
+    "Рідкісний",
+
+  "rarity.epic":
+    "Епічний",
+
+  "rarity.legendary":
+    "Легендарний",
+
+  "rarity.xolotl":
+    "Xólotl",
+
+
+  /*
+  ========================================================
+  UNITS
+  ========================================================
+  */
+
+  "unit.day":
+    "день",
+
+  "unit.days":
+    "днів",
+
+  "unit.gem":
+    "самоцвіт",
+
+  "unit.gems":
+    "самоцвітів",
+
+
+  /*
+  ========================================================
+  SEEDS
+  ========================================================
+  */
+
+  "seed.algae":
+    "Водорості",
+
+  "seed.potatoes":
+    "Картопля",
+
+  "seed.corn":
+    "Кукурудза",
+
+  "seed.coral":
+    "Корал",
+
+  "seed.tomatoes":
+    "Помідори",
+
+  "seed.wheat":
+    "Пшениця",
+
+  "seed.onions":
+    "Цибуля",
+
+  "seed.carrots":
+    "Морква",
+
+  "seed.bananas":
+    "Банани",
+
+  "seed.beans":
+    "Квасоля",
+
+  "seed.strawberries":
+    "Полуниця",
+
+  "seed.oranges":
+    "Апельсини",
+
+  "seed.grapes":
+    "Виноград",
+
+  "seed.chocolate":
+    "Шоколад",
+
+  "seed.peppers":
+    "Перець",
+
+
+  /*
+  ========================================================
+  STATUS EFFECTS
+  ========================================================
+  */
+
+  "effect.suffocated":
+    "Задушений",
+
+  "effect.suffocated.r":
+    "Втрачає 2 базові ОЗ наприкінці ходу.",
+
+
+  "effect.numb":
+    "Онімілий",
+
+  "effect.numb.r":
+    "4% базовий шанс не виконати жодної дії цього ходу.",
+
+
+  "effect.confused":
+    "Спантеличений",
+
+  "effect.confused.r":
+    "Втрачає 1 базове ОЗ та -1 базового Захисту наприкінці ходу.",
+
+
+  "effect.sparkling":
+    "Іскристий",
+
+  "effect.sparkling.r":
+    "2% базовий шанс не виконати жодної дії та -1 базової Швидкості.",
+
+
+  "effect.dazzled":
+    "Засліплений",
+
+  "effect.dazzled.r":
+    "4% базовий шанс промахнутися обраною атакою.",
+
+
+  "effect.weakened":
+    "Ослаблений",
+
+  "effect.weakened.r":
+    "-2 базової Атаки.",
+
+
+  "effect.unprotected":
+    "Незахищений",
+
+  "effect.unprotected.r":
+    "-2 базового Захисту.",
+
+
+  "effect.slow":
+    "Уповільнений",
+
+  "effect.slow.r":
+    "-2 базової Швидкості.",
+
+
+  "effect.exposed":
+    "Вразливий",
+
+  "effect.exposed.r":
+    "+4% базовий шанс отримати критичний удар.",
+
+
+  "effect.resentful":
+    "Ображений",
+
+  "effect.resentful.r":
+    "+10% базової отриманої критичної шкоди.",
+
+
+  "effect.tired":
+    "Втомлений",
+
+  "effect.tired.r":
+    "-1 базової Атаки та -1 базової Швидкості.",
+
+
+  "effect.dimmed":
+    "Затемнений",
+
+  "effect.dimmed.r":
+    "-1 базової Атаки та -1 базового Захисту.",
+
+
+  "effect.shutDown":
+    "Вимкнений",
+
+  "effect.shutDown.r":
+    "-1 базової Швидкості та -1 базового Захисту.",
+
+
+  "effect.discouraged":
+    "Знеохочений",
+
+  "effect.discouraged.r":
+    "2% базовий шанс не виконати жодної дії та -1 базової Атаки.",
+
+
+  "effect.staggering":
+    "Приголомшений",
+
+  "effect.staggering.r":
+    "2% базовий шанс не виконати жодної дії та -1 базового Захисту.",
+
+
+  "effect.enamored":
+    "Закоханий",
+
+  "effect.enamored.r":
+    "+2% базовий шанс отримати критичний удар та +8% базової отриманої критичної шкоди.",
+
+
+  "effect.vitalized":
+    "Життєздатний",
+
+  "effect.vitalized.r":
+    "+1 Любові.",
+
+
+  "effect.reinforced":
+    "Посилений",
+
+  "effect.reinforced.r":
+    "+1 Захисту.",
+
+
+  "effect.accelerated":
+    "Прискорений",
+
+  "effect.accelerated.r":
+    "+1 Швидкості.",
+
+
+  "effect.powered":
+    "Підсилений",
+
+  "effect.powered.r":
+    "+1 Атаки."
+
 };

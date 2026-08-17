@@ -1,196 +1,1451 @@
 export default {
+
+  /*
+  ========================================================
+  LANGUAGE
+  ========================================================
+  */
+
   "lang": "th",
-  "languageLabel": "Language",
-  "pageTitle": "Only Axolotls — Official Game Guide",
-  "description": "Official Only Axolotls game guide — mechanics, breeding, probabilities, levels, axolotl abilities, effects and more.",
-  "hero.eyebrow": "OFFICIAL GAME GUIDE",
-  "hero.title": "Only Axolotls",
-  "hero.subtitle": "Everything you need to know about your aquarium, axolotls, breeding, battles, progression and probabilities.",
-  "hero.note": "This guide describes the current final game systems and values.",
-  "basics.title": "How Only Axolotls Works",
-  "basics.p1": "Only Axolotls is built around collecting, breeding and developing axolotls. Each axolotl is made from <strong>8 individual pieces</strong>. Pieces have their own rarity and can contribute statistics, effects or special abilities.",
-  "basics.grid1.title": "8 Pieces",
-  "basics.grid1.p": "Every axolotl is assembled from eight independently determined pieces.",
-  "basics.grid2.title": "6 Rarities",
-  "basics.grid2.p": "Common, Uncommon, Rare, Epic, Legendary and Xólotl.",
-  "basics.grid3.title": "Progression",
-  "basics.grid3.p": "Aquarium levels unlock new axolotls, seeds, capacity and expansions.",
-  "basics.grid4.title": "Combat",
-  "basics.grid4.p": "Pieces can grant statistics and status effects that shape how axolotls perform.",
-  "breeding.title": "Breeding &amp; Piece Inheritance",
-  "breeding.p1": "When two axolotls reproduce, every one of their eight pieces is resolved independently.",
-  "breeding.mother": "35% Mother",
-  "breeding.father": "35% Father",
-  "breeding.mutation": "30% Mutation",
-  "breeding.p2": "For each piece, there is a <strong>35% chance</strong> to inherit the mother's piece, a <strong>35% chance</strong> to inherit the father's piece, and a <strong>30% chance</strong> that the piece mutates.",
-  "breeding.mutationTitle": "Mutation rarity",
-  "breeding.mutationP": "If both parent pieces have the same rarity, a mutation is guaranteed to use that rarity. If their rarities differ, the mutation distributes its chance evenly across every rarity step between the two pieces, including both endpoints. The resulting piece is then selected randomly from the chosen rarity.",
-  "breeding.example": "<b>Example:</b> Legendary mother + Common father = six rarity steps: Common, Uncommon, Rare, Epic, Legendary and Xólotl. A mutation has an equal chance of landing on each of those six rarity levels.",
-  "breeding.genderTitle": "Gender at birth",
-  "breeding.genderP": "Every newborn axolotl has a <strong>50% chance to be female</strong> and a <strong>50% chance to be male</strong>.",
-  "timers.title": "Breeding Time &amp; Gem Cost",
-  "timers.p": "The <strong>highest rarity among the two parent pieces</strong> determines both the breeding/hatching time and the number of gems required to skip the event.",
-  "timers.rarity": "Highest rarity",
-  "timers.time": "Time",
-  "timers.cost": "Skip cost",
-  "coins.title": "Coins",
-  "coins.p1": "Coins are the main currency used for several progression-related systems. They are required to maintain your aquarium, purchase seeds and unlock additional growing space.",
-  "coins.earnTitle": "How to earn Coins",
-  "coins.earnP": "Coins can be obtained through several activities:",
-  "coins.earn1": "Winning battles.",
-  "coins.earn2": "Completing axolotl sets.",
-  "coins.earn3": "Harvesting fully grown phytoplankton plants.",
-  "coins.breedTitle": "Breeding cost",
-  "coins.breedP": "Coins are required to allow two axolotls to reproduce. The cost depends on the rarities of <strong>all eight pieces of the mother</strong> and <strong>all eight pieces of the father</strong>. The rarities of both parents are considered together when calculating the final breeding cost.",
-  "coins.example": "<b>Important:</b> Breeding does not reward Coins. The player must spend Coins to begin the reproduction because the axolotls require care during the breeding process.",
-  "coins.otherTitle": "Other uses",
-  "coins.otherP": "Coins can also be spent on useful progression-related purchases, including seeds from the <strong>Seed Shop</strong> and additional <strong>pot slots</strong> for growing phytoplankton.",
-  "gems.title": "Gems",
-  "gems.p1": "Gems are a premium progression resource used exclusively to <strong>accelerate ongoing game processes</strong>.",
-  "gems.earnTitle": "How to earn Gems",
-  "gems.earn1": "Unlocking a piece gives <strong>1 gem</strong>.",
-  "gems.earn2": "Every axolotl level-up gives <strong>1 gem</strong>.",
-  "gems.earn3": "Completing a star level for the first time gives <strong>1 gem</strong>.",
-  "gems.spendTitle": "How Gems are spent",
-  "gems.spendP": "Gems can be used to instantly complete or accelerate the following processes:",
-  "gems.spend1": "<strong>Breeding</strong> — accelerate an ongoing reproduction.",
-  "gems.spend2": "<strong>Egg hatching</strong> — instantly complete the egg's remaining time.",
-  "gems.spend3": "<strong>Plant growth</strong> — instantly finish the remaining growth time of a plant.",
-  "gems.spend4": "<strong>Seed Shop refresh</strong> — instantly refresh the shop instead of waiting for its normal reset.",
-  "gems.example": "<b>Important:</b> Gems do not replace Coins and are not used for normal purchases. They exist specifically to let the player skip waiting times and accelerate progression.",
-  "food.title": "Phytoplankton, Food &amp; Growth",
-  "food.p1": "Each harvest produces <strong>2 phytoplankton</strong> of the planted crop. An axolotl needs 2 units of its required plant food to level up. Every additional level requires 2 more units than the previous level.",
-  "food.p2": "Each axolotl starts with a base stay duration of <strong>10 days</strong>. Every level adds <strong>4 days</strong> to that duration.",
-  "food.example": "<b>Example:</b> A level 1 axolotl stays for 10 days. Level 2 becomes 14 days, level 3 becomes 18 days, and so on.",
-  "food.favTitle": "Favourite food",
-  "food.favP": "Each of the 8 pieces independently has a <strong>12.5% chance</strong> of assigning the crop associated with that piece's set as the axolotl's favourite food. This can make an axolotl with high-rarity pieces easier to feed than expected.",
-  "food.seedTitle": "Seed unlocks",
-  "food.aquarium": "Aquarium",
-  "food.seed": "Seed",
-  "food.note": "Plant growth time depends on the plant's internal rarity. This rarity is not displayed to the player.",
-  "shop.title": "Seed Shop",
-  "shop.p1": "The Seed Shop is run by a sleepy Andalusian farmer and offers a rotating selection of phytoplankton seeds. The shop refreshes its available seeds every <strong>2 days</strong>.",
-  "shop.howTitle": "How the shop works",
-  "shop.p2": "The shop has up to <strong>6 seed slots</strong>. Each slot can contain a random seed from the seeds you have currently unlocked. Seeds can appear repeatedly, so the same seed may occupy more than one slot.",
-  "shop.p3": "Each available seed stack also receives a random quantity. The quantity starts between <strong>1 and 2 seeds</strong> and increases as your aquarium progresses. Every aquarium level increases both the minimum and maximum available quantity by <strong>2</strong>.",
-  "shop.example": "<b>Example:</b> At the starting level, a seed slot can contain 1–2 seeds. As your aquarium level increases, the possible quantity rises by 2 for both the minimum and maximum.",
-  "shop.groupsTitle": "Seed groups",
-  "shop.p4": "The shop does not choose randomly from all unlocked seeds with one single probability pool. The six slots are separated into different seed groups. Each slot selects from the seeds assigned to its group.",
-  "shop.p5": "This means that newly unlocked seeds are not competing equally against every seed in the entire collection. A rare late-game seed can instead be selected from a much smaller group of possible seeds assigned to that shop slot.",
-  "shop.example2": "<b>Example:</b> If a slot has only 3 possible seeds in its group, each of those seeds has a much more meaningful chance to appear than if the game selected from all 15 unlocked seeds at once.",
-  "shop.slotsTitle": "Shop slots",
-  "shop.p6": "The Seed Shop starts with <strong>1 available slot</strong>. As you progress through the aquarium levels, additional slots are unlocked at specific milestones, up to a maximum of <strong>6 slots</strong>.",
-  "shop.level": "Aquarium level",
-  "shop.slots": "Shop slots",
-  "shop.example3": "<b>Shop slot progression:</b> An additional shop slot is unlocked at aquarium levels <strong>4, 8, 14, 20 and 24</strong>. This increases the shop from its initial <strong>1 slot</strong> to the maximum of <strong>6 slots</strong>.",
-  "shop.p7": "Because the selection changes only every two days, the player cannot simply buy any seed whenever they want. Checking the shop regularly and spending coins when useful seeds appear is an important part of progression.",
-  "visitors.title": "The Daily Visitor",
-  "visitors.p1": "A new axolotl visitor is <strong>guaranteed once per day</strong>. Its appearance never depends on chance.",
-  "visitors.p2": "Visiting axolotls can be adopted or left behind. If you do not adopt a visitor, it leaves the following day.",
-  "visitors.p3": "If your aquarium is at maximum capacity, you cannot adopt another axolotl until you transfer axolotls out of the aquarium and create free space.",
-  "visitors.genTitle": "How the Daily Visitor is generated",
-  "visitors.genP": "Its eight pieces are generated independently. For each piece, the game first checks which rarities you have unlocked. Every unlocked rarity has exactly the same probability.",
-  "visitors.unlocked": "Unlocked rarities",
-  "visitors.chance": "Chance per rarity",
-  "visitors.commonUncommon": "Common + Uncommon",
-  "visitors.plusRare": "+ Rare",
-  "visitors.plusEpic": "+ Epic",
-  "visitors.plusLegendary": "+ Legendary",
-  "visitors.plusXolotl": "+ Xólotl",
-  "visitors.example": "<b>Example:</b> If all six rarities are unlocked, every rarity has a 16.67% chance for each piece. Once a rarity is chosen, all unlocked pieces within that rarity are equally likely. Two Common pieces means 50% each; five Rare pieces means 20% each; ten Epic pieces means 10% each.",
-  "visitors.p4": "The process is repeated eight times, once for every piece. As your collection grows, more individual pieces can appear in the Daily Visitor, while the chance of obtaining any specific piece becomes smaller.",
-  "love.title": "The Enamored Axolotl",
-  "love.p1": "After a battle, every enemy axolotl independently checks whether it wants to join you. Its chance is determined by the rarity of each of its eight pieces.",
-  "love.rarity": "Piece rarity",
-  "love.contribution": "Contribution",
-  "love.p2": "Each of the eight pieces contributes according to its rarity. The final chance is calculated from all eight contributions.",
-  "love.example": "<b>Example:</b> An enemy with Common + Common + Rare + Rare + Epic + Epic + Legendary + Xólotl sends all eight rarity contributions into the final calculation.",
-  "love.multipleTitle": "When multiple enemies accept",
-  "love.multipleP": "None may accept, one may accept, or several may accept. If several accept, the manager randomly selects <strong>one</strong> of them, with every accepted axolotl having the same chance.",
-  "love.two": "2 accepted<br><strong>50% each</strong>",
-  "love.three": "3 accepted<br><strong>33.33% each</strong>",
-  "love.four": "4 accepted<br><strong>25% each</strong>",
-  "levels.title": "Aquarium Levels &amp; Progression",
-  "levels.p": "There are <strong>25 aquarium levels</strong>, containing 50 gameplay levels. Each aquarium level unlocks new axolotls and progressively increases capacity.",
-  "effects.title": "Status Effects",
-  "effects.p": "Status effects alter combat statistics or action probabilities. Effects can be stacked when an ability applies multiple charges.",
-  "effects.effect": "Effect",
-  "effects.result": "Result",
-  "abilities.title": "Axolotl Piece Abilities",
-  "abilities.p": "Piece effects activate according to how many copies of the same piece are present in an axolotl. The following values are reached at 2/8, 4/8, 6/8 and 8/8 copies.",
-  "worlds.title": "Gameplay Levels",
-  "worlds.p": "The game contains five worlds and 50 levels. Each level lists the enemy combinations encountered and the aquarium requirement.",
-  "legal.title": "Privacy Policy &amp; Copyright",
-  "legal.privacyTitle": "Privacy Policy",
-  "legal.privacy1": "Only Axolotls respects your privacy. This website is an informational guide for the game. It does not intentionally request personal information, create user accounts, or require you to submit personal data.",
-  "legal.privacy2": "If this website is later connected to analytics, external services, forms, cookies or other technologies that process personal data, this policy will be updated before those features are introduced.",
-  "legal.copyTitle": "Copyright &amp; Intellectual Property",
-  "legal.copy1": "<strong>Only Axolotls</strong>, its game content, characters, artwork, graphics, logos, animations, music, sounds, written content and software are protected intellectual property of their respective rights holder(s) and are not released for unauthorized commercial redistribution.",
-  "legal.copy2": "This guide is provided solely to help players understand and enjoy the game. Reproduction, redistribution, commercial use or modification of protected game assets is not permitted without prior authorization.",
-  "legal.copy3": "© 2026 Notter Animations.",
-  "rarity.common": "Common",
-  "rarity.uncommon": "Uncommon",
-  "rarity.rare": "Rare",
-  "rarity.epic": "Epic",
-  "rarity.legendary": "Legendary",
-  "rarity.xolotl": "Xólotl",
-  "unit.day": "day",
-  "unit.days": "days",
-  "unit.gem": "gem",
-  "unit.gems": "gems",
-  "seed.algae": "Algae",
-  "seed.potatoes": "Potatoes",
-  "seed.corn": "Corn",
-  "seed.coral": "Coral",
-  "seed.tomatoes": "Tomatoes",
-  "seed.wheat": "Wheat",
-  "seed.onions": "Onions",
-  "seed.carrots": "Carrots",
-  "seed.bananas": "Bananas",
-  "seed.beans": "Beans",
-  "seed.strawberries": "Strawberries",
-  "seed.oranges": "Oranges",
-  "seed.grapes": "Grapes",
-  "seed.chocolate": "Chocolate",
-  "seed.peppers": "Peppers",
-  "effect.suffocated": "Suffocated",
-  "effect.suffocated.r": "Loses 2 base HP at the end of the turn.",
-  "effect.numb": "Numb",
-  "effect.numb.r": "4% base chance to take no action that turn.",
-  "effect.confused": "Confused",
-  "effect.confused.r": "Loses 1 base HP and -1 base Defense at the end of the turn.",
-  "effect.sparkling": "Sparkling",
-  "effect.sparkling.r": "2% base chance to take no action and -1 base Speed.",
-  "effect.dazzled": "Dazzled",
-  "effect.dazzled.r": "4% base chance to miss the selected attack.",
-  "effect.weakened": "Weakened",
-  "effect.weakened.r": "-2 base Attack.",
-  "effect.unprotected": "Unprotected",
-  "effect.unprotected.r": "-2 base Defense.",
-  "effect.slow": "Slow",
-  "effect.slow.r": "-2 base Speed.",
-  "effect.exposed": "Exposed",
-  "effect.exposed.r": "+4% base chance to receive a critical hit.",
-  "effect.resentful": "Resentful",
-  "effect.resentful.r": "+10% base critical damage received.",
-  "effect.tired": "Tired",
-  "effect.tired.r": "-1 base Attack and -1 base Speed.",
-  "effect.dimmed": "Dimmed",
-  "effect.dimmed.r": "-1 base Attack and -1 base Defense.",
-  "effect.shutDown": "Shut Down",
-  "effect.shutDown.r": "-1 base Speed and -1 base Defense.",
-  "effect.discouraged": "Discouraged",
-  "effect.discouraged.r": "2% base chance to take no action and -1 base Attack.",
-  "effect.staggering": "Staggering",
-  "effect.staggering.r": "2% base chance to take no action and -1 base Defense.",
-  "effect.enamored": "Enamored",
-  "effect.enamored.r": "+2% base chance to receive a critical hit and +8% base critical damage received.",
-  "effect.vitalized": "Vitalized",
-  "effect.vitalized.r": "+1 Love.",
-  "effect.reinforced": "Reinforced",
-  "effect.reinforced.r": "+1 Defense.",
-  "effect.accelerated": "Accelerated",
-  "effect.accelerated.r": "+1 Speed.",
-  "effect.powered": "Powered",
-  "effect.powered.r": "+1 Attack."
+  "languageLabel": "ภาษา",
+
+  "pageTitle":
+    "Only Axolotls — คู่มือเกมอย่างเป็นทางการ",
+
+  "description":
+    "คู่มือเกม Only Axolotls อย่างเป็นทางการ — กลไกการเล่น การผสมพันธุ์ ความน่าจะเป็น เลเวล ความสามารถของแอกโซลอเติล เอฟเฟกต์ และอื่น ๆ",
+
+
+  /*
+  ========================================================
+  HERO
+  ========================================================
+  */
+
+  "hero.eyebrow":
+    "คู่มือเกมอย่างเป็นทางการ",
+
+  "hero.title":
+    "Only Axolotls",
+
+  "hero.subtitle":
+    "ทุกสิ่งที่คุณจำเป็นต้องรู้เกี่ยวกับตู้ปลา แอกโซลอเติล การผสมพันธุ์ การต่อสู้ การพัฒนา และความน่าจะเป็น",
+
+  "hero.note":
+    "คู่มือนี้อธิบายระบบและค่าต่าง ๆ ของเกมเวอร์ชันสุดท้ายในปัจจุบัน.",
+
+
+  /*
+  ========================================================
+  BASICS
+  ========================================================
+  */
+
+  "basics.title":
+    "Only Axolotls ทำงานอย่างไร",
+
+  "basics.p1":
+    "Only Axolotls สร้างขึ้นจากการสะสม ผสมพันธุ์ และพัฒนาแอกโซลอเติล แอกโซลอเติลแต่ละตัวประกอบด้วย <strong>ชิ้นส่วน 8 ชิ้น</strong> โดยแต่ละชิ้นมีระดับความหายากของตัวเอง และสามารถเพิ่มค่าสถิติ เอฟเฟกต์ หรือความสามารถพิเศษได้",
+
+  "basics.grid1.title":
+    "8 ชิ้นส่วน",
+
+  "basics.grid1.p":
+    "แอกโซลอเติลทุกตัวประกอบขึ้นจากชิ้นส่วน 8 ชิ้นที่ถูกกำหนดแยกจากกัน",
+
+  "basics.grid2.title":
+    "6 ระดับความหายาก",
+
+  "basics.grid2.p":
+    "ธรรมดา, ไม่ธรรมดา, หายาก, มหากาพย์, ตำนาน และ Xólotl",
+
+  "basics.grid3.title":
+    "การพัฒนา",
+
+  "basics.grid3.p":
+    "เลเวลตู้ปลาจะปลดล็อกแอกโซลอเติล เมล็ดพันธุ์ ความจุ และส่วนขยายใหม่ ๆ",
+
+  "basics.grid4.title":
+    "การต่อสู้",
+
+  "basics.grid4.p":
+    "ชิ้นส่วนสามารถมอบค่าสถิติและเอฟเฟกต์สถานะที่กำหนดรูปแบบการต่อสู้ของแอกโซลอเติล",
+
+
+  /*
+  ========================================================
+  BREEDING
+  ========================================================
+  */
+
+  "breeding.title":
+    "การผสมพันธุ์และการสืบทอดชิ้นส่วน",
+
+  "breeding.p1":
+    "เมื่อแอกโซลอเติลสองตัวผสมพันธุ์กัน ชิ้นส่วนทั้ง 8 ชิ้นของพวกมันจะถูกกำหนดแยกจากกัน",
+
+  "breeding.mother":
+    "35% แม่",
+
+  "breeding.father":
+    "35% พ่อ",
+
+  "breeding.mutation":
+    "30% การกลายพันธุ์",
+
+  "breeding.p2":
+    "สำหรับชิ้นส่วนแต่ละชิ้น มีโอกาส <strong>35%</strong> ที่จะสืบทอดชิ้นส่วนจากแม่ โอกาส <strong>35%</strong> ที่จะสืบทอดชิ้นส่วนจากพ่อ และโอกาส <strong>30%</strong> ที่ชิ้นส่วนจะกลายพันธุ์",
+
+  "breeding.mutationTitle":
+    "ความหายากของการกลายพันธุ์",
+
+  "breeding.mutationP":
+    "หากชิ้นส่วนของพ่อและแม่มีระดับความหายากเหมือนกัน การกลายพันธุ์จะใช้ระดับความหายากนั้นอย่างแน่นอน หากระดับความหายากแตกต่างกัน การกลายพันธุ์จะแบ่งโอกาสเท่า ๆ กันระหว่างทุกระดับความหายากที่อยู่ระหว่างชิ้นส่วนทั้งสอง รวมถึงระดับต้นทางและปลายทาง จากนั้นชิ้นส่วนจะถูกสุ่มเลือกจากระดับความหายากที่ได้",
+
+  "breeding.example":
+    "<b>ตัวอย่าง:</b> แม่ระดับตำนาน + พ่อระดับธรรมดา = มี 6 ระดับความหายาก: ธรรมดา, ไม่ธรรมดา, หายาก, มหากาพย์, ตำนาน และ Xólotl การกลายพันธุ์มีโอกาสเท่ากันที่จะตกอยู่ในหนึ่งในหกระดับนี้",
+
+  "breeding.genderTitle":
+    "เพศเมื่อเกิด",
+
+  "breeding.genderP":
+    "แอกโซลอเติลแรกเกิดทุกตัวมีโอกาส <strong>50% เป็นเพศเมีย</strong> และ <strong>50% เป็นเพศผู้</strong>",
+
+
+  /*
+  ========================================================
+  BREEDING TIME
+  ========================================================
+  */
+
+  "timers.title":
+    "เวลาผสมพันธุ์และค่าใช้จ่ายเป็นอัญมณี",
+
+  "timers.p":
+    "<strong>ระดับความหายากสูงสุดของชิ้นส่วนจากพ่อแม่ทั้งสองตัว</strong> จะเป็นตัวกำหนดทั้งเวลาผสมพันธุ์/ฟักไข่ และจำนวนอัญมณีที่ต้องใช้เพื่อข้ามกระบวนการ",
+
+  "timers.rarity":
+    "ระดับความหายากสูงสุด",
+
+  "timers.time":
+    "เวลา",
+
+  "timers.cost":
+    "ค่าใช้จ่ายในการข้ามเวลา",
+
+
+  /*
+  ========================================================
+  COINS
+  ========================================================
+  */
+
+  "coins.title":
+    "เหรียญ",
+
+  "coins.p1":
+    "เหรียญเป็นสกุลเงินหลักที่ใช้ในระบบการพัฒนาหลายอย่าง จำเป็นสำหรับการดูแลตู้ปลา ซื้อเมล็ดพันธุ์ และปลดล็อกพื้นที่ปลูกเพิ่มเติม",
+
+  "coins.earnTitle":
+    "วิธีรับเหรียญ",
+
+  "coins.earnP":
+    "สามารถรับเหรียญได้จากกิจกรรมหลายอย่าง:",
+
+  "coins.earn1":
+    "ชนะการต่อสู้",
+
+  "coins.earn2":
+    "ทำชุดแอกโซลอเติลให้สำเร็จ",
+
+  "coins.earn3":
+    "เก็บเกี่ยวพืชแพลงก์ตอนพืชที่โตเต็มที่",
+
+  "coins.breedTitle":
+    "ค่าใช้จ่ายในการผสมพันธุ์",
+
+  "coins.breedP":
+    "ต้องใช้เหรียญเพื่อให้แอกโซลอเติลสองตัวสามารถผสมพันธุ์กันได้ ค่าใช้จ่ายขึ้นอยู่กับระดับความหายากของ <strong>ชิ้นส่วนทั้ง 8 ชิ้นของแม่</strong> และ <strong>ชิ้นส่วนทั้ง 8 ชิ้นของพ่อ</strong> ระดับความหายากของพ่อแม่ทั้งสองจะถูกนำมาพิจารณาร่วมกันเพื่อคำนวณค่าใช้จ่ายสุดท้าย",
+
+  "coins.example":
+    "<b>สำคัญ:</b> การผสมพันธุ์ไม่ได้มอบเหรียญ ผู้เล่นต้องใช้เหรียญเพื่อเริ่มการผสมพันธุ์ เนื่องจากแอกโซลอเติลต้องได้รับการดูแลระหว่างกระบวนการผสมพันธุ์",
+
+  "coins.otherTitle":
+    "การใช้งานอื่น ๆ",
+
+  "coins.otherP":
+    "เหรียญยังสามารถใช้กับการซื้อที่เกี่ยวข้องกับการพัฒนา เช่น เมล็ดพันธุ์จาก <strong>ร้านเมล็ดพันธุ์</strong> และ <strong>ช่องปลูก</strong> เพิ่มเติมสำหรับการปลูกแพลงก์ตอนพืช",
+
+
+  /*
+  ========================================================
+  GEMS
+  ========================================================
+  */
+
+  "gems.title":
+    "อัญมณี",
+
+  "gems.p1":
+    "อัญมณีเป็นทรัพยากรพรีเมียมสำหรับการพัฒนา ซึ่งใช้เฉพาะเพื่อ <strong>เร่งกระบวนการต่าง ๆ ที่กำลังดำเนินอยู่ในเกม</strong>",
+
+  "gems.earnTitle":
+    "วิธีรับอัญมณี",
+
+  "gems.earn1":
+    "การปลดล็อกชิ้นส่วนจะมอบ <strong>1 อัญมณี</strong>",
+
+  "gems.earn2":
+    "การเพิ่มเลเวลแอกโซลอเติลแต่ละครั้งจะมอบ <strong>1 อัญมณี</strong>",
+
+  "gems.earn3":
+    "การทำเลเวลดาวให้สำเร็จเป็นครั้งแรกจะมอบ <strong>1 อัญมณี</strong>",
+
+  "gems.spendTitle":
+    "วิธีใช้อัญมณี",
+
+  "gems.spendP":
+    "สามารถใช้อัญมณีเพื่อทำให้กระบวนการต่อไปนี้เสร็จทันทีหรือเร่งเวลาได้:",
+
+  "gems.spend1":
+    "<strong>การผสมพันธุ์</strong> — เร่งกระบวนการผสมพันธุ์ที่กำลังดำเนินอยู่",
+
+  "gems.spend2":
+    "<strong>การฟักไข่</strong> — ทำให้เวลาที่เหลือของไข่เสร็จสิ้นทันที",
+
+  "gems.spend3":
+    "<strong>การเติบโตของพืช</strong> — ทำให้เวลาที่เหลือของพืชเสร็จสิ้นทันที",
+
+  "gems.spend4":
+    "<strong>การรีเฟรชร้านเมล็ดพันธุ์</strong> — รีเฟรชร้านทันทีแทนการรอการรีเซ็ตตามปกติ",
+
+  "gems.example":
+    "<b>สำคัญ:</b> อัญมณีไม่สามารถใช้แทนเหรียญและไม่ใช้สำหรับการซื้อทั่วไป อัญมณีมีไว้โดยเฉพาะเพื่อให้ผู้เล่นข้ามเวลารอและเร่งการพัฒนา",
+
+
+  /*
+  ========================================================
+  FOOD
+  ========================================================
+  */
+
+  "food.title":
+    "แพลงก์ตอนพืช อาหาร และการเติบโต",
+
+  "food.p1":
+    "การเก็บเกี่ยวแต่ละครั้งจะได้รับ <strong>แพลงก์ตอนพืช 2 หน่วย</strong> จากพืชที่ปลูก แอกโซลอเติลต้องการอาหารจากพืชที่ตรงกับความต้องการจำนวน 2 หน่วยเพื่อเพิ่มเลเวล ทุกเลเวลถัดไปต้องใช้เพิ่มขึ้นอีก 2 หน่วยจากเลเวลก่อนหน้า",
+
+  "food.p2":
+    "แอกโซลอเติลแต่ละตัวเริ่มต้นด้วยระยะเวลาพักพื้นฐาน <strong>10 วัน</strong> ทุกเลเวลจะเพิ่มระยะเวลานี้อีก <strong>4 วัน</strong>",
+
+  "food.example":
+    "<b>ตัวอย่าง:</b> แอกโซลอเติลเลเวล 1 จะอยู่เป็นเวลา 10 วัน เลเวล 2 จะเป็น 14 วัน เลเวล 3 จะเป็น 18 วัน และเพิ่มขึ้นต่อไปในลักษณะเดียวกัน",
+
+  "food.favTitle":
+    "อาหารโปรด",
+
+  "food.favP":
+    "ชิ้นส่วนทั้ง 8 ชิ้นมีโอกาส <strong>12.5%</strong> ต่อชิ้นในการกำหนดพืชที่เกี่ยวข้องกับชุดของชิ้นส่วนนั้นให้เป็นอาหารโปรดของแอกโซลอเติล สิ่งนี้อาจทำให้แอกโซลอเติลที่มีชิ้นส่วนระดับความหายากสูงเลี้ยงได้ง่ายกว่าที่คาดไว้",
+
+  "food.seedTitle":
+    "การปลดล็อกเมล็ดพันธุ์",
+
+  "food.aquarium":
+    "ตู้ปลา",
+
+  "food.seed":
+    "เมล็ดพันธุ์",
+
+  "food.note":
+    "เวลาเติบโตของพืชขึ้นอยู่กับระดับความหายากภายในของพืช ระดับความหายากนี้จะไม่แสดงให้ผู้เล่นเห็น",
+
+
+  /*
+  ========================================================
+  SEED SHOP
+  ========================================================
+  */
+
+  "shop.title":
+    "ร้านเมล็ดพันธุ์",
+
+  "shop.p1":
+    "ร้านเมล็ดพันธุ์ดำเนินการโดย Dahlia และนำเสนอเมล็ดแพลงก์ตอนพืชแบบหมุนเวียน ร้านจะรีเฟรชเมล็ดพันธุ์ที่มีให้เลือกทุก <strong>2 วัน</strong>",
+
+  "shop.howTitle":
+    "ร้านทำงานอย่างไร",
+
+  "shop.p2":
+    "ร้านมีช่องเมล็ดพันธุ์ได้สูงสุด <strong>6 ช่อง</strong> แต่ละช่องสามารถบรรจุเมล็ดพันธุ์แบบสุ่มจากเมล็ดที่คุณปลดล็อกแล้ว เมล็ดพันธุ์สามารถปรากฏซ้ำได้ ดังนั้นเมล็ดชนิดเดียวกันอาจปรากฏในมากกว่าหนึ่งช่อง",
+
+  "shop.p3":
+    "กองเมล็ดพันธุ์แต่ละกองที่มีอยู่จะได้รับจำนวนแบบสุ่ม จำนวนเริ่มต้นอยู่ระหว่าง <strong>1 ถึง 2 เมล็ด</strong> และจะเพิ่มขึ้นตามความก้าวหน้าของตู้ปลา ทุกเลเวลตู้ปลาจะเพิ่มทั้งจำนวนขั้นต่ำและสูงสุดที่มีอยู่ขึ้น <strong>2</strong>",
+
+  "shop.example":
+    "<b>ตัวอย่าง:</b> ในเลเวลเริ่มต้น ช่องเมล็ดพันธุ์สามารถมีเมล็ด 1–2 เมล็ด เมื่อเลเวลตู้ปลาเพิ่มขึ้น จำนวนที่เป็นไปได้จะเพิ่มขึ้น 2 ทั้งค่าต่ำสุดและค่าสูงสุด",
+
+  "shop.groupsTitle":
+    "กลุ่มเมล็ดพันธุ์",
+
+  "shop.p4":
+    "ร้านไม่ได้สุ่มจากเมล็ดพันธุ์ที่ปลดล็อกทั้งหมดด้วยกลุ่มความน่าจะเป็นเพียงกลุ่มเดียว ช่องทั้งหกถูกแบ่งออกเป็นกลุ่มเมล็ดพันธุ์ที่แตกต่างกัน แต่ละช่องจะเลือกจากเมล็ดพันธุ์ที่ถูกกำหนดให้กับกลุ่มของมัน",
+
+  "shop.p5":
+    "นั่นหมายความว่าเมล็ดพันธุ์ที่เพิ่งปลดล็อกไม่ได้แข่งขันด้วยโอกาสเท่า ๆ กันกับเมล็ดทุกชนิดในคอลเลกชันทั้งหมด เมล็ดพันธุ์หายากในช่วงท้ายเกมอาจถูกเลือกจากกลุ่มเมล็ดพันธุ์ที่เล็กกว่ามากซึ่งกำหนดไว้สำหรับช่องร้านนั้น",
+
+  "shop.example2":
+    "<b>ตัวอย่าง:</b> หากช่องหนึ่งมีเมล็ดพันธุ์ที่เป็นไปได้เพียง 3 ชนิด เมล็ดพันธุ์แต่ละชนิดจะมีโอกาสปรากฏที่มีความหมายมากกว่าการสุ่มจากเมล็ดพันธุ์ที่ปลดล็อกแล้วทั้งหมด 15 ชนิดในครั้งเดียว",
+
+  "shop.slotsTitle":
+    "ช่องร้าน",
+
+  "shop.p6":
+    "ร้านเมล็ดพันธุ์เริ่มต้นด้วย <strong>1 ช่องที่ใช้งานได้</strong> เมื่อคุณพัฒนาผ่านเลเวลต่าง ๆ ของตู้ปลา จะมีการปลดล็อกช่องเพิ่มเติมตามจุดสำคัญที่กำหนดไว้ สูงสุด <strong>6 ช่อง</strong>",
+
+  "shop.level":
+    "เลเวลตู้ปลา",
+
+  "shop.slots":
+    "ช่องร้าน",
+
+  "shop.example3":
+    "<b>การเพิ่มช่องร้าน:</b> ช่องร้านเพิ่มเติมจะถูกปลดล็อกที่เลเวลตู้ปลา <strong>4, 8, 14, 20 และ 24</strong> ทำให้ร้านเพิ่มจาก <strong>1 ช่อง</strong> เริ่มต้นเป็นสูงสุด <strong>6 ช่อง</strong>",
+
+  "shop.p7":
+    "เนื่องจากการเลือกเมล็ดจะเปลี่ยนทุกสองวันเท่านั้น ผู้เล่นจึงไม่สามารถซื้อเมล็ดพันธุ์ใดก็ได้ตามต้องการ การตรวจสอบร้านเป็นประจำและใช้เหรียญเมื่อมีเมล็ดพันธุ์ที่มีประโยชน์ปรากฏขึ้นจึงเป็นส่วนสำคัญของการพัฒนา",
+
+
+  /*
+  ========================================================
+  DAILY VISITOR
+  ========================================================
+  */
+
+  "visitors.title":
+    "ผู้มาเยือนประจำวัน",
+
+  "visitors.p1":
+    "แอกโซลอเติลผู้มาเยือนใหม่จะปรากฏขึ้น <strong>อย่างน้อยวันละหนึ่งตัว</strong> การปรากฏตัวของมันไม่ขึ้นอยู่กับโอกาส",
+
+  "visitors.p2":
+    "แอกโซลอเติลผู้มาเยือนสามารถรับเลี้ยงหรือปล่อยไว้ได้ หากคุณไม่รับเลี้ยงผู้มาเยือน มันจะจากไปในวันถัดไป",
+
+  "visitors.p3":
+    "หากตู้ปลาของคุณมีความจุเต็ม คุณจะไม่สามารถรับเลี้ยงแอกโซลอเติลเพิ่มได้จนกว่าจะย้ายแอกโซลอเติลบางตัวออกจากตู้ปลาและสร้างพื้นที่ว่าง",
+
+  "visitors.genTitle":
+    "ผู้มาเยือนประจำวันถูกสร้างขึ้นอย่างไร",
+
+  "visitors.genP":
+    "ชิ้นส่วนทั้ง 8 ชิ้นของมันจะถูกสร้างขึ้นแยกจากกัน สำหรับแต่ละชิ้น เกมจะตรวจสอบก่อนว่าคุณปลดล็อกระดับความหายากใดแล้ว ระดับความหายากที่ปลดล็อกแล้วทุกระดับมีโอกาสเท่ากันทุกประการ",
+
+  "visitors.unlocked":
+    "ระดับความหายากที่ปลดล็อก",
+
+  "visitors.chance":
+    "โอกาสต่อระดับความหายาก",
+
+  "visitors.commonUncommon":
+    "ธรรมดา + ไม่ธรรมดา",
+
+  "visitors.plusRare":
+    "+ หายาก",
+
+  "visitors.plusEpic":
+    "+ มหากาพย์",
+
+  "visitors.plusLegendary":
+    "+ ตำนาน",
+
+  "visitors.plusXolotl":
+    "+ Xólotl",
+
+  "visitors.example":
+    "<b>ตัวอย่าง:</b> หากปลดล็อกระดับความหายากทั้งหกระดับแล้ว แต่ละระดับจะมีโอกาส 16.67% สำหรับชิ้นส่วนแต่ละชิ้น เมื่อเลือกระดับความหายากแล้ว ชิ้นส่วนทั้งหมดที่ปลดล็อกภายในระดับนั้นจะมีโอกาสเท่ากัน ตัวอย่างเช่น ชิ้นส่วนธรรมดา 2 ชิ้นจะมีโอกาส 50% ต่อชิ้น ชิ้นส่วนหายาก 5 ชิ้นจะมีโอกาส 20% ต่อชิ้น และชิ้นส่วนมหากาพย์ 10 ชิ้นจะมีโอกาส 10% ต่อชิ้น",
+
+  "visitors.p4":
+    "กระบวนการนี้จะทำซ้ำ 8 ครั้ง ครั้งหนึ่งสำหรับแต่ละชิ้นส่วน เมื่อคอลเลกชันของคุณเติบโตขึ้น ชิ้นส่วนแต่ละชนิดก็สามารถปรากฏในผู้มาเยือนประจำวันได้มากขึ้น ขณะที่โอกาสที่จะได้รับชิ้นส่วนเฉพาะใด ๆ จะลดลง",
+
+
+  /*
+  ========================================================
+  ENAMORED AXOLOTL
+  ========================================================
+  */
+
+  "love.title":
+    "แอกโซลอเติลผู้หลงรัก",
+
+  "love.p1":
+    "หลังจากการต่อสู้ แอกโซลอเติลศัตรูแต่ละตัวจะตรวจสอบแยกกันว่าต้องการเข้าร่วมกับคุณหรือไม่ โอกาสของมันจะถูกกำหนดจากระดับความหายากของชิ้นส่วนทั้ง 8 ชิ้น",
+
+  "love.rarity":
+    "ระดับความหายากของชิ้นส่วน",
+
+  "love.contribution":
+    "ส่วนสนับสนุน",
+
+  "love.p2":
+    "ชิ้นส่วนทั้ง 8 ชิ้นจะมีส่วนสนับสนุนตามระดับความหายากของมัน โอกาสสุดท้ายจะคำนวณจากส่วนสนับสนุนทั้งหมด",
+
+  "love.example":
+    "<b>ตัวอย่าง:</b> ศัตรูที่มี ธรรมดา + ธรรมดา + หายาก + หายาก + มหากาพย์ + มหากาพย์ + ตำนาน + Xólotl จะนำส่วนสนับสนุนจากระดับความหายากทั้ง 8 ชิ้นเข้าสู่การคำนวณขั้นสุดท้าย",
+
+  "love.multipleTitle":
+    "เมื่อศัตรูหลายตัวตอบรับ",
+
+  "love.multipleP":
+    "อาจไม่มีตัวใดตอบรับ อาจมีหนึ่งตัวตอบรับ หรืออาจมีหลายตัวตอบรับ หากมีหลายตัวตอบรับ ระบบจะสุ่มเลือก <strong>หนึ่งตัว</strong> โดยแอกโซลอเติลที่ตอบรับทุกตัวจะมีโอกาสเท่ากัน",
+
+  "love.two":
+    "ตอบรับ 2 ตัว<br><strong>50% ต่อหนึ่งตัว</strong>",
+
+  "love.three":
+    "ตอบรับ 3 ตัว<br><strong>33.33% ต่อหนึ่งตัว</strong>",
+
+  "love.four":
+    "ตอบรับ 4 ตัว<br><strong>25% ต่อหนึ่งตัว</strong>",
+
+
+  /*
+  ========================================================
+  LEVELS
+  ========================================================
+  */
+
+  "levels.title":
+    "เลเวลตู้ปลาและการพัฒนา",
+
+  "levels.p":
+    "มี <strong>25 เลเวลตู้ปลา</strong> ซึ่งประกอบด้วยเลเวลการเล่น 50 เลเวล แต่ละเลเวลตู้ปลาจะปลดล็อกแอกโซลอเติลใหม่และเพิ่มความจุขึ้นเรื่อย ๆ",
+
+
+  /*
+  ========================================================
+  EFFECTS
+  ========================================================
+  */
+
+  "effects.title":
+    "เอฟเฟกต์สถานะ",
+
+  "effects.p":
+    "เอฟเฟกต์สถานะจะเปลี่ยนแปลงค่าสถิติการต่อสู้หรือความน่าจะเป็นของการกระทำ เอฟเฟกต์สามารถซ้อนทับกันได้เมื่อความสามารถใช้หลายชาร์จ",
+
+  "effects.effect":
+    "เอฟเฟกต์",
+
+  "effects.result":
+    "ผลลัพธ์",
+
+
+  /*
+  ========================================================
+  ABILITIES
+  ========================================================
+  */
+
+  "abilities.title":
+    "ความสามารถจากชิ้นส่วนแอกโซลอเติล",
+
+  "abilities.p":
+    "เอฟเฟกต์ของชิ้นส่วนจะทำงานตามจำนวนสำเนาของชิ้นส่วนเดียวกันที่มีอยู่ในแอกโซลอเติล ค่าต่อไปนี้จะเกิดขึ้นเมื่อมีชิ้นส่วนซ้ำ 2/8, 4/8, 6/8 และ 8/8 ชิ้น",
+
+
+  /*
+  ========================================================
+  WORLDS
+  ========================================================
+  */
+
+  "worlds.title":
+    "เลเวลการเล่น",
+
+  "worlds.p":
+    "เกมประกอบด้วย 5 โลกและ 50 เลเวล แต่ละเลเวลจะแสดงชุดศัตรูที่พบและข้อกำหนดของตู้ปลา",
+
+
+  /*
+  ========================================================
+  DYNAMIC CONTENT
+  ========================================================
+  */
+
+  "dynamic.gameplayLevels":
+    "เลเวลการเล่น",
+
+  "dynamic.food":
+    "อาหาร",
+
+  "dynamic.capacity":
+    "ความจุ",
+
+  "dynamic.axolotls":
+    "แอกโซลอเติล",
+
+
+  /*
+  ========================================================
+  AQUARIUM LEVELS
+  ========================================================
+  */
+
+  "level.1.title":
+    "ตู้ปลา 1 — ผู้อยู่อาศัยกลุ่มแรก",
+
+  "level.2.title":
+    "ตู้ปลา 2 — สัญชาตญาณแรก",
+
+  "level.3.title":
+    "ตู้ปลา 3 — ความเป็นไปได้เล็ก ๆ",
+
+  "level.4.title":
+    "ตู้ปลา 4 — ผลประโยชน์แรก",
+
+  "level.5.title":
+    "ตู้ปลา 5 — พลังเสริม",
+
+  "level.6.title":
+    "ตู้ปลา 6 — เอฟเฟกต์แรก",
+
+  "level.7.title":
+    "ตู้ปลา 7 — ทำให้อ่อนแอ",
+
+  "level.8.title":
+    "ตู้ปลา 8 — จุดอ่อน",
+
+  "level.9.title":
+    "ตู้ปลา 9 — วัสดุชั้นยอด",
+
+  "level.10.title":
+    "ตู้ปลา 10 — พลังและความเร็ว",
+
+  "level.11.title":
+    "ตู้ปลา 11 — โชคลาภ",
+
+  "level.12.title":
+    "ตู้ปลา 12 — แสงและพิษ",
+
+  "level.13.title":
+    "ตู้ปลา 13 — สถานะบั่นทอน",
+
+  "level.14.title":
+    "ตู้ปลา 14 — พลังฮีโร่",
+
+  "level.15.title":
+    "ตู้ปลา 15 — พลังชั้นยอด",
+
+  "level.16.title":
+    "ตู้ปลา 16 — พลังเหนือธรรมดา",
+
+  "level.17.title":
+    "ตู้ปลา 17 — พลังโจมตี",
+
+  "level.18.title":
+    "ตู้ปลา 18 — ขีดจำกัดแห่งความตาย",
+
+  "level.19.title":
+    "ตู้ปลา 19 — พลังระดับตำนาน",
+
+  "level.20.title":
+    "ตู้ปลา 20 — ความแข็งแกร่งระดับตำนาน",
+
+  "level.21.title":
+    "ตู้ปลา 21 — พลังศักดิ์สิทธิ์",
+
+  "level.22.title":
+    "ตู้ปลา 22 — ความเป็นคู่",
+
+  "level.23.title":
+    "ตู้ปลา 23 — ภาพสะท้อน",
+
+  "level.24.title":
+    "ตู้ปลา 24 — พลังที่ปลดปล่อย",
+
+  "level.25.title":
+    "ตู้ปลา 25 — ตู้ปลาที่ยิ่งใหญ่ที่สุด",
+
+
+  /*
+  ========================================================
+  ABILITY GROUPS
+  ========================================================
+  */
+
+  "abilityGroup.0.title":
+    "❤️ ความรัก",
+
+  "abilityGroup.0.piece.0":
+    "ใบไม้: +1/+2/+3/+5 ความรัก",
+
+  "abilityGroup.0.piece.1":
+    "น้ำผึ้ง: 1/2/3/4 ชาร์จเพิ่มพลังให้ทีม",
+
+  "abilityGroup.0.piece.2":
+    "แอปเปิล: +2/+4/+6/+10 ความรัก",
+
+  "abilityGroup.0.piece.3":
+    "Netfil25: 2/3/4/5 ชาร์จเพิ่มพลังให้ทีม",
+
+  "abilityGroup.0.piece.4":
+    "หัวใจ: 2/3/4/5 ชาร์จเพิ่มพลัง + 5/5/5/10 ความรัก",
+
+
+  "abilityGroup.1.title":
+    "🛡️ การป้องกัน",
+
+  "abilityGroup.1.piece.0":
+    "หิน: +1/+2/+3/+5 การป้องกัน",
+
+  "abilityGroup.1.piece.1":
+    "ทองแดง: 1/2/3/4 ชาร์จเสริมพลังให้ทีม",
+
+  "abilityGroup.1.piece.2":
+    "เหล็ก: +2/+4/+6/+10 การป้องกัน",
+
+  "abilityGroup.1.piece.3":
+    "เพชร: 2/3/4/5 ชาร์จเสริมพลังให้ทีม",
+
+  "abilityGroup.1.piece.4":
+    "Lonsdaleite: 2/3/4/5 ชาร์จเสริมพลัง + 5/5/5/10 การป้องกัน",
+
+
+  "abilityGroup.2.title":
+    "💨 ความเร็ว",
+
+  "abilityGroup.2.piece.0":
+    "ขนนก: +1/+2/+3/+5 ความเร็ว",
+
+  "abilityGroup.2.piece.1":
+    "สายลม: 1/2/3/4 ชาร์จเร่งความเร็วให้ทีม",
+
+  "abilityGroup.2.piece.2":
+    "Crimson: +2/+4/+6/+10 ความเร็ว",
+
+  "abilityGroup.2.piece.3":
+    "พายุทอร์นาโด: 2/3/4/5 ชาร์จเร่งความเร็วให้ทีม",
+
+  "abilityGroup.2.piece.4":
+    "ดาว: 2/3/4/5 ชาร์จเร่งความเร็ว + 5/5/5/10 ความเร็ว",
+
+
+  "abilityGroup.3.title":
+    "⚔️ การโจมตี",
+
+  "abilityGroup.3.piece.0":
+    "กรงเล็บ: +1/+2/+3/+5 การโจมตี",
+
+  "abilityGroup.3.piece.1":
+    "เขี้ยว: 1/2/3/4 ชาร์จเพิ่มพลังให้ทีม",
+
+  "abilityGroup.3.piece.2":
+    "หนาม: +2/+4/+6/+10 การโจมตี",
+
+  "abilityGroup.3.piece.3":
+    "ดาบ: 2/3/4/5 ชาร์จเพิ่มพลังให้ทีม",
+
+  "abilityGroup.3.piece.4":
+    "ปีศาจ: 2/3/4/5 ชาร์จเพิ่มพลัง + 5/5/5/10 การโจมตี",
+
+
+  "abilityGroup.4.title":
+    "🎯 คริติคอล",
+
+  "abilityGroup.4.piece.0":
+    "ลูกเต๋า: +1/+2/+3/+5% โอกาสคริติคอล",
+
+  "abilityGroup.4.piece.1":
+    "โชคลาภ: +10/+15/+20/+40% โอกาสคริติคอล",
+
+  "abilityGroup.4.piece.2":
+    "อุกกาบาต: +2/+4/+6/+10% ความเสียหายคริติคอล",
+
+  "abilityGroup.4.piece.3":
+    "Notter: +10/+30/+60/+100% ความเสียหายคริติคอล",
+
+  "abilityGroup.4.piece.4":
+    "ดาวเคราะห์: +15/+50/+75/+100% โอกาสคริติคอล และ +30/+90/+200/+300% ความเสียหายคริติคอล",
+
+
+  "abilityGroup.5.title":
+    "🧪 เอฟเฟกต์",
+
+  "abilityGroup.5.piece.0":
+    "ไฟ → สำลัก 1/2/3/5 ครั้ง",
+
+  "abilityGroup.5.piece.1":
+    "น้ำแข็ง → ชา 1/2/3/5 ครั้ง",
+
+  "abilityGroup.5.piece.2":
+    "พิษ → สับสน 1/2/3/5 ครั้ง",
+
+  "abilityGroup.5.piece.3":
+    "ไฟฟ้า → ช็อต 1/2/3/5 ครั้ง",
+
+  "abilityGroup.5.piece.4":
+    "แสง → ตาพร่า 1/2/3/5 ครั้ง",
+
+
+  "abilityGroup.6.title":
+    "🧪 เอฟเฟกต์",
+
+  "abilityGroup.6.piece.0":
+    "ความหนาว → อ่อนแอ 1/2/3/5 ครั้ง",
+
+  "abilityGroup.6.piece.1":
+    "ฟองสบู่ → ไร้การป้องกัน 1/2/3/5 ครั้ง",
+
+  "abilityGroup.6.piece.2":
+    "โคลน → ช้าลง 1/2/3/5 ครั้ง",
+
+  "abilityGroup.6.piece.3":
+    "เป้าหมาย → เปิดเผย 1/2/3/5 ครั้ง",
+
+  "abilityGroup.6.piece.4":
+    "เศร้า → ขุ่นเคือง 1/2/3/5 ครั้ง",
+
+
+  "abilityGroup.7.title":
+    "🧪 เอฟเฟกต์",
+
+  "abilityGroup.7.piece.0":
+    "หลับ → เหนื่อย 1/2/3/5 ครั้ง",
+
+  "abilityGroup.7.piece.1":
+    "เงา → มืดมัว 1/2/3/5 ครั้ง",
+
+  "abilityGroup.7.piece.2":
+    "AI → ปิดระบบ 1/2/3/5 ครั้ง",
+
+  "abilityGroup.7.piece.3":
+    "ความเกียจคร้าน → หมดกำลังใจ 1/2/3/5 ครั้ง",
+
+  "abilityGroup.7.piece.4":
+    "แมงกะพรุน → โซเซ 1/2/3/5 ครั้ง",
+
+
+  "abilityGroup.8.title":
+    "🧪 เอฟเฟกต์",
+
+  "abilityGroup.8.piece.0":
+    "ศักดิ์สิทธิ์ → หลงรัก 1/2/3/5 ครั้ง",
+
+
+  "abilityGroup.9.title":
+    "🪄 เอฟเฟกต์คู่",
+
+  "abilityGroup.9.piece.0":
+    "ผี → เหนื่อย + ไร้การป้องกัน (1/2/3/5 ครั้งต่อเอฟเฟกต์)",
+
+  "abilityGroup.9.piece.1":
+    "น้ำค้างแข็ง → อ่อนแอ + ช้าลง (1/2/3/5 ครั้งต่อเอฟเฟกต์)",
+
+  "abilityGroup.9.piece.2":
+    "ทราย → โซเซ + ชา (1/2/3/5 ครั้งต่อเอฟเฟกต์)",
+
+  "abilityGroup.9.piece.3":
+    "กระจก → เปิดเผย + หมดกำลังใจ (1/2/3/5 ครั้งต่อเอฟเฟกต์)",
+
+  "abilityGroup.9.piece.4":
+    "แมกมา → สำลัก + ตาพร่า (1/2/3/5 ครั้งต่อเอฟเฟกต์)",
+
+
+  "abilityGroup.10.title":
+    "🪄 เอฟเฟกต์คู่",
+
+  "abilityGroup.10.piece.0":
+    "กัมมันตรังสี → สับสน + ปิดระบบ (1/2/3/5 ครั้งต่อเอฟเฟกต์)",
+
+  "abilityGroup.10.piece.1":
+    "ฟลามิงโก → หลงรัก + เพิ่มพลังชีวิตให้ทีม (1/2/3/5 ครั้งต่อเอฟเฟกต์)",
+
+  "abilityGroup.10.piece.2":
+    "อาร์เคด → ช็อต + เร่งความเร็วให้ทีม (1/2/3/5 ครั้งต่อเอฟเฟกต์)",
+
+  "abilityGroup.10.piece.3":
+    "คราส → มืดมัว + เสริมพลังให้ทีม (1/2/3/5 ครั้งต่อเอฟเฟกต์)",
+
+  "abilityGroup.10.piece.4":
+    "ทหาร → ขุ่นเคือง + เพิ่มพลังให้ทีม (1/2/3/5 ครั้งต่อเอฟเฟกต์)",
+
+
+  /*
+  ========================================================
+  WORLDS
+  ========================================================
+  */
+
+  "world.0.title":
+    "โลก 1 — สระน้ำเล็ก ๆ",
+
+  "world.1.title":
+    "โลก 2 — สายน้ำป่า",
+
+  "world.2.title":
+    "โลก 3 — ห้วงลึก",
+
+  "world.3.title":
+    "โลก 4 — อาณาจักรยักษ์",
+
+  "world.4.title":
+    "โลก 5 — ตู้ปลาที่ยิ่งใหญ่ที่สุด",
+
+
+  /*
+  ========================================================
+  WORLD 1
+  ========================================================
+  */
+
+  "world.0.level.0.title":
+    "1 — บ้านหลังใหม่",
+  "world.0.level.0.aquarium":
+    "ตู้ปลา 1",
+  "world.0.level.0.enemies":
+    "ชมพู",
+
+  "world.0.level.1.title":
+    "2 — การเคลื่อนไหวครั้งแรก",
+  "world.0.level.1.aquarium":
+    "ตู้ปลา 1",
+  "world.0.level.1.enemies":
+    "ใบไม้",
+
+  "world.0.level.2.title":
+    "3 — ความแตกต่างครั้งแรก",
+  "world.0.level.2.aquarium":
+    "—",
+  "world.0.level.2.enemies":
+    "ใบไม้ + ขนนก",
+
+  "world.0.level.3.title":
+    "4 — กรงเล็บเล็ก ๆ",
+  "world.0.level.3.aquarium":
+    "ตู้ปลา 2",
+  "world.0.level.3.enemies":
+    "ขนนก + กรงเล็บ",
+
+  "world.0.level.4.title":
+    "5 — สองต่อสอง",
+  "world.0.level.4.aquarium":
+    "ตู้ปลา 3",
+  "world.0.level.4.enemies":
+    "ใบไม้ + ลูกเต๋า · หิน + อุกกาบาต",
+
+  "world.0.level.5.title":
+    "6 — เอฟเฟกต์แรก",
+  "world.0.level.5.aquarium":
+    "ตู้ปลา 3",
+  "world.0.level.5.enemies":
+    "ไฟ + กรงเล็บ · ความหนาว + ขนนก",
+
+  "world.0.level.6.title":
+    "7 — การทำให้อ่อนแอ",
+  "world.0.level.6.aquarium":
+    "ตู้ปลา 4",
+  "world.0.level.6.enemies":
+    "หิน + ฟองสบู่ · กรงเล็บ + โคลน",
+
+  "world.0.level.7.title":
+    "8 — จุดอ่อน",
+  "world.0.level.7.aquarium":
+    "ตู้ปลา 4",
+  "world.0.level.7.enemies":
+    "ใบไม้ + เป้าหมาย · เศร้า + หิน",
+
+  "world.0.level.8.title":
+    "9 — วัสดุชั้นยอด",
+  "world.0.level.8.aquarium":
+    "ตู้ปลา 5",
+  "world.0.level.8.enemies":
+    "แอปเปิล + สายลม · เหล็ก + เขี้ยว",
+
+  "world.0.level.9.title":
+    "10 — บททดสอบแรก",
+  "world.0.level.9.aquarium":
+    "ตู้ปลา 5",
+  "world.0.level.9.enemies":
+    "แอปเปิล + เขี้ยว · สายลม + เหล็ก",
+
+
+  /*
+  ========================================================
+  WORLD 2
+  ========================================================
+  */
+
+  "world.1.level.0.title":
+    "11 — โชคลาภตื่นขึ้น",
+  "world.1.level.0.aquarium":
+    "ตู้ปลา 6",
+  "world.1.level.0.enemies":
+    "โชคลาภ + ไฟ · ความหนาว + ไฟฟ้า",
+
+  "world.1.level.1.title":
+    "12 — การปลดปล่อยพลัง",
+  "world.1.level.1.aquarium":
+    "—",
+  "world.1.level.1.enemies":
+    "ไฟฟ้า + กรงเล็บ · ไฟ + ขนนก",
+
+  "world.1.level.2.title":
+    "13 — พิษในสายน้ำ",
+  "world.1.level.2.aquarium":
+    "ตู้ปลา 7",
+  "world.1.level.2.enemies":
+    "พิษ + โคลน · ฟองสบู่ + เป้าหมาย · ไฟ + กรงเล็บ",
+
+  "world.1.level.3.title":
+    "14 — สายตาที่หายไป",
+  "world.1.level.3.aquarium":
+    "ตู้ปลา 7",
+  "world.1.level.3.enemies":
+    "โคลน + หิน · เป้าหมาย + ขนนก · เศร้า + กรงเล็บ",
+
+  "world.1.level.4.title":
+    "15 — แอปเปิลพิษ",
+  "world.1.level.4.aquarium":
+    "ตู้ปลา 8",
+  "world.1.level.4.enemies":
+    "แอปเปิล + พิษ · ฟองสบู่ + เหล็ก · สายลม + เขี้ยว",
+
+  "world.1.level.5.title":
+    "16 — ดวงตาไฟฟ้า",
+  "world.1.level.5.aquarium":
+    "ตู้ปลา 8",
+  "world.1.level.5.enemies":
+    "ไฟฟ้า + เป้าหมาย · เศร้า + โคลน · ฟองสบู่ + กรงเล็บ",
+
+  "world.1.level.6.title":
+    "17 — หัวใจแห่งการต่อสู้",
+  "world.1.level.6.aquarium":
+    "ตู้ปลา 9",
+  "world.1.level.6.enemies":
+    "แอปเปิล + เหล็ก · สายลม + หนาม · เป้าหมาย + เขี้ยว",
+
+  "world.1.level.7.title":
+    "18 — เหล็กและพิษ",
+  "world.1.level.7.aquarium":
+    "ตู้ปลา 9",
+  "world.1.level.7.enemies":
+    "พิษ + เหล็ก · แอปเปิล + หนาม · โคลน + กรงเล็บ",
+
+  "world.1.level.8.title":
+    "19 — ความเร็วคริติคอล",
+  "world.1.level.8.aquarium":
+    "ตู้ปลา 10",
+  "world.1.level.8.enemies":
+    "สายลม + Crimson · โชคลาภ + หนาม · แอปเปิล + ไฟฟ้า",
+
+  "world.1.level.9.title":
+    "20 — พายุ",
+  "world.1.level.9.aquarium":
+    "ตู้ปลา 10",
+  "world.1.level.9.enemies":
+    "สายลม + หนาม · ไฟฟ้า + Crimson · โชคลาภ + กรงเล็บ",
+
+
+  /*
+  ========================================================
+  WORLD 3
+  ========================================================
+  */
+
+  "world.2.level.0.title":
+    "21 — หลับใหลลึก",
+  "world.2.level.0.aquarium":
+    "ตู้ปลา 11",
+  "world.2.level.0.enemies":
+    "หลับ + โชคลาภ · ไฟฟ้า + แอปเปิล · เป้าหมาย + เหล็ก",
+
+  "world.2.level.1.title":
+    "22 — แสงอันตราย",
+  "world.2.level.1.aquarium":
+    "ตู้ปลา 11",
+  "world.2.level.1.enemies":
+    "แสง + หนาม · พิษ + Crimson · โชคลาภ + โคลน",
+
+  "world.2.level.2.title":
+    "23 — เงาทั้งสี่",
+  "world.2.level.2.aquarium":
+    "ตู้ปลา 12",
+  "world.2.level.2.enemies":
+    "แสง + กรงเล็บ · พิษ + เหล็ก · หลับ + ขนนก · ไฟฟ้า + หนาม",
+
+  "world.2.level.3.title":
+    "24 — พิษและความเร็ว",
+  "world.2.level.3.aquarium":
+    "ตู้ปลา 12",
+  "world.2.level.3.enemies":
+    "พิษ + Crimson · แสง + ขนนก · ไฟฟ้า + กรงเล็บ · หลับ + เหล็ก",
+
+  "world.2.level.4.title":
+    "25 — พลังของ Notter",
+  "world.2.level.4.aquarium":
+    "ตู้ปลา 13",
+  "world.2.level.4.enemies":
+    "หลับ + Notter · เงา + แอปเปิล · โชคลาภ + หนาม · แสง + Crimson",
+
+  "world.2.level.5.title":
+    "26 — เงาที่รวดเร็ว",
+  "world.2.level.5.aquarium":
+    "ตู้ปลา 13",
+  "world.2.level.5.enemies":
+    "เงา + ขนนก · หลับ + หนาม · แสง + เหล็ก · พิษ + กรงเล็บ",
+
+  "world.2.level.6.title":
+    "27 — ปัญญาประดิษฐ์",
+  "world.2.level.6.aquarium":
+    "ตู้ปลา 14",
+  "world.2.level.6.enemies":
+    "AI + โชคลาภ · เงา + หนาม · หลับ + Crimson · แสง + เหล็ก",
+
+  "world.2.level.7.title":
+    "28 — อาณาจักรที่มืดมน",
+  "world.2.level.7.aquarium":
+    "ตู้ปลา 14",
+  "world.2.level.7.enemies":
+    "AI + ขนนก · เงา + กรงเล็บ · พิษ + หนาม · โชคลาภ + เหล็ก",
+
+  "world.2.level.8.title":
+    "29 — ยักษ์กลุ่มแรก",
+  "world.2.level.8.aquarium":
+    "ตู้ปลา 15",
+  "world.2.level.8.enemies":
+    "Netfil25 + เหล็ก · เพชร + หนาม · พายุทอร์นาโด + โชคลาภ · AI + แอปเปิล",
+
+  "world.2.level.9.title":
+    "30 — หัวใจแห่งห้วงลึก",
+  "world.2.level.9.aquarium":
+    "ตู้ปลา 15",
+  "world.2.level.9.enemies":
+    "Netfil25 + หนาม · เพชร + Crimson · พายุทอร์นาโด + กรงเล็บ · AI + โชคลาภ",
+
+
+  /*
+  ========================================================
+  WORLD 4
+  ========================================================
+  */
+
+  "world.3.level.0.title":
+    "31 — น้ำแข็งนิรันดร์",
+  "world.3.level.0.aquarium":
+    "ตู้ปลา 16",
+  "world.3.level.0.enemies":
+    "น้ำแข็ง + หนาม · พายุทอร์นาโด + เหล็ก · Netfil25 + Crimson · AI + กรงเล็บ",
+
+  "world.3.level.1.title":
+    "32 — พายุน้ำแข็ง",
+  "world.3.level.1.aquarium":
+    "ตู้ปลา 16",
+  "world.3.level.1.enemies":
+    "น้ำแข็ง + พายุทอร์นาโด · เพชร + หนาม · AI + Crimson · Netfil25 + กรงเล็บ",
+
+  "world.3.level.2.title":
+    "33 — ดาบ",
+  "world.3.level.2.aquarium":
+    "ตู้ปลา 17",
+  "world.3.level.2.enemies":
+    "ดาบ + หนาม · ความเกียจคร้าน + เหล็ก · น้ำแข็ง + โชคลาภ · พายุทอร์นาโด + Crimson",
+
+  "world.3.level.3.title":
+    "34 — ศัตรูที่สมบูรณ์แบบ",
+  "world.3.level.3.aquarium":
+    "ตู้ปลา 17",
+  "world.3.level.3.enemies":
+    "ดาบ + เหล็ก · ความเกียจคร้าน + หนาม · น้ำแข็ง + Crimson · พายุทอร์นาโด + โชคลาภ",
+
+  "world.3.level.4.title":
+    "35 — ขีดจำกัดแห่งความตาย",
+  "world.3.level.4.aquarium":
+    "ตู้ปลา 18",
+  "world.3.level.4.enemies":
+    "แมงกะพรุน + หนาม · หัวใจ + เหล็ก · ดาบ + Crimson · น้ำแข็ง + โชคลาภ",
+
+  "world.3.level.5.title":
+    "36 — ความรักและการทำลายล้าง",
+  "world.3.level.5.aquarium":
+    "ตู้ปลา 18",
+  "world.3.level.5.enemies":
+    "หัวใจ + หนาม · แมงกะพรุน + เหล็ก · ดาบ + โชคลาภ · ความเกียจคร้าน + Crimson",
+
+  "world.3.level.6.title":
+    "37 — พลังระดับตำนาน",
+  "world.3.level.6.aquarium":
+    "ตู้ปลา 19",
+  "world.3.level.6.enemies":
+    "Lonsdaleite + ดาบ · ดาว + หนาม · หัวใจ + Crimson · แมงกะพรุน + โชคลาภ",
+
+  "world.3.level.7.title":
+    "38 — พลังทั้งสี่",
+  "world.3.level.7.aquarium":
+    "ตู้ปลา 19",
+  "world.3.level.7.enemies":
+    "Lonsdaleite + เหล็ก · ดาว + Crimson · ดาบ + หนาม · หัวใจ + แอปเปิล",
+
+  "world.3.level.8.title":
+    "39 — พลังฮีโร่",
+  "world.3.level.8.aquarium":
+    "ตู้ปลา 20",
+  "world.3.level.8.enemies":
+    "ปีศาจ + หนาม · ดาวเคราะห์ + โชคลาภ · ดาว + เหล็ก · หัวใจ + Crimson",
+
+  "world.3.level.9.title":
+    "40 — ยักษ์ใหญ่",
+  "world.3.level.9.aquarium":
+    "ตู้ปลา 20",
+  "world.3.level.9.enemies":
+    "ปีศาจ + ดาบ · ดาวเคราะห์ + หนาม · ดาว + เหล็ก · หัวใจ + Lonsdaleite",
+
+
+  /*
+  ========================================================
+  WORLD 5
+  ========================================================
+  */
+
+  "world.4.level.0.title":
+    "41 — การปรากฏตัวแห่งเทพ",
+  "world.4.level.0.aquarium":
+    "ตู้ปลา 21",
+  "world.4.level.0.enemies":
+    "ศักดิ์สิทธิ์ + หนาม · ผี + เหล็ก · ดาวเคราะห์ + Crimson · ดาว + โชคลาภ",
+
+  "world.4.level.1.title":
+    "42 — คำสาป",
+  "world.4.level.1.aquarium":
+    "ตู้ปลา 21",
+  "world.4.level.1.enemies":
+    "ผี + หนาม · ศักดิ์สิทธิ์ + เหล็ก · ปีศาจ + Crimson · ดาวเคราะห์ + โชคลาภ",
+
+  "world.4.level.2.title":
+    "43 — น้ำค้างแข็ง",
+  "world.4.level.2.aquarium":
+    "ตู้ปลา 22",
+  "world.4.level.2.enemies":
+    "น้ำค้างแข็ง + หนาม · ทราย + เหล็ก · ผี + Crimson · ศักดิ์สิทธิ์ + โชคลาภ",
+
+  "world.4.level.3.title":
+    "44 — ทรายและน้ำแข็ง",
+  "world.4.level.3.aquarium":
+    "ตู้ปลา 22",
+  "world.4.level.3.enemies":
+    "ทราย + หนาม · น้ำค้างแข็ง + Crimson · ศักดิ์สิทธิ์ + เหล็ก · ดาวเคราะห์ + ปีศาจ",
+
+  "world.4.level.4.title":
+    "45 — กระจก",
+  "world.4.level.4.aquarium":
+    "ตู้ปลา 23",
+  "world.4.level.4.enemies":
+    "กระจก + หนาม · แมกมา + เหล็ก · น้ำค้างแข็ง + Crimson · ทราย + โชคลาภ",
+
+  "world.4.level.5.title":
+    "46 — ภาพสะท้อนแห่งพลัง",
+  "world.4.level.5.aquarium":
+    "ตู้ปลา 23",
+  "world.4.level.5.enemies":
+    "กระจก + ปีศาจ · แมกมา + ดาว · ทราย + Lonsdaleite · ดาวเคราะห์ + หัวใจ",
+
+  "world.4.level.6.title":
+    "47 — รังสี",
+  "world.4.level.6.aquarium":
+    "ตู้ปลา 24",
+  "world.4.level.6.enemies":
+    "กัมมันตรังสี + หนาม · ฟลามิงโก + เหล็ก · กระจก + Crimson · แมกมา + โชคลาภ",
+
+  "world.4.level.7.title":
+    "48 — ธาตุสุดท้าย",
+  "world.4.level.7.aquarium":
+    "ตู้ปลา 24",
+  "world.4.level.7.enemies":
+    "กัมมันตรังสี + ปีศาจ · ฟลามิงโก + ดาว · กระจก + Lonsdaleite · แมกมา + ดาวเคราะห์",
+
+  "world.4.level.8.title":
+    "49 — ตู้ปลาที่ยิ่งใหญ่ที่สุด",
+  "world.4.level.8.aquarium":
+    "ตู้ปลา 25",
+  "world.4.level.8.enemies":
+    "อาร์เคด + หนาม · คราส + เหล็ก · ทหาร + Crimson · ดาวเคราะห์ + ปีศาจ",
+
+  "world.4.level.9.title":
+    "50 — จุดจบ",
+  "world.4.level.9.aquarium":
+    "ตู้ปลา 25",
+  "world.4.level.9.enemies":
+    "ทหาร + ดาวเคราะห์ · อาร์เคด + ดาว · คราส + Lonsdaleite · ฟลามิงโก + ศักดิ์สิทธิ์",
+
+
+  /*
+  ========================================================
+  LEGAL
+  ========================================================
+  */
+
+  "legal.title":
+    "นโยบายความเป็นส่วนตัวและลิขสิทธิ์",
+
+  "legal.privacyTitle":
+    "นโยบายความเป็นส่วนตัว",
+
+  "legal.privacy1":
+    "Only Axolotls เคารพความเป็นส่วนตัวของคุณ เว็บไซต์นี้เป็นคู่มือข้อมูลสำหรับเกม และไม่มีเจตนาร้องขอข้อมูลส่วนบุคคล สร้างบัญชีผู้ใช้ หรือกำหนดให้คุณส่งข้อมูลส่วนบุคคล",
+
+  "legal.privacy2":
+    "หากเว็บไซต์นี้เชื่อมต่อกับระบบวิเคราะห์ข้อมูล บริการภายนอก แบบฟอร์ม คุกกี้ หรือเทคโนโลยีอื่นที่ประมวลผลข้อมูลส่วนบุคคลในภายหลัง นโยบายนี้จะได้รับการอัปเดตก่อนที่จะเปิดตัวฟีเจอร์ดังกล่าว",
+
+  "legal.copyTitle":
+    "ลิขสิทธิ์และทรัพย์สินทางปัญญา",
+
+  "legal.copy1":
+    "<strong>Only Axolotls</strong> รวมถึงเนื้อหาในเกม ตัวละคร งานศิลป์ กราฟิก โลโก้ แอนิเมชัน เพลง เสียง เนื้อหาที่เขียนขึ้น และซอฟต์แวร์ ล้วนเป็นทรัพย์สินทางปัญญาที่ได้รับการคุ้มครองของผู้ถือสิทธิ์ที่เกี่ยวข้อง และไม่ได้รับอนุญาตให้เผยแพร่เชิงพาณิชย์โดยไม่ได้รับอนุญาต",
+
+  "legal.copy2":
+    "คู่มือนี้จัดทำขึ้นเพื่อช่วยให้ผู้เล่นเข้าใจและสนุกกับเกมเท่านั้น ไม่อนุญาตให้ทำซ้ำ แจกจ่าย ใช้ในเชิงพาณิชย์ หรือดัดแปลงทรัพย์สินของเกมที่ได้รับการคุ้มครองโดยไม่ได้รับอนุญาตล่วงหน้า",
+
+  "legal.copy3":
+    "© 2026 Notter Animations.",
+
+
+  /*
+  ========================================================
+  RARITIES
+  ========================================================
+  */
+
+  "rarity.common":
+    "ธรรมดา",
+
+  "rarity.uncommon":
+    "ไม่ธรรมดา",
+
+  "rarity.rare":
+    "หายาก",
+
+  "rarity.epic":
+    "มหากาพย์",
+
+  "rarity.legendary":
+    "ตำนาน",
+
+  "rarity.xolotl":
+    "Xólotl",
+
+
+  /*
+  ========================================================
+  UNITS
+  ========================================================
+  */
+
+  "unit.day":
+    "วัน",
+
+  "unit.days":
+    "วัน",
+
+  "unit.gem":
+    "อัญมณี",
+
+  "unit.gems":
+    "อัญมณี",
+
+
+  /*
+  ========================================================
+  SEEDS
+  ========================================================
+  */
+
+  "seed.algae":
+    "สาหร่าย",
+
+  "seed.potatoes":
+    "มันฝรั่ง",
+
+  "seed.corn":
+    "ข้าวโพด",
+
+  "seed.coral":
+    "ปะการัง",
+
+  "seed.tomatoes":
+    "มะเขือเทศ",
+
+  "seed.wheat":
+    "ข้าวสาลี",
+
+  "seed.onions":
+    "หัวหอม",
+
+  "seed.carrots":
+    "แครอต",
+
+  "seed.bananas":
+    "กล้วย",
+
+  "seed.beans":
+    "ถั่ว",
+
+  "seed.strawberries":
+    "สตรอว์เบอร์รี",
+
+  "seed.oranges":
+    "ส้ม",
+
+  "seed.grapes":
+    "องุ่น",
+
+  "seed.chocolate":
+    "ช็อกโกแลต",
+
+  "seed.peppers":
+    "พริก",
+
+
+  /*
+  ========================================================
+  STATUS EFFECTS
+  ========================================================
+  */
+
+  "effect.suffocated":
+    "สำลัก",
+
+  "effect.suffocated.r":
+    "เสีย HP พื้นฐาน 2 หน่วยเมื่อจบเทิร์น.",
+
+
+  "effect.numb":
+    "ชา",
+
+  "effect.numb.r":
+    "มีโอกาสพื้นฐาน 4% ที่จะไม่ทำการกระทำใด ๆ ในเทิร์นนั้น",
+
+
+  "effect.confused":
+    "สับสน",
+
+  "effect.confused.r":
+    "เสีย HP พื้นฐาน 1 หน่วย และ -1 การป้องกันพื้นฐานเมื่อจบเทิร์น",
+
+
+  "effect.sparkling":
+    "ช็อต",
+
+  "effect.sparkling.r":
+    "มีโอกาสพื้นฐาน 2% ที่จะไม่ทำการกระทำใด ๆ และ -1 ความเร็วพื้นฐาน",
+
+
+  "effect.dazzled":
+    "ตาพร่า",
+
+  "effect.dazzled.r":
+    "มีโอกาสพื้นฐาน 4% ที่จะพลาดการโจมตีที่เลือก",
+
+
+  "effect.weakened":
+    "อ่อนแอ",
+
+  "effect.weakened.r":
+    "-2 การโจมตีพื้นฐาน",
+
+
+  "effect.unprotected":
+    "ไร้การป้องกัน",
+
+  "effect.unprotected.r":
+    "-2 การป้องกันพื้นฐาน",
+
+
+  "effect.slow":
+    "ช้าลง",
+
+  "effect.slow.r":
+    "-2 ความเร็วพื้นฐาน",
+
+
+  "effect.exposed":
+    "เปิดเผย",
+
+  "effect.exposed.r":
+    "+4% โอกาสพื้นฐานที่จะได้รับการโจมตีคริติคอล",
+
+
+  "effect.resentful":
+    "ขุ่นเคือง",
+
+  "effect.resentful.r":
+    "+10% ความเสียหายคริติคอลพื้นฐานที่ได้รับ",
+
+
+  "effect.tired":
+    "เหนื่อย",
+
+  "effect.tired.r":
+    "-1 การโจมตีพื้นฐาน และ -1 ความเร็วพื้นฐาน",
+
+
+  "effect.dimmed":
+    "มืดมัว",
+
+  "effect.dimmed.r":
+    "-1 การโจมตีพื้นฐาน และ -1 การป้องกันพื้นฐาน",
+
+
+  "effect.shutDown":
+    "ปิดระบบ",
+
+  "effect.shutDown.r":
+    "-1 ความเร็วพื้นฐาน และ -1 การป้องกันพื้นฐาน",
+
+
+  "effect.discouraged":
+    "หมดกำลังใจ",
+
+  "effect.discouraged.r":
+    "มีโอกาสพื้นฐาน 2% ที่จะไม่ทำการกระทำใด ๆ และ -1 การโจมตีพื้นฐาน",
+
+
+  "effect.staggering":
+    "โซเซ",
+
+  "effect.staggering.r":
+    "มีโอกาสพื้นฐาน 2% ที่จะไม่ทำการกระทำใด ๆ และ -1 การป้องกันพื้นฐาน",
+
+
+  "effect.enamored":
+    "หลงรัก",
+
+  "effect.enamored.r":
+    "+2% โอกาสพื้นฐานที่จะได้รับการโจมตีคริติคอล และ +8% ความเสียหายคริติคอลพื้นฐานที่ได้รับ",
+
+
+  "effect.vitalized":
+    "เพิ่มพลังชีวิต",
+
+  "effect.vitalized.r":
+    "+1 ความรัก",
+
+
+  "effect.reinforced":
+    "เสริมพลัง",
+
+  "effect.reinforced.r":
+    "+1 การป้องกัน",
+
+
+  "effect.accelerated":
+    "เร่งความเร็ว",
+
+  "effect.accelerated.r":
+    "+1 ความเร็ว",
+
+
+  "effect.powered":
+    "เพิ่มพลัง",
+
+  "effect.powered.r":
+    "+1 การโจมตี"
+
 };

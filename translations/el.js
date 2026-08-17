@@ -1,196 +1,1451 @@
 export default {
+
+  /*
+  ========================================================
+  LANGUAGE
+  ========================================================
+  */
+
   "lang": "el",
-  "languageLabel": "Language",
-  "pageTitle": "Only Axolotls — Official Game Guide",
-  "description": "Official Only Axolotls game guide — mechanics, breeding, probabilities, levels, axolotl abilities, effects and more.",
-  "hero.eyebrow": "OFFICIAL GAME GUIDE",
-  "hero.title": "Only Axolotls",
-  "hero.subtitle": "Everything you need to know about your aquarium, axolotls, breeding, battles, progression and probabilities.",
-  "hero.note": "This guide describes the current final game systems and values.",
-  "basics.title": "How Only Axolotls Works",
-  "basics.p1": "Only Axolotls is built around collecting, breeding and developing axolotls. Each axolotl is made from <strong>8 individual pieces</strong>. Pieces have their own rarity and can contribute statistics, effects or special abilities.",
-  "basics.grid1.title": "8 Pieces",
-  "basics.grid1.p": "Every axolotl is assembled from eight independently determined pieces.",
-  "basics.grid2.title": "6 Rarities",
-  "basics.grid2.p": "Common, Uncommon, Rare, Epic, Legendary and Xólotl.",
-  "basics.grid3.title": "Progression",
-  "basics.grid3.p": "Aquarium levels unlock new axolotls, seeds, capacity and expansions.",
-  "basics.grid4.title": "Combat",
-  "basics.grid4.p": "Pieces can grant statistics and status effects that shape how axolotls perform.",
-  "breeding.title": "Breeding &amp; Piece Inheritance",
-  "breeding.p1": "When two axolotls reproduce, every one of their eight pieces is resolved independently.",
-  "breeding.mother": "35% Mother",
-  "breeding.father": "35% Father",
-  "breeding.mutation": "30% Mutation",
-  "breeding.p2": "For each piece, there is a <strong>35% chance</strong> to inherit the mother's piece, a <strong>35% chance</strong> to inherit the father's piece, and a <strong>30% chance</strong> that the piece mutates.",
-  "breeding.mutationTitle": "Mutation rarity",
-  "breeding.mutationP": "If both parent pieces have the same rarity, a mutation is guaranteed to use that rarity. If their rarities differ, the mutation distributes its chance evenly across every rarity step between the two pieces, including both endpoints. The resulting piece is then selected randomly from the chosen rarity.",
-  "breeding.example": "<b>Example:</b> Legendary mother + Common father = six rarity steps: Common, Uncommon, Rare, Epic, Legendary and Xólotl. A mutation has an equal chance of landing on each of those six rarity levels.",
-  "breeding.genderTitle": "Gender at birth",
-  "breeding.genderP": "Every newborn axolotl has a <strong>50% chance to be female</strong> and a <strong>50% chance to be male</strong>.",
-  "timers.title": "Breeding Time &amp; Gem Cost",
-  "timers.p": "The <strong>highest rarity among the two parent pieces</strong> determines both the breeding/hatching time and the number of gems required to skip the event.",
-  "timers.rarity": "Highest rarity",
-  "timers.time": "Time",
-  "timers.cost": "Skip cost",
-  "coins.title": "Coins",
-  "coins.p1": "Coins are the main currency used for several progression-related systems. They are required to maintain your aquarium, purchase seeds and unlock additional growing space.",
-  "coins.earnTitle": "How to earn Coins",
-  "coins.earnP": "Coins can be obtained through several activities:",
-  "coins.earn1": "Winning battles.",
-  "coins.earn2": "Completing axolotl sets.",
-  "coins.earn3": "Harvesting fully grown phytoplankton plants.",
-  "coins.breedTitle": "Breeding cost",
-  "coins.breedP": "Coins are required to allow two axolotls to reproduce. The cost depends on the rarities of <strong>all eight pieces of the mother</strong> and <strong>all eight pieces of the father</strong>. The rarities of both parents are considered together when calculating the final breeding cost.",
-  "coins.example": "<b>Important:</b> Breeding does not reward Coins. The player must spend Coins to begin the reproduction because the axolotls require care during the breeding process.",
-  "coins.otherTitle": "Other uses",
-  "coins.otherP": "Coins can also be spent on useful progression-related purchases, including seeds from the <strong>Seed Shop</strong> and additional <strong>pot slots</strong> for growing phytoplankton.",
-  "gems.title": "Gems",
-  "gems.p1": "Gems are a premium progression resource used exclusively to <strong>accelerate ongoing game processes</strong>.",
-  "gems.earnTitle": "How to earn Gems",
-  "gems.earn1": "Unlocking a piece gives <strong>1 gem</strong>.",
-  "gems.earn2": "Every axolotl level-up gives <strong>1 gem</strong>.",
-  "gems.earn3": "Completing a star level for the first time gives <strong>1 gem</strong>.",
-  "gems.spendTitle": "How Gems are spent",
-  "gems.spendP": "Gems can be used to instantly complete or accelerate the following processes:",
-  "gems.spend1": "<strong>Breeding</strong> — accelerate an ongoing reproduction.",
-  "gems.spend2": "<strong>Egg hatching</strong> — instantly complete the egg's remaining time.",
-  "gems.spend3": "<strong>Plant growth</strong> — instantly finish the remaining growth time of a plant.",
-  "gems.spend4": "<strong>Seed Shop refresh</strong> — instantly refresh the shop instead of waiting for its normal reset.",
-  "gems.example": "<b>Important:</b> Gems do not replace Coins and are not used for normal purchases. They exist specifically to let the player skip waiting times and accelerate progression.",
-  "food.title": "Phytoplankton, Food &amp; Growth",
-  "food.p1": "Each harvest produces <strong>2 phytoplankton</strong> of the planted crop. An axolotl needs 2 units of its required plant food to level up. Every additional level requires 2 more units than the previous level.",
-  "food.p2": "Each axolotl starts with a base stay duration of <strong>10 days</strong>. Every level adds <strong>4 days</strong> to that duration.",
-  "food.example": "<b>Example:</b> A level 1 axolotl stays for 10 days. Level 2 becomes 14 days, level 3 becomes 18 days, and so on.",
-  "food.favTitle": "Favourite food",
-  "food.favP": "Each of the 8 pieces independently has a <strong>12.5% chance</strong> of assigning the crop associated with that piece's set as the axolotl's favourite food. This can make an axolotl with high-rarity pieces easier to feed than expected.",
-  "food.seedTitle": "Seed unlocks",
-  "food.aquarium": "Aquarium",
-  "food.seed": "Seed",
-  "food.note": "Plant growth time depends on the plant's internal rarity. This rarity is not displayed to the player.",
-  "shop.title": "Seed Shop",
-  "shop.p1": "The Seed Shop is run by a sleepy Andalusian farmer and offers a rotating selection of phytoplankton seeds. The shop refreshes its available seeds every <strong>2 days</strong>.",
-  "shop.howTitle": "How the shop works",
-  "shop.p2": "The shop has up to <strong>6 seed slots</strong>. Each slot can contain a random seed from the seeds you have currently unlocked. Seeds can appear repeatedly, so the same seed may occupy more than one slot.",
-  "shop.p3": "Each available seed stack also receives a random quantity. The quantity starts between <strong>1 and 2 seeds</strong> and increases as your aquarium progresses. Every aquarium level increases both the minimum and maximum available quantity by <strong>2</strong>.",
-  "shop.example": "<b>Example:</b> At the starting level, a seed slot can contain 1–2 seeds. As your aquarium level increases, the possible quantity rises by 2 for both the minimum and maximum.",
-  "shop.groupsTitle": "Seed groups",
-  "shop.p4": "The shop does not choose randomly from all unlocked seeds with one single probability pool. The six slots are separated into different seed groups. Each slot selects from the seeds assigned to its group.",
-  "shop.p5": "This means that newly unlocked seeds are not competing equally against every seed in the entire collection. A rare late-game seed can instead be selected from a much smaller group of possible seeds assigned to that shop slot.",
-  "shop.example2": "<b>Example:</b> If a slot has only 3 possible seeds in its group, each of those seeds has a much more meaningful chance to appear than if the game selected from all 15 unlocked seeds at once.",
-  "shop.slotsTitle": "Shop slots",
-  "shop.p6": "The Seed Shop starts with <strong>1 available slot</strong>. As you progress through the aquarium levels, additional slots are unlocked at specific milestones, up to a maximum of <strong>6 slots</strong>.",
-  "shop.level": "Aquarium level",
-  "shop.slots": "Shop slots",
-  "shop.example3": "<b>Shop slot progression:</b> An additional shop slot is unlocked at aquarium levels <strong>4, 8, 14, 20 and 24</strong>. This increases the shop from its initial <strong>1 slot</strong> to the maximum of <strong>6 slots</strong>.",
-  "shop.p7": "Because the selection changes only every two days, the player cannot simply buy any seed whenever they want. Checking the shop regularly and spending coins when useful seeds appear is an important part of progression.",
-  "visitors.title": "The Daily Visitor",
-  "visitors.p1": "A new axolotl visitor is <strong>guaranteed once per day</strong>. Its appearance never depends on chance.",
-  "visitors.p2": "Visiting axolotls can be adopted or left behind. If you do not adopt a visitor, it leaves the following day.",
-  "visitors.p3": "If your aquarium is at maximum capacity, you cannot adopt another axolotl until you transfer axolotls out of the aquarium and create free space.",
-  "visitors.genTitle": "How the Daily Visitor is generated",
-  "visitors.genP": "Its eight pieces are generated independently. For each piece, the game first checks which rarities you have unlocked. Every unlocked rarity has exactly the same probability.",
-  "visitors.unlocked": "Unlocked rarities",
-  "visitors.chance": "Chance per rarity",
-  "visitors.commonUncommon": "Common + Uncommon",
-  "visitors.plusRare": "+ Rare",
-  "visitors.plusEpic": "+ Epic",
-  "visitors.plusLegendary": "+ Legendary",
-  "visitors.plusXolotl": "+ Xólotl",
-  "visitors.example": "<b>Example:</b> If all six rarities are unlocked, every rarity has a 16.67% chance for each piece. Once a rarity is chosen, all unlocked pieces within that rarity are equally likely. Two Common pieces means 50% each; five Rare pieces means 20% each; ten Epic pieces means 10% each.",
-  "visitors.p4": "The process is repeated eight times, once for every piece. As your collection grows, more individual pieces can appear in the Daily Visitor, while the chance of obtaining any specific piece becomes smaller.",
-  "love.title": "The Enamored Axolotl",
-  "love.p1": "After a battle, every enemy axolotl independently checks whether it wants to join you. Its chance is determined by the rarity of each of its eight pieces.",
-  "love.rarity": "Piece rarity",
-  "love.contribution": "Contribution",
-  "love.p2": "Each of the eight pieces contributes according to its rarity. The final chance is calculated from all eight contributions.",
-  "love.example": "<b>Example:</b> An enemy with Common + Common + Rare + Rare + Epic + Epic + Legendary + Xólotl sends all eight rarity contributions into the final calculation.",
-  "love.multipleTitle": "When multiple enemies accept",
-  "love.multipleP": "None may accept, one may accept, or several may accept. If several accept, the manager randomly selects <strong>one</strong> of them, with every accepted axolotl having the same chance.",
-  "love.two": "2 accepted<br><strong>50% each</strong>",
-  "love.three": "3 accepted<br><strong>33.33% each</strong>",
-  "love.four": "4 accepted<br><strong>25% each</strong>",
-  "levels.title": "Aquarium Levels &amp; Progression",
-  "levels.p": "There are <strong>25 aquarium levels</strong>, containing 50 gameplay levels. Each aquarium level unlocks new axolotls and progressively increases capacity.",
-  "effects.title": "Status Effects",
-  "effects.p": "Status effects alter combat statistics or action probabilities. Effects can be stacked when an ability applies multiple charges.",
-  "effects.effect": "Effect",
-  "effects.result": "Result",
-  "abilities.title": "Axolotl Piece Abilities",
-  "abilities.p": "Piece effects activate according to how many copies of the same piece are present in an axolotl. The following values are reached at 2/8, 4/8, 6/8 and 8/8 copies.",
-  "worlds.title": "Gameplay Levels",
-  "worlds.p": "The game contains five worlds and 50 levels. Each level lists the enemy combinations encountered and the aquarium requirement.",
-  "legal.title": "Privacy Policy &amp; Copyright",
-  "legal.privacyTitle": "Privacy Policy",
-  "legal.privacy1": "Only Axolotls respects your privacy. This website is an informational guide for the game. It does not intentionally request personal information, create user accounts, or require you to submit personal data.",
-  "legal.privacy2": "If this website is later connected to analytics, external services, forms, cookies or other technologies that process personal data, this policy will be updated before those features are introduced.",
-  "legal.copyTitle": "Copyright &amp; Intellectual Property",
-  "legal.copy1": "<strong>Only Axolotls</strong>, its game content, characters, artwork, graphics, logos, animations, music, sounds, written content and software are protected intellectual property of their respective rights holder(s) and are not released for unauthorized commercial redistribution.",
-  "legal.copy2": "This guide is provided solely to help players understand and enjoy the game. Reproduction, redistribution, commercial use or modification of protected game assets is not permitted without prior authorization.",
-  "legal.copy3": "© 2026 Notter Animations.",
-  "rarity.common": "Common",
-  "rarity.uncommon": "Uncommon",
-  "rarity.rare": "Rare",
-  "rarity.epic": "Epic",
-  "rarity.legendary": "Legendary",
-  "rarity.xolotl": "Xólotl",
-  "unit.day": "day",
-  "unit.days": "days",
-  "unit.gem": "gem",
-  "unit.gems": "gems",
-  "seed.algae": "Algae",
-  "seed.potatoes": "Potatoes",
-  "seed.corn": "Corn",
-  "seed.coral": "Coral",
-  "seed.tomatoes": "Tomatoes",
-  "seed.wheat": "Wheat",
-  "seed.onions": "Onions",
-  "seed.carrots": "Carrots",
-  "seed.bananas": "Bananas",
-  "seed.beans": "Beans",
-  "seed.strawberries": "Strawberries",
-  "seed.oranges": "Oranges",
-  "seed.grapes": "Grapes",
-  "seed.chocolate": "Chocolate",
-  "seed.peppers": "Peppers",
-  "effect.suffocated": "Suffocated",
-  "effect.suffocated.r": "Loses 2 base HP at the end of the turn.",
-  "effect.numb": "Numb",
-  "effect.numb.r": "4% base chance to take no action that turn.",
-  "effect.confused": "Confused",
-  "effect.confused.r": "Loses 1 base HP and -1 base Defense at the end of the turn.",
-  "effect.sparkling": "Sparkling",
-  "effect.sparkling.r": "2% base chance to take no action and -1 base Speed.",
-  "effect.dazzled": "Dazzled",
-  "effect.dazzled.r": "4% base chance to miss the selected attack.",
-  "effect.weakened": "Weakened",
-  "effect.weakened.r": "-2 base Attack.",
-  "effect.unprotected": "Unprotected",
-  "effect.unprotected.r": "-2 base Defense.",
-  "effect.slow": "Slow",
-  "effect.slow.r": "-2 base Speed.",
-  "effect.exposed": "Exposed",
-  "effect.exposed.r": "+4% base chance to receive a critical hit.",
-  "effect.resentful": "Resentful",
-  "effect.resentful.r": "+10% base critical damage received.",
-  "effect.tired": "Tired",
-  "effect.tired.r": "-1 base Attack and -1 base Speed.",
-  "effect.dimmed": "Dimmed",
-  "effect.dimmed.r": "-1 base Attack and -1 base Defense.",
-  "effect.shutDown": "Shut Down",
-  "effect.shutDown.r": "-1 base Speed and -1 base Defense.",
-  "effect.discouraged": "Discouraged",
-  "effect.discouraged.r": "2% base chance to take no action and -1 base Attack.",
-  "effect.staggering": "Staggering",
-  "effect.staggering.r": "2% base chance to take no action and -1 base Defense.",
-  "effect.enamored": "Enamored",
-  "effect.enamored.r": "+2% base chance to receive a critical hit and +8% base critical damage received.",
-  "effect.vitalized": "Vitalized",
-  "effect.vitalized.r": "+1 Love.",
-  "effect.reinforced": "Reinforced",
-  "effect.reinforced.r": "+1 Defense.",
-  "effect.accelerated": "Accelerated",
-  "effect.accelerated.r": "+1 Speed.",
-  "effect.powered": "Powered",
-  "effect.powered.r": "+1 Attack."
+  "languageLabel": "Γλώσσα",
+
+  "pageTitle":
+    "Only Axolotls — Επίσημος Οδηγός Παιχνιδιού",
+
+  "description":
+    "Επίσημος οδηγός του Only Axolotls — μηχανισμοί, αναπαραγωγή, πιθανότητες, επίπεδα, ικανότητες αξολοτλ, εφέ και πολλά άλλα.",
+
+
+  /*
+  ========================================================
+  HERO
+  ========================================================
+  */
+
+  "hero.eyebrow":
+    "ΕΠΙΣΗΜΟΣ ΟΔΗΓΟΣ ΠΑΙΧΝΙΔΙΟΥ",
+
+  "hero.title":
+    "Only Axolotls",
+
+  "hero.subtitle":
+    "Όλα όσα πρέπει να γνωρίζετε για το ενυδρείο σας, τα αξολοτλ, την αναπαραγωγή, τις μάχες, την πρόοδο και τις πιθανότητες.",
+
+  "hero.note":
+    "Αυτός ο οδηγός περιγράφει τα τρέχοντα τελικά συστήματα και τις τιμές του παιχνιδιού.",
+
+
+  /*
+  ========================================================
+  BASICS
+  ========================================================
+  */
+
+  "basics.title":
+    "Πώς λειτουργεί το Only Axolotls",
+
+  "basics.p1":
+    "Το Only Axolotls βασίζεται στη συλλογή, την αναπαραγωγή και την ανάπτυξη αξολοτλ. Κάθε αξολοτλ αποτελείται από <strong>8 ξεχωριστά κομμάτια</strong>. Τα κομμάτια έχουν τη δική τους σπανιότητα και μπορούν να προσφέρουν στατιστικά, εφέ ή ειδικές ικανότητες.",
+
+  "basics.grid1.title":
+    "8 Κομμάτια",
+
+  "basics.grid1.p":
+    "Κάθε αξολοτλ αποτελείται από οκτώ κομμάτια που καθορίζονται ανεξάρτητα.",
+
+  "basics.grid2.title":
+    "6 Σπανιότητες",
+
+  "basics.grid2.p":
+    "Κοινό, Ασυνήθιστο, Σπάνιο, Επικό, Θρυλικό και Xólotl.",
+
+  "basics.grid3.title":
+    "Πρόοδος",
+
+  "basics.grid3.p":
+    "Τα επίπεδα του ενυδρείου ξεκλειδώνουν νέα αξολοτλ, σπόρους, χωρητικότητα και επεκτάσεις.",
+
+  "basics.grid4.title":
+    "Μάχη",
+
+  "basics.grid4.p":
+    "Τα κομμάτια μπορούν να προσφέρουν στατιστικά και επιδράσεις κατάστασης που επηρεάζουν την απόδοση των αξολοτλ.",
+
+
+  /*
+  ========================================================
+  BREEDING
+  ========================================================
+  */
+
+  "breeding.title":
+    "Αναπαραγωγή & Κληρονομικότητα Κομματιών",
+
+  "breeding.p1":
+    "Όταν δύο αξολοτλ αναπαράγονται, καθένα από τα οκτώ κομμάτια τους καθορίζεται ανεξάρτητα.",
+
+  "breeding.mother":
+    "35% Μητέρα",
+
+  "breeding.father":
+    "35% Πατέρας",
+
+  "breeding.mutation":
+    "30% Μετάλλαξη",
+
+  "breeding.p2":
+    "Για κάθε κομμάτι, υπάρχει <strong>35% πιθανότητα</strong> να κληρονομηθεί το κομμάτι της μητέρας, <strong>35% πιθανότητα</strong> να κληρονομηθεί το κομμάτι του πατέρα και <strong>30% πιθανότητα</strong> να μεταλλαχθεί το κομμάτι.",
+
+  "breeding.mutationTitle":
+    "Σπανιότητα Μετάλλαξης",
+
+  "breeding.mutationP":
+    "Αν και τα δύο γονικά κομμάτια έχουν την ίδια σπανιότητα, η μετάλλαξη χρησιμοποιεί εγγυημένα αυτή τη σπανιότητα. Αν οι σπανιότητές τους διαφέρουν, η μετάλλαξη κατανέμει την πιθανότητά της ισόποσα σε κάθε βαθμίδα σπανιότητας μεταξύ των δύο κομματιών, συμπεριλαμβανομένων και των δύο άκρων. Στη συνέχεια, το κομμάτι επιλέγεται τυχαία από την επιλεγμένη σπανιότητα.",
+
+  "breeding.example":
+    "<b>Παράδειγμα:</b> Θρυλική μητέρα + Κοινός πατέρας = έξι βαθμίδες σπανιότητας: Κοινό, Ασυνήθιστο, Σπάνιο, Επικό, Θρυλικό και Xólotl. Μια μετάλλαξη έχει ίση πιθανότητα να καταλήξει σε καθεμία από αυτές τις έξι βαθμίδες σπανιότητας.",
+
+  "breeding.genderTitle":
+    "Φύλο κατά τη Γέννηση",
+
+  "breeding.genderP":
+    "Κάθε νεογέννητο αξολοτλ έχει <strong>50% πιθανότητα να είναι θηλυκό</strong> και <strong>50% πιθανότητα να είναι αρσενικό</strong>.",
+
+
+  /*
+  ========================================================
+  BREEDING TIME
+  ========================================================
+  */
+
+  "timers.title":
+    "Χρόνος Αναπαραγωγής & Κόστος Κρυστάλλων",
+
+  "timers.p":
+    "Η <strong>υψηλότερη σπανιότητα μεταξύ των δύο γονικών κομματιών</strong> καθορίζει τόσο τον χρόνο αναπαραγωγής/εκκόλαψης όσο και τον αριθμό των κρυστάλλων που απαιτούνται για την παράλειψη της διαδικασίας.",
+
+  "timers.rarity":
+    "Υψηλότερη Σπανιότητα",
+
+  "timers.time":
+    "Χρόνος",
+
+  "timers.cost":
+    "Κόστος Παράλειψης",
+
+
+  /*
+  ========================================================
+  COINS
+  ========================================================
+  */
+
+  "coins.title":
+    "Νομίσματα",
+
+  "coins.p1":
+    "Τα νομίσματα είναι το βασικό νόμισμα που χρησιμοποιείται σε διάφορα συστήματα προόδου. Απαιτούνται για τη συντήρηση του ενυδρείου, την αγορά σπόρων και το ξεκλείδωμα επιπλέον χώρου καλλιέργειας.",
+
+  "coins.earnTitle":
+    "Πώς Κερδίζετε Νομίσματα",
+
+  "coins.earnP":
+    "Τα νομίσματα μπορούν να αποκτηθούν μέσω διαφόρων δραστηριοτήτων:",
+
+  "coins.earn1":
+    "Κερδίζοντας μάχες.",
+
+  "coins.earn2":
+    "Ολοκληρώνοντας σετ αξολοτλ.",
+
+  "coins.earn3":
+    "Συγκομίζοντας πλήρως ανεπτυγμένα φυτά φυτοπλαγκτού.",
+
+  "coins.breedTitle":
+    "Κόστος Αναπαραγωγής",
+
+  "coins.breedP":
+    "Απαιτούνται νομίσματα για να επιτραπεί σε δύο αξολοτλ να αναπαραχθούν. Το κόστος εξαρτάται από τις σπανιότητες <strong>και των οκτώ κομματιών της μητέρας</strong> και <strong>και των οκτώ κομματιών του πατέρα</strong>. Οι σπανιότητες και των δύο γονέων υπολογίζονται μαζί για τον καθορισμό του τελικού κόστους αναπαραγωγής.",
+
+  "coins.example":
+    "<b>Σημαντικό:</b> Η αναπαραγωγή δεν ανταμείβει με Νομίσματα. Ο παίκτης πρέπει να ξοδέψει Νομίσματα για να ξεκινήσει η αναπαραγωγή, επειδή τα αξολοτλ χρειάζονται φροντίδα κατά τη διάρκεια της διαδικασίας.",
+
+  "coins.otherTitle":
+    "Άλλες Χρήσεις",
+
+  "coins.otherP":
+    "Τα νομίσματα μπορούν επίσης να χρησιμοποιηθούν για χρήσιμες αγορές που σχετίζονται με την πρόοδο, όπως σπόροι από το <strong>Κατάστημα Σπόρων</strong> και επιπλέον <strong>θέσεις γλαστρών</strong> για την καλλιέργεια φυτοπλαγκτού.",
+
+
+  /*
+  ========================================================
+  GEMS
+  ========================================================
+  */
+
+  "gems.title":
+    "Κρύσταλλοι",
+
+  "gems.p1":
+    "Οι κρύσταλλοι είναι ένας πόρος premium που χρησιμοποιείται αποκλειστικά για <strong>την επιτάχυνση ενεργών διαδικασιών του παιχνιδιού</strong>.",
+
+  "gems.earnTitle":
+    "Πώς Κερδίζετε Κρυστάλλους",
+
+  "gems.earn1":
+    "Το ξεκλείδωμα ενός κομματιού δίνει <strong>1 κρύσταλλο</strong>.",
+
+  "gems.earn2":
+    "Κάθε ανέβασμα επιπέδου ενός αξολοτλ δίνει <strong>1 κρύσταλλο</strong>.",
+
+  "gems.earn3":
+    "Η ολοκλήρωση ενός επιπέδου αστεριού για πρώτη φορά δίνει <strong>1 κρύσταλλο</strong>.",
+
+  "gems.spendTitle":
+    "Πώς Χρησιμοποιούνται οι Κρύσταλλοι",
+
+  "gems.spendP":
+    "Οι κρύσταλλοι μπορούν να χρησιμοποιηθούν για την άμεση ολοκλήρωση ή επιτάχυνση των παρακάτω διαδικασιών:",
+
+  "gems.spend1":
+    "<strong>Αναπαραγωγή</strong> — επιταχύνει μια ενεργή αναπαραγωγή.",
+
+  "gems.spend2":
+    "<strong>Εκκόλαψη αυγού</strong> — ολοκληρώνει αμέσως τον υπόλοιπο χρόνο του αυγού.",
+
+  "gems.spend3":
+    "<strong>Ανάπτυξη φυτού</strong> — ολοκληρώνει αμέσως τον υπόλοιπο χρόνο ανάπτυξης ενός φυτού.",
+
+  "gems.spend4":
+    "<strong>Ανανέωση Καταστήματος Σπόρων</strong> — ανανεώνει αμέσως το κατάστημα αντί να περιμένετε την κανονική επαναφορά του.",
+
+  "gems.example":
+    "<b>Σημαντικό:</b> Οι κρύσταλλοι δεν αντικαθιστούν τα Νομίσματα και δεν χρησιμοποιούνται για κανονικές αγορές. Υπάρχουν ειδικά για να επιτρέπουν στον παίκτη να παρακάμπτει χρόνους αναμονής και να επιταχύνει την πρόοδο.",
+
+
+  /*
+  ========================================================
+  FOOD
+  ========================================================
+  */
+
+  "food.title":
+    "Φυτοπλαγκτόν, Τροφή & Ανάπτυξη",
+
+  "food.p1":
+    "Κάθε συγκομιδή παράγει <strong>2 φυτοπλαγκτόν</strong> από την καλλιέργεια που φυτεύτηκε. Ένα αξολοτλ χρειάζεται 2 μονάδες της απαιτούμενης φυτικής τροφής του για να ανέβει επίπεδο. Κάθε επιπλέον επίπεδο απαιτεί 2 περισσότερες μονάδες από το προηγούμενο.",
+
+  "food.p2":
+    "Κάθε αξολοτλ ξεκινά με βασική διάρκεια παραμονής <strong>10 ημερών</strong>. Κάθε επίπεδο προσθέτει <strong>4 ημέρες</strong> σε αυτή τη διάρκεια.",
+
+  "food.example":
+    "<b>Παράδειγμα:</b> Ένα αξολοτλ επιπέδου 1 παραμένει για 10 ημέρες. Στο επίπεδο 2 παραμένει 14 ημέρες, στο επίπεδο 3 για 18 ημέρες και ούτω καθεξής.",
+
+  "food.favTitle":
+    "Αγαπημένη Τροφή",
+
+  "food.favP":
+    "Κάθε ένα από τα 8 κομμάτια έχει ανεξάρτητα <strong>12,5% πιθανότητα</strong> να αντιστοιχίσει την καλλιέργεια που σχετίζεται με το σετ του κομματιού ως αγαπημένη τροφή του αξολοτλ. Αυτό μπορεί να κάνει ένα αξολοτλ με κομμάτια υψηλής σπανιότητας ευκολότερο στο τάισμα από ό,τι αναμένεται.",
+
+  "food.seedTitle":
+    "Ξεκλειδώματα Σπόρων",
+
+  "food.aquarium":
+    "Ενυδρείο",
+
+  "food.seed":
+    "Σπόρος",
+
+  "food.note":
+    "Ο χρόνος ανάπτυξης του φυτού εξαρτάται από την εσωτερική σπανιότητα του φυτού. Αυτή η σπανιότητα δεν εμφανίζεται στον παίκτη.",
+
+
+  /*
+  ========================================================
+  SEED SHOP
+  ========================================================
+  */
+
+  "shop.title":
+    "Κατάστημα Σπόρων",
+
+  "shop.p1":
+    "Το Κατάστημα Σπόρων διευθύνεται από τη Dahlia και προσφέρει μια εναλλασσόμενη επιλογή σπόρων φυτοπλαγκτού. Το κατάστημα ανανεώνει τους διαθέσιμους σπόρους κάθε <strong>2 ημέρες</strong>.",
+
+  "shop.howTitle":
+    "Πώς Λειτουργεί το Κατάστημα",
+
+  "shop.p2":
+    "Το κατάστημα διαθέτει έως <strong>6 θέσεις σπόρων</strong>. Κάθε θέση μπορεί να περιέχει έναν τυχαίο σπόρο από τους σπόρους που έχετε ήδη ξεκλειδώσει. Οι σπόροι μπορούν να εμφανιστούν επανειλημμένα, επομένως ο ίδιος σπόρος μπορεί να καταλαμβάνει περισσότερες από μία θέσεις.",
+
+  "shop.p3":
+    "Κάθε διαθέσιμη στοίβα σπόρων λαμβάνει επίσης μια τυχαία ποσότητα. Η ποσότητα ξεκινά μεταξύ <strong>1 και 2 σπόρων</strong> και αυξάνεται καθώς προχωρά το ενυδρείο σας. Κάθε επίπεδο ενυδρείου αυξάνει τόσο την ελάχιστη όσο και τη μέγιστη διαθέσιμη ποσότητα κατά <strong>2</strong>.",
+
+  "shop.example":
+    "<b>Παράδειγμα:</b> Στο αρχικό επίπεδο, μια θέση σπόρων μπορεί να περιέχει 1–2 σπόρους. Καθώς αυξάνεται το επίπεδο του ενυδρείου, η πιθανή ποσότητα αυξάνεται κατά 2 τόσο για την ελάχιστη όσο και για τη μέγιστη τιμή.",
+
+  "shop.groupsTitle":
+    "Ομάδες Σπόρων",
+
+  "shop.p4":
+    "Το κατάστημα δεν επιλέγει τυχαία από όλους τους ξεκλειδωμένους σπόρους με μία ενιαία ομάδα πιθανοτήτων. Οι έξι θέσεις χωρίζονται σε διαφορετικές ομάδες σπόρων. Κάθε θέση επιλέγει από τους σπόρους που έχουν αντιστοιχιστεί στην ομάδα της.",
+
+  "shop.p5":
+    "Αυτό σημαίνει ότι οι νέοι ξεκλειδωμένοι σπόροι δεν ανταγωνίζονται ισότιμα κάθε σπόρο ολόκληρης της συλλογής. Ένας σπάνιος σπόρος του τέλους του παιχνιδιού μπορεί αντίθετα να επιλέγεται από μια πολύ μικρότερη ομάδα πιθανών σπόρων που έχει αντιστοιχιστεί σε αυτή τη θέση του καταστήματος.",
+
+  "shop.example2":
+    "<b>Παράδειγμα:</b> Αν μια θέση έχει μόνο 3 πιθανούς σπόρους στην ομάδα της, καθένας από αυτούς έχει πολύ πιο σημαντική πιθανότητα να εμφανιστεί από ό,τι αν το παιχνίδι επέλεγε ανάμεσα σε όλους τους 15 ξεκλειδωμένους σπόρους ταυτόχρονα.",
+
+  "shop.slotsTitle":
+    "Θέσεις Καταστήματος",
+
+  "shop.p6":
+    "Το Κατάστημα Σπόρων ξεκινά με <strong>1 διαθέσιμη θέση</strong>. Καθώς προχωράτε στα επίπεδα του ενυδρείου, επιπλέον θέσεις ξεκλειδώνονται σε συγκεκριμένα ορόσημα, έως το μέγιστο των <strong>6 θέσεων</strong>.",
+
+  "shop.level":
+    "Επίπεδο Ενυδρείου",
+
+  "shop.slots":
+    "Θέσεις Καταστήματος",
+
+  "shop.example3":
+    "<b>Πρόοδος Θέσεων Καταστήματος:</b> Μια επιπλέον θέση καταστήματος ξεκλειδώνεται στα επίπεδα ενυδρείου <strong>4, 8, 14, 20 και 24</strong>. Αυτό αυξάνει το κατάστημα από την αρχική <strong>1 θέση</strong> στο μέγιστο των <strong>6 θέσεων</strong>.",
+
+  "shop.p7":
+    "Επειδή η επιλογή αλλάζει μόνο κάθε δύο ημέρες, ο παίκτης δεν μπορεί απλώς να αγοράζει οποιονδήποτε σπόρο όποτε θέλει. Ο τακτικός έλεγχος του καταστήματος και η χρήση νομισμάτων όταν εμφανίζονται χρήσιμοι σπόροι αποτελούν σημαντικό μέρος της προόδου.",
+
+
+  /*
+  ========================================================
+  DAILY VISITOR
+  ========================================================
+  */
+
+  "visitors.title":
+    "Ο Καθημερινός Επισκέπτης",
+
+  "visitors.p1":
+    "Ένας νέος επισκέπτης αξολοτλ <strong>εγγυάται μία φορά την ημέρα</strong>. Η εμφάνισή του δεν εξαρτάται ποτέ από τύχη.",
+
+  "visitors.p2":
+    "Τα επισκέπτοντα αξολοτλ μπορούν να υιοθετηθούν ή να αφεθούν. Αν δεν υιοθετήσετε έναν επισκέπτη, φεύγει την επόμενη ημέρα.",
+
+  "visitors.p3":
+    "Αν το ενυδρείο σας βρίσκεται στη μέγιστη χωρητικότητα, δεν μπορείτε να υιοθετήσετε άλλο αξολοτλ μέχρι να μεταφέρετε αξολοτλ εκτός του ενυδρείου και να δημιουργήσετε ελεύθερο χώρο.",
+
+  "visitors.genTitle":
+    "Πώς Δημιουργείται ο Καθημερινός Επισκέπτης",
+
+  "visitors.genP":
+    "Τα οκτώ κομμάτια του δημιουργούνται ανεξάρτητα. Για κάθε κομμάτι, το παιχνίδι ελέγχει πρώτα ποιες σπανιότητες έχετε ξεκλειδώσει. Κάθε ξεκλειδωμένη σπανιότητα έχει ακριβώς την ίδια πιθανότητα.",
+
+  "visitors.unlocked":
+    "Ξεκλειδωμένες Σπανιότητες",
+
+  "visitors.chance":
+    "Πιθανότητα ανά Σπανιότητα",
+
+  "visitors.commonUncommon":
+    "Κοινό + Ασυνήθιστο",
+
+  "visitors.plusRare":
+    "+ Σπάνιο",
+
+  "visitors.plusEpic":
+    "+ Επικό",
+
+  "visitors.plusLegendary":
+    "+ Θρυλικό",
+
+  "visitors.plusXolotl":
+    "+ Xólotl",
+
+  "visitors.example":
+    "<b>Παράδειγμα:</b> Αν και οι έξι σπανιότητες είναι ξεκλειδωμένες, κάθε σπανιότητα έχει πιθανότητα 16,67% για κάθε κομμάτι. Μόλις επιλεγεί μια σπανιότητα, όλα τα ξεκλειδωμένα κομμάτια μέσα σε αυτή τη σπανιότητα είναι εξίσου πιθανά. Δύο Κοινά κομμάτια σημαίνει 50% το καθένα· πέντε Σπάνια κομμάτια σημαίνει 20% το καθένα· δέκα Επικά κομμάτια σημαίνει 10% το καθένα.",
+
+  "visitors.p4":
+    "Η διαδικασία επαναλαμβάνεται οκτώ φορές, μία για κάθε κομμάτι. Καθώς μεγαλώνει η συλλογή σας, περισσότερα μεμονωμένα κομμάτια μπορούν να εμφανιστούν στον Καθημερινό Επισκέπτη, ενώ η πιθανότητα απόκτησης οποιουδήποτε συγκεκριμένου κομματιού γίνεται μικρότερη.",
+
+
+  /*
+  ========================================================
+  ENAMORED AXOLOTL
+  ========================================================
+  */
+
+  "love.title":
+    "Το Ερωτευμένο Αξολοτλ",
+
+  "love.p1":
+    "Μετά από μια μάχη, κάθε εχθρικό αξολοτλ ελέγχει ανεξάρτητα αν θέλει να σας ακολουθήσει. Η πιθανότητά του καθορίζεται από τη σπανιότητα καθενός από τα οκτώ κομμάτια του.",
+
+  "love.rarity":
+    "Σπανιότητα Κομματιού",
+
+  "love.contribution":
+    "Συνεισφορά",
+
+  "love.p2":
+    "Καθένα από τα οκτώ κομμάτια συνεισφέρει ανάλογα με τη σπανιότητά του. Η τελική πιθανότητα υπολογίζεται από όλες τις οκτώ συνεισφορές.",
+
+  "love.example":
+    "<b>Παράδειγμα:</b> Ένας εχθρός με Κοινό + Κοινό + Σπάνιο + Σπάνιο + Επικό + Επικό + Θρυλικό + Xólotl εισάγει και τις οκτώ συνεισφορές σπανιότητας στον τελικό υπολογισμό.",
+
+  "love.multipleTitle":
+    "Όταν Πολλοί Εχθροί Αποδέχονται",
+
+  "love.multipleP":
+    "Κανένας μπορεί να μην αποδεχτεί, ένας μπορεί να αποδεχτεί ή πολλοί μπορούν να αποδεχτούν. Αν αποδεχτούν πολλοί, ο διαχειριστής επιλέγει τυχαία <strong>έναν</strong> από αυτούς, με κάθε αποδεκτό αξολοτλ να έχει την ίδια πιθανότητα.",
+
+  "love.two":
+    "2 αποδέχτηκαν<br><strong>50% ο καθένας</strong>",
+
+  "love.three":
+    "3 αποδέχτηκαν<br><strong>33,33% ο καθένας</strong>",
+
+  "love.four":
+    "4 αποδέχτηκαν<br><strong>25% ο καθένας</strong>",
+
+
+  /*
+  ========================================================
+  LEVELS
+  ========================================================
+  */
+
+  "levels.title":
+    "Επίπεδα Ενυδρείου & Πρόοδος",
+
+  "levels.p":
+    "Υπάρχουν <strong>25 επίπεδα ενυδρείου</strong>, τα οποία περιλαμβάνουν 50 επίπεδα παιχνιδιού. Κάθε επίπεδο ενυδρείου ξεκλειδώνει νέα αξολοτλ και αυξάνει σταδιακά τη χωρητικότητα.",
+
+
+  /*
+  ========================================================
+  EFFECTS
+  ========================================================
+  */
+
+  "effects.title":
+    "Επιδράσεις Κατάστασης",
+
+  "effects.p":
+    "Οι επιδράσεις κατάστασης αλλάζουν τα στατιστικά μάχης ή τις πιθανότητες ενεργειών. Οι επιδράσεις μπορούν να συσσωρευτούν όταν μια ικανότητα εφαρμόζει πολλαπλές φορτίσεις.",
+
+  "effects.effect":
+    "Επίδραση",
+
+  "effects.result":
+    "Αποτέλεσμα",
+
+
+  /*
+  ========================================================
+  ABILITIES
+  ========================================================
+  */
+
+  "abilities.title":
+    "Ικανότητες Κομματιών Αξολοτλ",
+
+  "abilities.p":
+    "Οι επιδράσεις των κομματιών ενεργοποιούνται ανάλογα με το πόσα αντίγραφα του ίδιου κομματιού υπάρχουν σε ένα αξολοτλ. Οι παρακάτω τιμές επιτυγχάνονται με 2/8, 4/8, 6/8 και 8/8 αντίγραφα.",
+
+
+  /*
+  ========================================================
+  WORLDS
+  ========================================================
+  */
+
+  "worlds.title":
+    "Επίπεδα Παιχνιδιού",
+
+  "worlds.p":
+    "Το παιχνίδι περιλαμβάνει πέντε κόσμους και 50 επίπεδα. Κάθε επίπεδο αναφέρει τους συνδυασμούς εχθρών που συναντώνται και την απαιτούμενη πρόοδο του ενυδρείου.",
+
+
+  /*
+  ========================================================
+  DYNAMIC CONTENT
+  ========================================================
+  */
+
+  "dynamic.gameplayLevels":
+    "Επίπεδα Παιχνιδιού",
+
+  "dynamic.food":
+    "Τροφή",
+
+  "dynamic.capacity":
+    "Χωρητικότητα",
+
+  "dynamic.axolotls":
+    "αξολοτλ",
+
+
+  /*
+  ========================================================
+  AQUARIUM LEVELS
+  ========================================================
+  */
+
+  "level.1.title":
+    "Ενυδρείο 1 — Πρώτοι Κάτοικοι",
+
+  "level.2.title":
+    "Ενυδρείο 2 — Πρώτα Ένστικτα",
+
+  "level.3.title":
+    "Ενυδρείο 3 — Μικρές Δυνατότητες",
+
+  "level.4.title":
+    "Ενυδρείο 4 — Πρώτα Οφέλη",
+
+  "level.5.title":
+    "Ενυδρείο 5 — Ενίσχυση",
+
+  "level.6.title":
+    "Ενυδρείο 6 — Πρώτες Επιδράσεις",
+
+  "level.7.title":
+    "Ενυδρείο 7 — Εξασθένηση",
+
+  "level.8.title":
+    "Ενυδρείο 8 — Το Αδύναμο Σημείο",
+
+  "level.9.title":
+    "Ενυδρείο 9 — Ανώτερα Υλικά",
+
+  "level.10.title":
+    "Ενυδρείο 10 — Δύναμη & Ταχύτητα",
+
+  "level.11.title":
+    "Ενυδρείο 11 — Τύχη",
+
+  "level.12.title":
+    "Ενυδρείο 12 — Φως & Δηλητήριο",
+
+  "level.13.title":
+    "Ενυδρείο 13 — Εξασθενητικές Καταστάσεις",
+
+  "level.14.title":
+    "Ενυδρείο 14 — Δύναμη Ήρωα",
+
+  "level.15.title":
+    "Ενυδρείο 15 — Ανώτερη Δύναμη",
+
+  "level.16.title":
+    "Ενυδρείο 16 — Εξαιρετικές Δυνάμεις",
+
+  "level.17.title":
+    "Ενυδρείο 17 — Επιθετική Δύναμη",
+
+  "level.18.title":
+    "Ενυδρείο 18 — Θανάσιμο Όριο",
+
+  "level.19.title":
+    "Ενυδρείο 19 — Θρυλική Δύναμη",
+
+  "level.20.title":
+    "Ενυδρείο 20 — Θρυλική Ισχύς",
+
+  "level.21.title":
+    "Ενυδρείο 21 — Θεϊκή Δύναμη",
+
+  "level.22.title":
+    "Ενυδρείο 22 — Δυαδικότητα",
+
+  "level.23.title":
+    "Ενυδρείο 23 — Αντανακλάσεις",
+
+  "level.24.title":
+    "Ενυδρείο 24 — Απελευθερωμένη Δύναμη",
+
+  "level.25.title":
+    "Ενυδρείο 25 — ΤΟ ΜΕΓΑΛΟ ΕΝΥΔΡΕΙΟ",
+
+
+  /*
+  ========================================================
+  ABILITY GROUPS
+  ========================================================
+  */
+
+  "abilityGroup.0.title":
+    "❤️ Αγάπη",
+
+  "abilityGroup.0.piece.0":
+    "Φύλλο: +1/+2/+3/+5 Αγάπη",
+
+  "abilityGroup.0.piece.1":
+    "Μέλι: 1/2/3/4 Ενισχυμένες φορτίσεις στην ομάδα",
+
+  "abilityGroup.0.piece.2":
+    "Μήλο: +2/+4/+6/+10 Αγάπη",
+
+  "abilityGroup.0.piece.3":
+    "Netfil25: 2/3/4/5 Ενισχυμένες φορτίσεις στην ομάδα",
+
+  "abilityGroup.0.piece.4":
+    "Καρδιά: 2/3/4/5 Ενισχυμένες + 5/5/5/10 Αγάπη",
+
+
+  "abilityGroup.1.title":
+    "🛡️ Άμυνα",
+
+  "abilityGroup.1.piece.0":
+    "Πέτρα: +1/+2/+3/+5 Άμυνα",
+
+  "abilityGroup.1.piece.1":
+    "Χαλκός: 1/2/3/4 Ενισχυμένες φορτίσεις στην ομάδα",
+
+  "abilityGroup.1.piece.2":
+    "Σίδηρος: +2/+4/+6/+10 Άμυνα",
+
+  "abilityGroup.1.piece.3":
+    "Διαμάντι: 2/3/4/5 Ενισχυμένες φορτίσεις στην ομάδα",
+
+  "abilityGroup.1.piece.4":
+    "Λονσνταλεΐτης: 2/3/4/5 Ενισχυμένες + 5/5/5/10 Άμυνα",
+
+
+  "abilityGroup.2.title":
+    "💨 Ταχύτητα",
+
+  "abilityGroup.2.piece.0":
+    "Φτερό: +1/+2/+3/+5 Ταχύτητα",
+
+  "abilityGroup.2.piece.1":
+    "Άνεμος: 1/2/3/4 Επιταχυνόμενες φορτίσεις στην ομάδα",
+
+  "abilityGroup.2.piece.2":
+    "Πορφυρό: +2/+4/+6/+10 Ταχύτητα",
+
+  "abilityGroup.2.piece.3":
+    "Ανεμοστρόβιλος: 2/3/4/5 Επιταχυνόμενες φορτίσεις στην ομάδα",
+
+  "abilityGroup.2.piece.4":
+    "Αστέρι: 2/3/4/5 Επιταχυνόμενες + 5/5/5/10 Ταχύτητα",
+
+
+  "abilityGroup.3.title":
+    "⚔️ Επίθεση",
+
+  "abilityGroup.3.piece.0":
+    "Νύχια: +1/+2/+3/+5 Επίθεση",
+
+  "abilityGroup.3.piece.1":
+    "Κυνόδοντες: 1/2/3/4 Ενισχυμένες φορτίσεις στην ομάδα",
+
+  "abilityGroup.3.piece.2":
+    "Αγκάθια: +2/+4/+6/+10 Επίθεση",
+
+  "abilityGroup.3.piece.3":
+    "Σπαθιά: 2/3/4/5 Ενισχυμένες φορτίσεις στην ομάδα",
+
+  "abilityGroup.3.piece.4":
+    "Διάβολος: 2/3/4/5 Ενισχυμένες + 5/5/5/10 Επίθεση",
+
+
+  "abilityGroup.4.title":
+    "🎯 Κρίσιμο",
+
+  "abilityGroup.4.piece.0":
+    "Ζάρια: +1/+2/+3/+5% Πιθανότητα Κρίσιμου",
+
+  "abilityGroup.4.piece.1":
+    "Τύχη: +10/+15/+20/+40% Πιθανότητα Κρίσιμου",
+
+  "abilityGroup.4.piece.2":
+    "Μετεωρίτης: +2/+4/+6/+10% Κρίσιμη Ζημιά",
+
+  "abilityGroup.4.piece.3":
+    "Notter: +10/+30/+60/+100% Κρίσιμη Ζημιά",
+
+  "abilityGroup.4.piece.4":
+    "Πλανήτης: +15/+50/+75/+100% Πιθανότητα Κρίσιμου και +30/+90/+200/+300% Κρίσιμη Ζημιά",
+
+
+  "abilityGroup.5.title":
+    "🧪 Επιδράσεις",
+
+  "abilityGroup.5.piece.0":
+    "Φωτιά → 1/2/3/5 Ασφυκτιά",
+
+  "abilityGroup.5.piece.1":
+    "Πάγος → 1/2/3/5 Μούδιασμα",
+
+  "abilityGroup.5.piece.2":
+    "Δηλητήριο → 1/2/3/5 Σύγχυση",
+
+  "abilityGroup.5.piece.3":
+    "Ηλεκτρισμός → 1/2/3/5 Ηλεκτρισμένο",
+
+  "abilityGroup.5.piece.4":
+    "Φως → 1/2/3/5 Θαμπωμένο",
+
+
+  "abilityGroup.6.title":
+    "🧪 Επιδράσεις",
+
+  "abilityGroup.6.piece.0":
+    "Κρύο → 1/2/3/5 Εξασθενημένο",
+
+  "abilityGroup.6.piece.1":
+    "Φούσκα → 1/2/3/5 Απροστάτευτο",
+
+  "abilityGroup.6.piece.2":
+    "Λάσπη → 1/2/3/5 Αργό",
+
+  "abilityGroup.6.piece.3":
+    "Στόχος → 1/2/3/5 Εκτεθειμένο",
+
+  "abilityGroup.6.piece.4":
+    "Λυπημένο → 1/2/3/5 Μνησίκακο",
+
+
+  "abilityGroup.7.title":
+    "🧪 Επιδράσεις",
+
+  "abilityGroup.7.piece.0":
+    "Ύπνος → 1/2/3/5 Κουρασμένο",
+
+  "abilityGroup.7.piece.1":
+    "Σκιά → 1/2/3/5 Σκοτεινιασμένο",
+
+  "abilityGroup.7.piece.2":
+    "AI → 1/2/3/5 Απενεργοποιημένο",
+
+  "abilityGroup.7.piece.3":
+    "Νωθρότητα → 1/2/3/5 Αποθαρρυμένο",
+
+  "abilityGroup.7.piece.4":
+    "Μέδουσα → 1/2/3/5 Παραπαίον",
+
+
+  "abilityGroup.8.title":
+    "🧪 Επιδράσεις",
+
+  "abilityGroup.8.piece.0":
+    "Θείο → 1/2/3/5 Ερωτευμένο",
+
+
+  "abilityGroup.9.title":
+    "🪄 Διπλές Επιδράσεις",
+
+  "abilityGroup.9.piece.0":
+    "Φάντασμα → Κουρασμένο + Απροστάτευτο (1/2/3/5 το καθένα)",
+
+  "abilityGroup.9.piece.1":
+    "Πάχνη → Εξασθενημένο + Αργό (1/2/3/5 το καθένα)",
+
+  "abilityGroup.9.piece.2":
+    "Άμμος → Παραπαίον + Μούδιασμα (1/2/3/5 το καθένα)",
+
+  "abilityGroup.9.piece.3":
+    "Καθρέφτης → Εκτεθειμένο + Αποθαρρυμένο (1/2/3/5 το καθένα)",
+
+  "abilityGroup.9.piece.4":
+    "Μάγμα → Ασφυκτιά + Θαμπωμένο (1/2/3/5 το καθένα)",
+
+
+  "abilityGroup.10.title":
+    "🪄 Διπλές Επιδράσεις",
+
+  "abilityGroup.10.piece.0":
+    "Ραδιενεργό → Σύγχυση + Απενεργοποιημένο (1/2/3/5 το καθένα)",
+
+  "abilityGroup.10.piece.1":
+    "Φλαμίνγκο → Ερωτευμένο + Ενισχυμένο για την ομάδα (1/2/3/5 το καθένα)",
+
+  "abilityGroup.10.piece.2":
+    "Arcade → Ηλεκτρισμένο + Επιταχυνόμενο για την ομάδα (1/2/3/5 το καθένα)",
+
+  "abilityGroup.10.piece.3":
+    "Έκλειψη → Σκοτεινιασμένο + Ενισχυμένο για την ομάδα (1/2/3/5 το καθένα)",
+
+  "abilityGroup.10.piece.4":
+    "Στρατιώτης → Μνησίκακο + Ενισχυμένο για την ομάδα (1/2/3/5 το καθένα)",
+
+
+  /*
+  ========================================================
+  WORLDS
+  ========================================================
+  */
+
+  "world.0.title":
+    "ΚΟΣΜΟΣ 1 — Η ΜΙΚΡΗ ΛΙΜΝΗ",
+
+  "world.1.title":
+    "ΚΟΣΜΟΣ 2 — ΑΓΡΙΑ ΝΕΡΑ",
+
+  "world.2.title":
+    "ΚΟΣΜΟΣ 3 — ΤΑ ΒΑΘΗ",
+
+  "world.3.title":
+    "ΚΟΣΜΟΣ 4 — ΤΟ ΓΙΓΑΝΤΙΑΙΟ ΒΑΣΙΛΕΙΟ",
+
+  "world.4.title":
+    "ΚΟΣΜΟΣ 5 — ΤΟ ΜΕΓΑΛΟ ΕΝΥΔΡΕΙΟ",
+
+
+  /*
+  ========================================================
+  WORLD 1
+  ========================================================
+  */
+
+  "world.0.level.0.title":
+    "1 — Ένα Νέο Σπίτι",
+  "world.0.level.0.aquarium":
+    "Ενυδρείο 1",
+  "world.0.level.0.enemies":
+    "Ροζ",
+
+  "world.0.level.1.title":
+    "2 — Πρώτη Κίνηση",
+  "world.0.level.1.aquarium":
+    "Ενυδρείο 1",
+  "world.0.level.1.enemies":
+    "Φύλλο",
+
+  "world.0.level.2.title":
+    "3 — Πρώτες Διαφορές",
+  "world.0.level.2.aquarium":
+    "—",
+  "world.0.level.2.enemies":
+    "Φύλλο + Φτερό",
+
+  "world.0.level.3.title":
+    "4 — Μικρά Νύχια",
+  "world.0.level.3.aquarium":
+    "Ενυδρείο 2",
+  "world.0.level.3.enemies":
+    "Φτερό + Νύχια",
+
+  "world.0.level.4.title":
+    "5 — Δύο εναντίον Δύο",
+  "world.0.level.4.aquarium":
+    "Ενυδρείο 3",
+  "world.0.level.4.enemies":
+    "Φύλλο + Ζάρια · Πέτρα + Μετεωρίτης",
+
+  "world.0.level.5.title":
+    "6 — Πρώτες Επιδράσεις",
+  "world.0.level.5.aquarium":
+    "Ενυδρείο 3",
+  "world.0.level.5.enemies":
+    "Φωτιά + Νύχια · Κρύο + Φτερό",
+
+  "world.0.level.6.title":
+    "7 — Εξασθένηση",
+  "world.0.level.6.aquarium":
+    "Ενυδρείο 4",
+  "world.0.level.6.enemies":
+    "Πέτρα + Φούσκα · Νύχια + Λάσπη",
+
+  "world.0.level.7.title":
+    "8 — Το Αδύναμο Σημείο",
+  "world.0.level.7.aquarium":
+    "Ενυδρείο 4",
+  "world.0.level.7.enemies":
+    "Φύλλο + Στόχος · Λυπημένο + Πέτρα",
+
+  "world.0.level.8.title":
+    "9 — Ανώτερα Υλικά",
+  "world.0.level.8.aquarium":
+    "Ενυδρείο 5",
+  "world.0.level.8.enemies":
+    "Μήλο + Άνεμος · Σίδηρος + Κυνόδοντες",
+
+  "world.0.level.9.title":
+    "10 — Η Πρώτη Πρόκληση",
+  "world.0.level.9.aquarium":
+    "Ενυδρείο 5",
+  "world.0.level.9.enemies":
+    "Μήλο + Κυνόδοντες · Άνεμος + Σίδηρος",
+
+
+  /*
+  ========================================================
+  WORLD 2
+  ========================================================
+  */
+
+  "world.1.level.0.title":
+    "11 — Η Τύχη Ξυπνά",
+  "world.1.level.0.aquarium":
+    "Ενυδρείο 6",
+  "world.1.level.0.enemies":
+    "Τύχη + Φωτιά · Κρύο + Ηλεκτρισμός",
+
+  "world.1.level.1.title":
+    "12 — Εκκενώσεις",
+  "world.1.level.1.aquarium":
+    "—",
+  "world.1.level.1.enemies":
+    "Ηλεκτρισμός + Νύχια · Φωτιά + Φτερό",
+
+  "world.1.level.2.title":
+    "13 — Δηλητήριο στο Νερό",
+  "world.1.level.2.aquarium":
+    "Ενυδρείο 7",
+  "world.1.level.2.enemies":
+    "Δηλητήριο + Λάσπη · Φούσκα + Στόχος · Φωτιά + Νύχια",
+
+  "world.1.level.3.title":
+    "14 — Το Χαμένο Βλέμμα",
+  "world.1.level.3.aquarium":
+    "Ενυδρείο 7",
+  "world.1.level.3.enemies":
+    "Λάσπη + Πέτρα · Στόχος + Φτερό · Λυπημένο + Νύχια",
+
+  "world.1.level.4.title":
+    "15 — Δηλητηριώδες Μήλο",
+  "world.1.level.4.aquarium":
+    "Ενυδρείο 8",
+  "world.1.level.4.enemies":
+    "Μήλο + Δηλητήριο · Φούσκα + Σίδηρος · Άνεμος + Κυνόδοντες",
+
+  "world.1.level.5.title":
+    "16 — Το Ηλεκτρικό Μάτι",
+  "world.1.level.5.aquarium":
+    "Ενυδρείο 8",
+  "world.1.level.5.enemies":
+    "Ηλεκτρισμός + Στόχος · Λυπημένο + Λάσπη · Φούσκα + Νύχια",
+
+  "world.1.level.6.title":
+    "17 — Η Καρδιά της Μάχης",
+  "world.1.level.6.aquarium":
+    "Ενυδρείο 9",
+  "world.1.level.6.enemies":
+    "Μήλο + Σίδηρος · Άνεμος + Αγκάθια · Στόχος + Κυνόδοντες",
+
+  "world.1.level.7.title":
+    "18 — Ατσάλι & Δηλητήριο",
+  "world.1.level.7.aquarium":
+    "Ενυδρείο 9",
+  "world.1.level.7.enemies":
+    "Δηλητήριο + Σίδηρος · Μήλο + Αγκάθια · Λάσπη + Νύχια",
+
+  "world.1.level.8.title":
+    "19 — Κρίσιμη Ταχύτητα",
+  "world.1.level.8.aquarium":
+    "Ενυδρείο 10",
+  "world.1.level.8.enemies":
+    "Άνεμος + Πορφυρό · Τύχη + Αγκάθια · Μήλο + Ηλεκτρισμός",
+
+  "world.1.level.9.title":
+    "20 — Η Καταιγίδα",
+  "world.1.level.9.aquarium":
+    "Ενυδρείο 10",
+  "world.1.level.9.enemies":
+    "Άνεμος + Αγκάθια · Ηλεκτρισμός + Πορφυρό · Τύχη + Νύχια",
+
+
+  /*
+  ========================================================
+  WORLD 3
+  ========================================================
+  */
+
+  "world.2.level.0.title":
+    "21 — Βαθύς Ύπνος",
+  "world.2.level.0.aquarium":
+    "Ενυδρείο 11",
+  "world.2.level.0.enemies":
+    "Ύπνος + Τύχη · Ηλεκτρισμός + Μήλο · Στόχος + Σίδηρος",
+
+  "world.2.level.1.title":
+    "22 — Επικίνδυνο Φως",
+  "world.2.level.1.aquarium":
+    "Ενυδρείο 11",
+  "world.2.level.1.enemies":
+    "Φως + Αγκάθια · Δηλητήριο + Πορφυρό · Τύχη + Λάσπη",
+
+  "world.2.level.2.title":
+    "23 — Τέσσερις Σκιές",
+  "world.2.level.2.aquarium":
+    "Ενυδρείο 12",
+  "world.2.level.2.enemies":
+    "Φως + Νύχια · Δηλητήριο + Σίδηρος · Ύπνος + Φτερό · Ηλεκτρισμός + Αγκάθια",
+
+  "world.2.level.3.title":
+    "24 — Δηλητήριο & Ταχύτητα",
+  "world.2.level.3.aquarium":
+    "Ενυδρείο 12",
+  "world.2.level.3.enemies":
+    "Δηλητήριο + Πορφυρό · Φως + Φτερό · Ηλεκτρισμός + Νύχια · Ύπνος + Σίδηρος",
+
+  "world.2.level.4.title":
+    "25 — Η Δύναμη του Notter",
+  "world.2.level.4.aquarium":
+    "Ενυδρείο 13",
+  "world.2.level.4.enemies":
+    "Ύπνος + Notter · Σκιά + Μήλο · Τύχη + Αγκάθια · Φως + Πορφυρό",
+
+  "world.2.level.5.title":
+    "26 — Γρήγορες Σκιές",
+  "world.2.level.5.aquarium":
+    "Ενυδρείο 13",
+  "world.2.level.5.enemies":
+    "Σκιά + Φτερό · Ύπνος + Αγκάθια · Φως + Σίδηρος · Δηλητήριο + Νύχια",
+
+  "world.2.level.6.title":
+    "27 — Τεχνητή Νοημοσύνη",
+  "world.2.level.6.aquarium":
+    "Ενυδρείο 14",
+  "world.2.level.6.enemies":
+    "AI + Τύχη · Σκιά + Αγκάθια · Ύπνος + Πορφυρό · Φως + Σίδηρος",
+
+  "world.2.level.7.title":
+    "28 — Το Σκοτεινό Βασίλειο",
+  "world.2.level.7.aquarium":
+    "Ενυδρείο 14",
+  "world.2.level.7.enemies":
+    "AI + Φτερό · Σκιά + Νύχια · Δηλητήριο + Αγκάθια · Τύχη + Σίδηρος",
+
+  "world.2.level.8.title":
+    "29 — Πρώτοι Γίγαντες",
+  "world.2.level.8.aquarium":
+    "Ενυδρείο 15",
+  "world.2.level.8.enemies":
+    "Netfil25 + Σίδηρος · Διαμάντι + Αγκάθια · Ανεμοστρόβιλος + Τύχη · AI + Μήλο",
+
+  "world.2.level.9.title":
+    "30 — Η Καρδιά των Βαθών",
+  "world.2.level.9.aquarium":
+    "Ενυδρείο 15",
+  "world.2.level.9.enemies":
+    "Netfil25 + Αγκάθια · Διαμάντι + Πορφυρό · Ανεμοστρόβιλος + Νύχια · AI + Τύχη",
+
+
+  /*
+  ========================================================
+  WORLD 4
+  ========================================================
+  */
+
+  "world.3.level.0.title":
+    "31 — Αιώνιος Πάγος",
+  "world.3.level.0.aquarium":
+    "Ενυδρείο 16",
+  "world.3.level.0.enemies":
+    "Πάγος + Αγκάθια · Ανεμοστρόβιλος + Σίδηρος · Netfil25 + Πορφυρό · AI + Νύχια",
+
+  "world.3.level.1.title":
+    "32 — Παγωμένη Καταιγίδα",
+  "world.3.level.1.aquarium":
+    "Ενυδρείο 16",
+  "world.3.level.1.enemies":
+    "Πάγος + Ανεμοστρόβιλος · Διαμάντι + Αγκάθια · AI + Πορφυρό · Netfil25 + Νύχια",
+
+  "world.3.level.2.title":
+    "33 — Σπαθιά",
+  "world.3.level.2.aquarium":
+    "Ενυδρείο 17",
+  "world.3.level.2.enemies":
+    "Σπαθιά + Αγκάθια · Νωθρότητα + Σίδηρος · Πάγος + Τύχη · Ανεμοστρόβιλος + Πορφυρό",
+
+  "world.3.level.3.title":
+    "34 — Ο Τέλειος Εχθρός",
+  "world.3.level.3.aquarium":
+    "Ενυδρείο 17",
+  "world.3.level.3.enemies":
+    "Σπαθιά + Σίδηρος · Νωθρότητα + Αγκάθια · Πάγος + Πορφυρό · Ανεμοστρόβιλος + Τύχη",
+
+  "world.3.level.4.title":
+    "35 — Θανάσιμο Όριο",
+  "world.3.level.4.aquarium":
+    "Ενυδρείο 18",
+  "world.3.level.4.enemies":
+    "Μέδουσα + Αγκάθια · Καρδιά + Σίδηρος · Σπαθιά + Πορφυρό · Πάγος + Τύχη",
+
+  "world.3.level.5.title":
+    "36 — Αγάπη & Καταστροφή",
+  "world.3.level.5.aquarium":
+    "Ενυδρείο 18",
+  "world.3.level.5.enemies":
+    "Καρδιά + Αγκάθια · Μέδουσα + Σίδηρος · Σπαθιά + Τύχη · Νωθρότητα + Πορφυρό",
+
+  "world.3.level.6.title":
+    "37 — Θρυλική Δύναμη",
+  "world.3.level.6.aquarium":
+    "Ενυδρείο 19",
+  "world.3.level.6.enemies":
+    "Λονσνταλεΐτης + Σπαθιά · Αστέρι + Αγκάθια · Καρδιά + Πορφυρό · Μέδουσα + Τύχη",
+
+  "world.3.level.7.title":
+    "38 — Τέσσερις Δυνάμεις",
+  "world.3.level.7.aquarium":
+    "Ενυδρείο 19",
+  "world.3.level.7.enemies":
+    "Λονσνταλεΐτης + Σίδηρος · Αστέρι + Πορφυρό · Σπαθιά + Αγκάθια · Καρδιά + Μήλο",
+
+  "world.3.level.8.title":
+    "39 — Δύναμη Ήρωα",
+  "world.3.level.8.aquarium":
+    "Ενυδρείο 20",
+  "world.3.level.8.enemies":
+    "Διάβολος + Αγκάθια · Πλανήτης + Τύχη · Αστέρι + Σίδηρος · Καρδιά + Πορφυρό",
+
+  "world.3.level.9.title":
+    "40 — Ο Κολοσσός",
+  "world.3.level.9.aquarium":
+    "Ενυδρείο 20",
+  "world.3.level.9.enemies":
+    "Διάβολος + Σπαθιά · Πλανήτης + Αγκάθια · Αστέρι + Σίδηρος · Καρδιά + Λονσνταλεΐτης",
+
+
+  /*
+  ========================================================
+  WORLD 5
+  ========================================================
+  */
+
+  "world.4.level.0.title":
+    "41 — Θεϊκή Παρουσία",
+  "world.4.level.0.aquarium":
+    "Ενυδρείο 21",
+  "world.4.level.0.enemies":
+    "Θείο + Αγκάθια · Φάντασμα + Σίδηρος · Πλανήτης + Πορφυρό · Αστέρι + Τύχη",
+
+  "world.4.level.1.title":
+    "42 — Κατάρα",
+  "world.4.level.1.aquarium":
+    "Ενυδρείο 21",
+  "world.4.level.1.enemies":
+    "Φάντασμα + Αγκάθια · Θείο + Σίδηρος · Διάβολος + Πορφυρό · Πλανήτης + Τύχη",
+
+  "world.4.level.2.title":
+    "43 — Πάχνη",
+  "world.4.level.2.aquarium":
+    "Ενυδρείο 22",
+  "world.4.level.2.enemies":
+    "Πάχνη + Αγκάθια · Άμμος + Σίδηρος · Φάντασμα + Πορφυρό · Θείο + Τύχη",
+
+  "world.4.level.3.title":
+    "44 — Άμμος & Πάγος",
+  "world.4.level.3.aquarium":
+    "Ενυδρείο 22",
+  "world.4.level.3.enemies":
+    "Άμμος + Αγκάθια · Πάχνη + Πορφυρό · Θείο + Σίδηρος · Πλανήτης + Διάβολος",
+
+  "world.4.level.4.title":
+    "45 — Ο Καθρέφτης",
+  "world.4.level.4.aquarium":
+    "Ενυδρείο 23",
+  "world.4.level.4.enemies":
+    "Καθρέφτης + Αγκάθια · Μάγμα + Σίδηρος · Πάχνη + Πορφυρό · Άμμος + Τύχη",
+
+  "world.4.level.5.title":
+    "46 — Αντανάκλαση της Δύναμης",
+  "world.4.level.5.aquarium":
+    "Ενυδρείο 23",
+  "world.4.level.5.enemies":
+    "Καθρέφτης + Διάβολος · Μάγμα + Αστέρι · Άμμος + Λονσνταλεΐτης · Πλανήτης + Καρδιά",
+
+  "world.4.level.6.title":
+    "47 — Ακτινοβολία",
+  "world.4.level.6.aquarium":
+    "Ενυδρείο 24",
+  "world.4.level.6.enemies":
+    "Ραδιενεργό + Αγκάθια · Φλαμίνγκο + Σίδηρος · Καθρέφτης + Πορφυρό · Μάγμα + Τύχη",
+
+  "world.4.level.7.title":
+    "48 — Το Τελικό Στοιχείο",
+  "world.4.level.7.aquarium":
+    "Ενυδρείο 24",
+  "world.4.level.7.enemies":
+    "Ραδιενεργό + Διάβολος · Φλαμίνγκο + Αστέρι · Καθρέφτης + Λονσνταλεΐτης · Μάγμα + Πλανήτης",
+
+  "world.4.level.8.title":
+    "49 — Το Μεγάλο Ενυδρείο",
+  "world.4.level.8.aquarium":
+    "Ενυδρείο 25",
+  "world.4.level.8.enemies":
+    "Arcade + Αγκάθια · Έκλειψη + Σίδηρος · Στρατιώτης + Πορφυρό · Πλανήτης + Διάβολος",
+
+  "world.4.level.9.title":
+    "50 — ΤΟ ΤΕΛΟΣ",
+  "world.4.level.9.aquarium":
+    "Ενυδρείο 25",
+  "world.4.level.9.enemies":
+    "Στρατιώτης + Πλανήτης · Arcade + Αστέρι · Έκλειψη + Λονσνταλεΐτης · Φλαμίνγκο + Θείο",
+
+
+  /*
+  ========================================================
+  LEGAL
+  ========================================================
+  */
+
+  "legal.title":
+    "Πολιτική Απορρήτου & Πνευματικά Δικαιώματα",
+
+  "legal.privacyTitle":
+    "Πολιτική Απορρήτου",
+
+  "legal.privacy1":
+    "Το Only Axolotls σέβεται το απόρρητό σας. Αυτός ο ιστότοπος αποτελεί ενημερωτικό οδηγό για το παιχνίδι. Δεν ζητά σκόπιμα προσωπικές πληροφορίες, δεν δημιουργεί λογαριασμούς χρηστών και δεν απαιτεί την υποβολή προσωπικών δεδομένων.",
+
+  "legal.privacy2":
+    "Αν αυτός ο ιστότοπος συνδεθεί αργότερα με αναλυτικά εργαλεία, εξωτερικές υπηρεσίες, φόρμες, cookies ή άλλες τεχνολογίες που επεξεργάζονται προσωπικά δεδομένα, αυτή η πολιτική θα ενημερωθεί πριν από την εισαγωγή αυτών των λειτουργιών.",
+
+  "legal.copyTitle":
+    "Πνευματικά Δικαιώματα & Πνευματική Ιδιοκτησία",
+
+  "legal.copy1":
+    "<strong>Only Axolotls</strong>, το περιεχόμενο του παιχνιδιού, οι χαρακτήρες, τα έργα τέχνης, τα γραφικά, τα λογότυπα, οι κινούμενες εικόνες, η μουσική, οι ήχοι, το γραπτό περιεχόμενο και το λογισμικό προστατεύονται ως πνευματική ιδιοκτησία των αντίστοιχων δικαιούχων και δεν διατίθενται για μη εξουσιοδοτημένη εμπορική αναδιανομή.",
+
+  "legal.copy2":
+    "Αυτός ο οδηγός παρέχεται αποκλειστικά για να βοηθήσει τους παίκτες να κατανοήσουν και να απολαύσουν το παιχνίδι. Η αναπαραγωγή, αναδιανομή, εμπορική χρήση ή τροποποίηση προστατευμένων στοιχείων του παιχνιδιού δεν επιτρέπεται χωρίς προηγούμενη άδεια.",
+
+  "legal.copy3":
+    "© 2026 Notter Animations.",
+
+
+  /*
+  ========================================================
+  RARITIES
+  ========================================================
+  */
+
+  "rarity.common":
+    "Κοινό",
+
+  "rarity.uncommon":
+    "Ασυνήθιστο",
+
+  "rarity.rare":
+    "Σπάνιο",
+
+  "rarity.epic":
+    "Επικό",
+
+  "rarity.legendary":
+    "Θρυλικό",
+
+  "rarity.xolotl":
+    "Xólotl",
+
+
+  /*
+  ========================================================
+  UNITS
+  ========================================================
+  */
+
+  "unit.day":
+    "ημέρα",
+
+  "unit.days":
+    "ημέρες",
+
+  "unit.gem":
+    "κρύσταλλος",
+
+  "unit.gems":
+    "κρύσταλλοι",
+
+
+  /*
+  ========================================================
+  SEEDS
+  ========================================================
+  */
+
+  "seed.algae":
+    "Φύκια",
+
+  "seed.potatoes":
+    "Πατάτες",
+
+  "seed.corn":
+    "Καλαμπόκι",
+
+  "seed.coral":
+    "Κοράλλι",
+
+  "seed.tomatoes":
+    "Ντομάτες",
+
+  "seed.wheat":
+    "Σιτάρι",
+
+  "seed.onions":
+    "Κρεμμύδια",
+
+  "seed.carrots":
+    "Καρότα",
+
+  "seed.bananas":
+    "Μπανάνες",
+
+  "seed.beans":
+    "Φασόλια",
+
+  "seed.strawberries":
+    "Φράουλες",
+
+  "seed.oranges":
+    "Πορτοκάλια",
+
+  "seed.grapes":
+    "Σταφύλια",
+
+  "seed.chocolate":
+    "Σοκολάτα",
+
+  "seed.peppers":
+    "Πιπεριές",
+
+
+  /*
+  ========================================================
+  STATUS EFFECTS
+  ========================================================
+  */
+
+  "effect.suffocated":
+    "Ασφυκτιά",
+
+  "effect.suffocated.r":
+    "Χάνει 2 βασικούς HP στο τέλος του γύρου.",
+
+
+  "effect.numb":
+    "Μούδιασμα",
+
+  "effect.numb.r":
+    "4% βασική πιθανότητα να μην πραγματοποιήσει καμία ενέργεια σε αυτόν τον γύρο.",
+
+
+  "effect.confused":
+    "Σύγχυση",
+
+  "effect.confused.r":
+    "Χάνει 1 βασικό HP και -1 βασική Άμυνα στο τέλος του γύρου.",
+
+
+  "effect.sparkling":
+    "Ηλεκτρισμένο",
+
+  "effect.sparkling.r":
+    "2% βασική πιθανότητα να μην πραγματοποιήσει καμία ενέργεια και -1 βασική Ταχύτητα.",
+
+
+  "effect.dazzled":
+    "Θαμπωμένο",
+
+  "effect.dazzled.r":
+    "4% βασική πιθανότητα να αστοχήσει η επιλεγμένη επίθεση.",
+
+
+  "effect.weakened":
+    "Εξασθενημένο",
+
+  "effect.weakened.r":
+    "-2 βασική Επίθεση.",
+
+
+  "effect.unprotected":
+    "Απροστάτευτο",
+
+  "effect.unprotected.r":
+    "-2 βασική Άμυνα.",
+
+
+  "effect.slow":
+    "Αργό",
+
+  "effect.slow.r":
+    "-2 βασική Ταχύτητα.",
+
+
+  "effect.exposed":
+    "Εκτεθειμένο",
+
+  "effect.exposed.r":
+    "+4% βασική πιθανότητα να δεχθεί κρίσιμο χτύπημα.",
+
+
+  "effect.resentful":
+    "Μνησίκακο",
+
+  "effect.resentful.r":
+    "+10% βασική κρίσιμη ζημιά που δέχεται.",
+
+
+  "effect.tired":
+    "Κουρασμένο",
+
+  "effect.tired.r":
+    "-1 βασική Επίθεση και -1 βασική Ταχύτητα.",
+
+
+  "effect.dimmed":
+    "Σκοτεινιασμένο",
+
+  "effect.dimmed.r":
+    "-1 βασική Επίθεση και -1 βασική Άμυνα.",
+
+
+  "effect.shutDown":
+    "Απενεργοποιημένο",
+
+  "effect.shutDown.r":
+    "-1 βασική Ταχύτητα και -1 βασική Άμυνα.",
+
+
+  "effect.discouraged":
+    "Αποθαρρυμένο",
+
+  "effect.discouraged.r":
+    "2% βασική πιθανότητα να μην πραγματοποιήσει καμία ενέργεια και -1 βασική Επίθεση.",
+
+
+  "effect.staggering":
+    "Παραπαίον",
+
+  "effect.staggering.r":
+    "2% βασική πιθανότητα να μην πραγματοποιήσει καμία ενέργεια και -1 βασική Άμυνα.",
+
+
+  "effect.enamored":
+    "Ερωτευμένο",
+
+  "effect.enamored.r":
+    "+2% βασική πιθανότητα να δεχθεί κρίσιμο χτύπημα και +8% βασική κρίσιμη ζημιά που δέχεται.",
+
+
+  "effect.vitalized":
+    "Ενισχυμένο",
+
+  "effect.vitalized.r":
+    "+1 Αγάπη.",
+
+
+  "effect.reinforced":
+    "Οχυρωμένο",
+
+  "effect.reinforced.r":
+    "+1 Άμυνα.",
+
+
+  "effect.accelerated":
+    "Επιταχυνόμενο",
+
+  "effect.accelerated.r":
+    "+1 Ταχύτητα.",
+
+
+  "effect.powered":
+    "Ενδυναμωμένο",
+
+  "effect.powered.r":
+    "+1 Επίθεση."
+
 };

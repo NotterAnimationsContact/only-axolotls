@@ -1,196 +1,1451 @@
 export default {
+
+  /*
+  ========================================================
+  LANGUAGE
+  ========================================================
+  */
+
   "lang": "ar",
-  "languageLabel": "Language",
-  "pageTitle": "Only Axolotls — Official Game Guide",
-  "description": "Official Only Axolotls game guide — mechanics, breeding, probabilities, levels, axolotl abilities, effects and more.",
-  "hero.eyebrow": "OFFICIAL GAME GUIDE",
-  "hero.title": "Only Axolotls",
-  "hero.subtitle": "Everything you need to know about your aquarium, axolotls, breeding, battles, progression and probabilities.",
-  "hero.note": "This guide describes the current final game systems and values.",
-  "basics.title": "How Only Axolotls Works",
-  "basics.p1": "Only Axolotls is built around collecting, breeding and developing axolotls. Each axolotl is made from <strong>8 individual pieces</strong>. Pieces have their own rarity and can contribute statistics, effects or special abilities.",
-  "basics.grid1.title": "8 Pieces",
-  "basics.grid1.p": "Every axolotl is assembled from eight independently determined pieces.",
-  "basics.grid2.title": "6 Rarities",
-  "basics.grid2.p": "Common, Uncommon, Rare, Epic, Legendary and Xólotl.",
-  "basics.grid3.title": "Progression",
-  "basics.grid3.p": "Aquarium levels unlock new axolotls, seeds, capacity and expansions.",
-  "basics.grid4.title": "Combat",
-  "basics.grid4.p": "Pieces can grant statistics and status effects that shape how axolotls perform.",
-  "breeding.title": "Breeding &amp; Piece Inheritance",
-  "breeding.p1": "When two axolotls reproduce, every one of their eight pieces is resolved independently.",
-  "breeding.mother": "35% Mother",
-  "breeding.father": "35% Father",
-  "breeding.mutation": "30% Mutation",
-  "breeding.p2": "For each piece, there is a <strong>35% chance</strong> to inherit the mother's piece, a <strong>35% chance</strong> to inherit the father's piece, and a <strong>30% chance</strong> that the piece mutates.",
-  "breeding.mutationTitle": "Mutation rarity",
-  "breeding.mutationP": "If both parent pieces have the same rarity, a mutation is guaranteed to use that rarity. If their rarities differ, the mutation distributes its chance evenly across every rarity step between the two pieces, including both endpoints. The resulting piece is then selected randomly from the chosen rarity.",
-  "breeding.example": "<b>Example:</b> Legendary mother + Common father = six rarity steps: Common, Uncommon, Rare, Epic, Legendary and Xólotl. A mutation has an equal chance of landing on each of those six rarity levels.",
-  "breeding.genderTitle": "Gender at birth",
-  "breeding.genderP": "Every newborn axolotl has a <strong>50% chance to be female</strong> and a <strong>50% chance to be male</strong>.",
-  "timers.title": "Breeding Time &amp; Gem Cost",
-  "timers.p": "The <strong>highest rarity among the two parent pieces</strong> determines both the breeding/hatching time and the number of gems required to skip the event.",
-  "timers.rarity": "Highest rarity",
-  "timers.time": "Time",
-  "timers.cost": "Skip cost",
-  "coins.title": "Coins",
-  "coins.p1": "Coins are the main currency used for several progression-related systems. They are required to maintain your aquarium, purchase seeds and unlock additional growing space.",
-  "coins.earnTitle": "How to earn Coins",
-  "coins.earnP": "Coins can be obtained through several activities:",
-  "coins.earn1": "Winning battles.",
-  "coins.earn2": "Completing axolotl sets.",
-  "coins.earn3": "Harvesting fully grown phytoplankton plants.",
-  "coins.breedTitle": "Breeding cost",
-  "coins.breedP": "Coins are required to allow two axolotls to reproduce. The cost depends on the rarities of <strong>all eight pieces of the mother</strong> and <strong>all eight pieces of the father</strong>. The rarities of both parents are considered together when calculating the final breeding cost.",
-  "coins.example": "<b>Important:</b> Breeding does not reward Coins. The player must spend Coins to begin the reproduction because the axolotls require care during the breeding process.",
-  "coins.otherTitle": "Other uses",
-  "coins.otherP": "Coins can also be spent on useful progression-related purchases, including seeds from the <strong>Seed Shop</strong> and additional <strong>pot slots</strong> for growing phytoplankton.",
-  "gems.title": "Gems",
-  "gems.p1": "Gems are a premium progression resource used exclusively to <strong>accelerate ongoing game processes</strong>.",
-  "gems.earnTitle": "How to earn Gems",
-  "gems.earn1": "Unlocking a piece gives <strong>1 gem</strong>.",
-  "gems.earn2": "Every axolotl level-up gives <strong>1 gem</strong>.",
-  "gems.earn3": "Completing a star level for the first time gives <strong>1 gem</strong>.",
-  "gems.spendTitle": "How Gems are spent",
-  "gems.spendP": "Gems can be used to instantly complete or accelerate the following processes:",
-  "gems.spend1": "<strong>Breeding</strong> — accelerate an ongoing reproduction.",
-  "gems.spend2": "<strong>Egg hatching</strong> — instantly complete the egg's remaining time.",
-  "gems.spend3": "<strong>Plant growth</strong> — instantly finish the remaining growth time of a plant.",
-  "gems.spend4": "<strong>Seed Shop refresh</strong> — instantly refresh the shop instead of waiting for its normal reset.",
-  "gems.example": "<b>Important:</b> Gems do not replace Coins and are not used for normal purchases. They exist specifically to let the player skip waiting times and accelerate progression.",
-  "food.title": "Phytoplankton, Food &amp; Growth",
-  "food.p1": "Each harvest produces <strong>2 phytoplankton</strong> of the planted crop. An axolotl needs 2 units of its required plant food to level up. Every additional level requires 2 more units than the previous level.",
-  "food.p2": "Each axolotl starts with a base stay duration of <strong>10 days</strong>. Every level adds <strong>4 days</strong> to that duration.",
-  "food.example": "<b>Example:</b> A level 1 axolotl stays for 10 days. Level 2 becomes 14 days, level 3 becomes 18 days, and so on.",
-  "food.favTitle": "Favourite food",
-  "food.favP": "Each of the 8 pieces independently has a <strong>12.5% chance</strong> of assigning the crop associated with that piece's set as the axolotl's favourite food. This can make an axolotl with high-rarity pieces easier to feed than expected.",
-  "food.seedTitle": "Seed unlocks",
-  "food.aquarium": "Aquarium",
-  "food.seed": "Seed",
-  "food.note": "Plant growth time depends on the plant's internal rarity. This rarity is not displayed to the player.",
-  "shop.title": "Seed Shop",
-  "shop.p1": "The Seed Shop is run by a sleepy Andalusian farmer and offers a rotating selection of phytoplankton seeds. The shop refreshes its available seeds every <strong>2 days</strong>.",
-  "shop.howTitle": "How the shop works",
-  "shop.p2": "The shop has up to <strong>6 seed slots</strong>. Each slot can contain a random seed from the seeds you have currently unlocked. Seeds can appear repeatedly, so the same seed may occupy more than one slot.",
-  "shop.p3": "Each available seed stack also receives a random quantity. The quantity starts between <strong>1 and 2 seeds</strong> and increases as your aquarium progresses. Every aquarium level increases both the minimum and maximum available quantity by <strong>2</strong>.",
-  "shop.example": "<b>Example:</b> At the starting level, a seed slot can contain 1–2 seeds. As your aquarium level increases, the possible quantity rises by 2 for both the minimum and maximum.",
-  "shop.groupsTitle": "Seed groups",
-  "shop.p4": "The shop does not choose randomly from all unlocked seeds with one single probability pool. The six slots are separated into different seed groups. Each slot selects from the seeds assigned to its group.",
-  "shop.p5": "This means that newly unlocked seeds are not competing equally against every seed in the entire collection. A rare late-game seed can instead be selected from a much smaller group of possible seeds assigned to that shop slot.",
-  "shop.example2": "<b>Example:</b> If a slot has only 3 possible seeds in its group, each of those seeds has a much more meaningful chance to appear than if the game selected from all 15 unlocked seeds at once.",
-  "shop.slotsTitle": "Shop slots",
-  "shop.p6": "The Seed Shop starts with <strong>1 available slot</strong>. As you progress through the aquarium levels, additional slots are unlocked at specific milestones, up to a maximum of <strong>6 slots</strong>.",
-  "shop.level": "Aquarium level",
-  "shop.slots": "Shop slots",
-  "shop.example3": "<b>Shop slot progression:</b> An additional shop slot is unlocked at aquarium levels <strong>4, 8, 14, 20 and 24</strong>. This increases the shop from its initial <strong>1 slot</strong> to the maximum of <strong>6 slots</strong>.",
-  "shop.p7": "Because the selection changes only every two days, the player cannot simply buy any seed whenever they want. Checking the shop regularly and spending coins when useful seeds appear is an important part of progression.",
-  "visitors.title": "The Daily Visitor",
-  "visitors.p1": "A new axolotl visitor is <strong>guaranteed once per day</strong>. Its appearance never depends on chance.",
-  "visitors.p2": "Visiting axolotls can be adopted or left behind. If you do not adopt a visitor, it leaves the following day.",
-  "visitors.p3": "If your aquarium is at maximum capacity, you cannot adopt another axolotl until you transfer axolotls out of the aquarium and create free space.",
-  "visitors.genTitle": "How the Daily Visitor is generated",
-  "visitors.genP": "Its eight pieces are generated independently. For each piece, the game first checks which rarities you have unlocked. Every unlocked rarity has exactly the same probability.",
-  "visitors.unlocked": "Unlocked rarities",
-  "visitors.chance": "Chance per rarity",
-  "visitors.commonUncommon": "Common + Uncommon",
-  "visitors.plusRare": "+ Rare",
-  "visitors.plusEpic": "+ Epic",
-  "visitors.plusLegendary": "+ Legendary",
-  "visitors.plusXolotl": "+ Xólotl",
-  "visitors.example": "<b>Example:</b> If all six rarities are unlocked, every rarity has a 16.67% chance for each piece. Once a rarity is chosen, all unlocked pieces within that rarity are equally likely. Two Common pieces means 50% each; five Rare pieces means 20% each; ten Epic pieces means 10% each.",
-  "visitors.p4": "The process is repeated eight times, once for every piece. As your collection grows, more individual pieces can appear in the Daily Visitor, while the chance of obtaining any specific piece becomes smaller.",
-  "love.title": "The Enamored Axolotl",
-  "love.p1": "After a battle, every enemy axolotl independently checks whether it wants to join you. Its chance is determined by the rarity of each of its eight pieces.",
-  "love.rarity": "Piece rarity",
-  "love.contribution": "Contribution",
-  "love.p2": "Each of the eight pieces contributes according to its rarity. The final chance is calculated from all eight contributions.",
-  "love.example": "<b>Example:</b> An enemy with Common + Common + Rare + Rare + Epic + Epic + Legendary + Xólotl sends all eight rarity contributions into the final calculation.",
-  "love.multipleTitle": "When multiple enemies accept",
-  "love.multipleP": "None may accept, one may accept, or several may accept. If several accept, the manager randomly selects <strong>one</strong> of them, with every accepted axolotl having the same chance.",
-  "love.two": "2 accepted<br><strong>50% each</strong>",
-  "love.three": "3 accepted<br><strong>33.33% each</strong>",
-  "love.four": "4 accepted<br><strong>25% each</strong>",
-  "levels.title": "Aquarium Levels &amp; Progression",
-  "levels.p": "There are <strong>25 aquarium levels</strong>, containing 50 gameplay levels. Each aquarium level unlocks new axolotls and progressively increases capacity.",
-  "effects.title": "Status Effects",
-  "effects.p": "Status effects alter combat statistics or action probabilities. Effects can be stacked when an ability applies multiple charges.",
-  "effects.effect": "Effect",
-  "effects.result": "Result",
-  "abilities.title": "Axolotl Piece Abilities",
-  "abilities.p": "Piece effects activate according to how many copies of the same piece are present in an axolotl. The following values are reached at 2/8, 4/8, 6/8 and 8/8 copies.",
-  "worlds.title": "Gameplay Levels",
-  "worlds.p": "The game contains five worlds and 50 levels. Each level lists the enemy combinations encountered and the aquarium requirement.",
-  "legal.title": "Privacy Policy &amp; Copyright",
-  "legal.privacyTitle": "Privacy Policy",
-  "legal.privacy1": "Only Axolotls respects your privacy. This website is an informational guide for the game. It does not intentionally request personal information, create user accounts, or require you to submit personal data.",
-  "legal.privacy2": "If this website is later connected to analytics, external services, forms, cookies or other technologies that process personal data, this policy will be updated before those features are introduced.",
-  "legal.copyTitle": "Copyright &amp; Intellectual Property",
-  "legal.copy1": "<strong>Only Axolotls</strong>, its game content, characters, artwork, graphics, logos, animations, music, sounds, written content and software are protected intellectual property of their respective rights holder(s) and are not released for unauthorized commercial redistribution.",
-  "legal.copy2": "This guide is provided solely to help players understand and enjoy the game. Reproduction, redistribution, commercial use or modification of protected game assets is not permitted without prior authorization.",
-  "legal.copy3": "© 2026 Notter Animations.",
-  "rarity.common": "Common",
-  "rarity.uncommon": "Uncommon",
-  "rarity.rare": "Rare",
-  "rarity.epic": "Epic",
-  "rarity.legendary": "Legendary",
-  "rarity.xolotl": "Xólotl",
-  "unit.day": "day",
-  "unit.days": "days",
-  "unit.gem": "gem",
-  "unit.gems": "gems",
-  "seed.algae": "Algae",
-  "seed.potatoes": "Potatoes",
-  "seed.corn": "Corn",
-  "seed.coral": "Coral",
-  "seed.tomatoes": "Tomatoes",
-  "seed.wheat": "Wheat",
-  "seed.onions": "Onions",
-  "seed.carrots": "Carrots",
-  "seed.bananas": "Bananas",
-  "seed.beans": "Beans",
-  "seed.strawberries": "Strawberries",
-  "seed.oranges": "Oranges",
-  "seed.grapes": "Grapes",
-  "seed.chocolate": "Chocolate",
-  "seed.peppers": "Peppers",
-  "effect.suffocated": "Suffocated",
-  "effect.suffocated.r": "Loses 2 base HP at the end of the turn.",
-  "effect.numb": "Numb",
-  "effect.numb.r": "4% base chance to take no action that turn.",
-  "effect.confused": "Confused",
-  "effect.confused.r": "Loses 1 base HP and -1 base Defense at the end of the turn.",
-  "effect.sparkling": "Sparkling",
-  "effect.sparkling.r": "2% base chance to take no action and -1 base Speed.",
-  "effect.dazzled": "Dazzled",
-  "effect.dazzled.r": "4% base chance to miss the selected attack.",
-  "effect.weakened": "Weakened",
-  "effect.weakened.r": "-2 base Attack.",
-  "effect.unprotected": "Unprotected",
-  "effect.unprotected.r": "-2 base Defense.",
-  "effect.slow": "Slow",
-  "effect.slow.r": "-2 base Speed.",
-  "effect.exposed": "Exposed",
-  "effect.exposed.r": "+4% base chance to receive a critical hit.",
-  "effect.resentful": "Resentful",
-  "effect.resentful.r": "+10% base critical damage received.",
-  "effect.tired": "Tired",
-  "effect.tired.r": "-1 base Attack and -1 base Speed.",
-  "effect.dimmed": "Dimmed",
-  "effect.dimmed.r": "-1 base Attack and -1 base Defense.",
-  "effect.shutDown": "Shut Down",
-  "effect.shutDown.r": "-1 base Speed and -1 base Defense.",
-  "effect.discouraged": "Discouraged",
-  "effect.discouraged.r": "2% base chance to take no action and -1 base Attack.",
-  "effect.staggering": "Staggering",
-  "effect.staggering.r": "2% base chance to take no action and -1 base Defense.",
-  "effect.enamored": "Enamored",
-  "effect.enamored.r": "+2% base chance to receive a critical hit and +8% base critical damage received.",
-  "effect.vitalized": "Vitalized",
-  "effect.vitalized.r": "+1 Love.",
-  "effect.reinforced": "Reinforced",
-  "effect.reinforced.r": "+1 Defense.",
-  "effect.accelerated": "Accelerated",
-  "effect.accelerated.r": "+1 Speed.",
-  "effect.powered": "Powered",
-  "effect.powered.r": "+1 Attack."
+  "languageLabel": "اللغة",
+
+  "pageTitle":
+    "Only Axolotls — الدليل الرسمي للعبة",
+
+  "description":
+    "الدليل الرسمي للعبة Only Axolotls — الآليات، التكاثر، الاحتمالات، المستويات، قدرات قنافذ البحر، التأثيرات والمزيد.",
+
+
+  /*
+  ========================================================
+  HERO
+  ========================================================
+  */
+
+  "hero.eyebrow":
+    "الدليل الرسمي للعبة",
+
+  "hero.title":
+    "Only Axolotls",
+
+  "hero.subtitle":
+    "كل ما تحتاج إلى معرفته عن حوضك المائي، وقنافذ البحر، والتكاثر، والمعارك، والتقدم والاحتمالات.",
+
+  "hero.note":
+    "يصف هذا الدليل أنظمة وقيم اللعبة النهائية الحالية.",
+
+
+  /*
+  ========================================================
+  BASICS
+  ========================================================
+  */
+
+  "basics.title":
+    "كيف تعمل Only Axolotls",
+
+  "basics.p1":
+    "تعتمد Only Axolotls على جمع قنافذ البحر وتكاثرها وتطويرها. يتكون كل قنفذ بحر من <strong>8 قطع فردية</strong>. لكل قطعة ندرة خاصة بها، ويمكنها منح إحصائيات أو تأثيرات أو قدرات خاصة.",
+
+  "basics.grid1.title":
+    "8 قطع",
+
+  "basics.grid1.p":
+    "يتكون كل قنفذ بحر من ثماني قطع يتم تحديدها بشكل مستقل.",
+
+  "basics.grid2.title":
+    "6 درجات ندرة",
+
+  "basics.grid2.p":
+    "عادي، غير شائع، نادر، ملحمي، أسطوري وزولوتل.",
+
+  "basics.grid3.title":
+    "التقدم",
+
+  "basics.grid3.p":
+    "تفتح مستويات الحوض المائي قنافذ بحر جديدة وبذورًا وسعةً وتوسعات جديدة.",
+
+  "basics.grid4.title":
+    "المعارك",
+
+  "basics.grid4.p":
+    "يمكن للقطع منح إحصائيات وتأثيرات حالة تحدد أداء قنافذ البحر.",
+
+
+  /*
+  ========================================================
+  BREEDING
+  ========================================================
+  */
+
+  "breeding.title":
+    "التكاثر ووراثة القطع",
+
+  "breeding.p1":
+    "عندما يتكاثر قنفذا بحر، يتم تحديد كل واحدة من قطعهما الثماني بشكل مستقل.",
+
+  "breeding.mother":
+    "35% الأم",
+
+  "breeding.father":
+    "35% الأب",
+
+  "breeding.mutation":
+    "30% طفرة",
+
+  "breeding.p2":
+    "لكل قطعة، هناك <strong>احتمال 35%</strong> لوراثة قطعة الأم، و<strong>احتمال 35%</strong> لوراثة قطعة الأب، و<strong>احتمال 30%</strong> لحدوث طفرة في القطعة.",
+
+  "breeding.mutationTitle":
+    "ندرة الطفرة",
+
+  "breeding.mutationP":
+    "إذا كانت قطعتا الوالدين من نفس درجة الندرة، فإن الطفرة تستخدم تلك الندرة بشكل مضمون. أما إذا اختلفت الندرتان، فتتوزع فرصة الطفرة بالتساوي على كل درجة ندرة بين القطعتين، بما في ذلك الطرفين. بعد ذلك يتم اختيار القطعة الناتجة عشوائيًا من الندرة المحددة.",
+
+  "breeding.example":
+    "<b>مثال:</b> أم أسطورية + أب عادي = ست درجات ندرة: عادي، غير شائع، نادر، ملحمي، أسطوري وزولوتل. تمتلك الطفرة فرصة متساوية للوقوع على أي من درجات الندرة الست.",
+
+  "breeding.genderTitle":
+    "الجنس عند الولادة",
+
+  "breeding.genderP":
+    "كل قنفذ بحر حديث الولادة لديه <strong>احتمال 50% أن يكون أنثى</strong> و<strong>احتمال 50% أن يكون ذكرًا</strong>.",
+
+
+  /*
+  ========================================================
+  BREEDING TIME
+  ========================================================
+  */
+
+  "timers.title":
+    "وقت التكاثر وتكلفة الجواهر",
+
+  "timers.p":
+    "تحدد <strong>أعلى درجة ندرة بين قطعتي الوالدين</strong> كلاً من وقت التكاثر/فقس البيضة وعدد الجواهر المطلوبة لتخطي الحدث.",
+
+  "timers.rarity":
+    "أعلى ندرة",
+
+  "timers.time":
+    "الوقت",
+
+  "timers.cost":
+    "تكلفة التخطي",
+
+
+  /*
+  ========================================================
+  COINS
+  ========================================================
+  */
+
+  "coins.title":
+    "العملات",
+
+  "coins.p1":
+    "العملات هي العملة الرئيسية المستخدمة في العديد من أنظمة التقدم. وهي مطلوبة للحفاظ على حوضك المائي، وشراء البذور وفتح مساحات زراعة إضافية.",
+
+  "coins.earnTitle":
+    "كيفية كسب العملات",
+
+  "coins.earnP":
+    "يمكن الحصول على العملات من خلال عدة أنشطة:",
+
+  "coins.earn1":
+    "الفوز بالمعارك.",
+
+  "coins.earn2":
+    "إكمال مجموعات قنافذ البحر.",
+
+  "coins.earn3":
+    "حصاد نباتات العوالق النباتية المكتملة النمو.",
+
+  "coins.breedTitle":
+    "تكلفة التكاثر",
+
+  "coins.breedP":
+    "يلزم إنفاق العملات للسماح لقنفذي بحر بالتكاثر. تعتمد التكلفة على ندرة <strong>القطع الثماني للأم</strong> و<strong>القطع الثماني للأب</strong>. يتم أخذ ندرة كلا الوالدين معًا في الاعتبار عند حساب تكلفة التكاثر النهائية.",
+
+  "coins.example":
+    "<b>مهم:</b> التكاثر لا يمنح عملات. يجب على اللاعب إنفاق العملات لبدء التكاثر لأن قنافذ البحر تحتاج إلى رعاية أثناء عملية التكاثر.",
+
+  "coins.otherTitle":
+    "استخدامات أخرى",
+
+  "coins.otherP":
+    "يمكن أيضًا إنفاق العملات على مشتريات مفيدة مرتبطة بالتقدم، بما في ذلك البذور من <strong>متجر البذور</strong> و<strong>خانات الأواني</strong> الإضافية لزراعة العوالق النباتية.",
+
+
+  /*
+  ========================================================
+  GEMS
+  ========================================================
+  */
+
+  "gems.title":
+    "الجواهر",
+
+  "gems.p1":
+    "الجواهر هي مورد تقدم مميز يُستخدم حصريًا <strong>لتسريع العمليات الجارية في اللعبة</strong>.",
+
+  "gems.earnTitle":
+    "كيفية كسب الجواهر",
+
+  "gems.earn1":
+    "فتح قطعة يمنح <strong>جوهرة واحدة</strong>.",
+
+  "gems.earn2":
+    "كل رفع لمستوى قنفذ البحر يمنح <strong>جوهرة واحدة</strong>.",
+
+  "gems.earn3":
+    "إكمال مستوى نجوم لأول مرة يمنح <strong>جوهرة واحدة</strong>.",
+
+  "gems.spendTitle":
+    "كيفية استخدام الجواهر",
+
+  "gems.spendP":
+    "يمكن استخدام الجواهر لإكمال أو تسريع العمليات التالية بشكل فوري:",
+
+  "gems.spend1":
+    "<strong>التكاثر</strong> — تسريع عملية تكاثر جارية.",
+
+  "gems.spend2":
+    "<strong>فقس البيضة</strong> — إكمال الوقت المتبقي للبيضة فورًا.",
+
+  "gems.spend3":
+    "<strong>نمو النبات</strong> — إنهاء وقت النمو المتبقي للنبات فورًا.",
+
+  "gems.spend4":
+    "<strong>تحديث متجر البذور</strong> — تحديث المتجر فورًا بدلًا من انتظار إعادة الضبط العادية.",
+
+  "gems.example":
+    "<b>مهم:</b> الجواهر لا تحل محل العملات ولا تُستخدم للمشتريات العادية. وهي موجودة تحديدًا للسماح للاعب بتخطي أوقات الانتظار وتسريع التقدم.",
+
+
+  /*
+  ========================================================
+  FOOD
+  ========================================================
+  */
+
+  "food.title":
+    "العوالق النباتية والطعام والنمو",
+
+  "food.p1":
+    "ينتج كل حصاد <strong>2 من العوالق النباتية</strong> من المحصول المزروع. يحتاج قنفذ البحر إلى وحدتين من طعام النبات المطلوب لرفع مستواه. يتطلب كل مستوى إضافي وحدتين أكثر من المستوى السابق.",
+
+  "food.p2":
+    "يبدأ كل قنفذ بحر بمدة إقامة أساسية تبلغ <strong>10 أيام</strong>. يضيف كل مستوى <strong>4 أيام</strong> إلى هذه المدة.",
+
+  "food.example":
+    "<b>مثال:</b> يبقى قنفذ البحر من المستوى 1 لمدة 10 أيام. يصبح المستوى 2 لمدة 14 يومًا، والمستوى 3 لمدة 18 يومًا، وهكذا.",
+
+  "food.favTitle":
+    "الطعام المفضل",
+
+  "food.favP":
+    "كل واحدة من القطع الثماني لديها بشكل مستقل <strong>احتمال 12.5%</strong> لتحديد المحصول المرتبط بمجموعة تلك القطعة كطعام مفضل لقنفذ البحر. وهذا قد يجعل إطعام قنفذ بحر يمتلك قطعًا عالية الندرة أسهل مما هو متوقع.",
+
+  "food.seedTitle":
+    "فتح البذور",
+
+  "food.aquarium":
+    "الحوض المائي",
+
+  "food.seed":
+    "البذرة",
+
+  "food.note":
+    "يعتمد وقت نمو النبات على الندرة الداخلية للنبات. هذه الندرة لا تظهر للاعب.",
+
+
+  /*
+  ========================================================
+  SEED SHOP
+  ========================================================
+  */
+
+  "shop.title":
+    "متجر البذور",
+
+  "shop.p1":
+    "يدير Dahlia متجر البذور ويقدم مجموعة متغيرة من بذور العوالق النباتية. يقوم المتجر بتحديث البذور المتاحة كل <strong>يومين</strong>.",
+
+  "shop.howTitle":
+    "كيف يعمل المتجر",
+
+  "shop.p2":
+    "يمتلك المتجر ما يصل إلى <strong>6 خانات للبذور</strong>. يمكن أن تحتوي كل خانة على بذرة عشوائية من البذور التي فتحتها حاليًا. يمكن أن تظهر البذور بشكل متكرر، لذلك قد تشغل البذرة نفسها أكثر من خانة.",
+
+  "shop.p3":
+    "تحصل كل مجموعة بذور متاحة أيضًا على كمية عشوائية. تبدأ الكمية بين <strong>1 و2 بذرة</strong> وتزداد مع تقدم الحوض المائي. كل مستوى من مستويات الحوض يزيد الحد الأدنى والحد الأقصى للكمية المتاحة بمقدار <strong>2</strong>.",
+
+  "shop.example":
+    "<b>مثال:</b> في المستوى الأول، يمكن أن تحتوي خانة البذور على 1–2 بذرة. ومع ارتفاع مستوى الحوض، تزداد الكمية المحتملة بمقدار 2 لكل من الحد الأدنى والحد الأقصى.",
+
+  "shop.groupsTitle":
+    "مجموعات البذور",
+
+  "shop.p4":
+    "لا يختار المتجر عشوائيًا من جميع البذور المفتوحة باستخدام مجموعة احتمالات واحدة. يتم تقسيم الخانات الست إلى مجموعات بذور مختلفة. تختار كل خانة من البذور المخصصة لمجموعتها.",
+
+  "shop.p5":
+    "هذا يعني أن البذور التي تم فتحها حديثًا لا تتنافس بالتساوي مع كل بذرة في المجموعة بأكملها. يمكن بدلًا من ذلك اختيار بذرة نادرة من مراحل متقدمة من مجموعة أصغر بكثير من البذور المحتملة المخصصة لخانة المتجر.",
+
+  "shop.example2":
+    "<b>مثال:</b> إذا كانت إحدى الخانات تحتوي على 3 بذور محتملة فقط في مجموعتها، فستكون لكل واحدة منها فرصة أكبر بكثير للظهور مقارنة باختيار اللعبة من بين جميع البذور الـ15 المفتوحة دفعة واحدة.",
+
+  "shop.slotsTitle":
+    "خانات المتجر",
+
+  "shop.p6":
+    "يبدأ متجر البذور بـ<strong>خانة واحدة متاحة</strong>. ومع تقدمك عبر مستويات الحوض المائي، يتم فتح خانات إضافية عند مراحل محددة، حتى حد أقصى يبلغ <strong>6 خانات</strong>.",
+
+  "shop.level":
+    "مستوى الحوض المائي",
+
+  "shop.slots":
+    "خانات المتجر",
+
+  "shop.example3":
+    "<b>تقدم خانات المتجر:</b> يتم فتح خانة متجر إضافية عند مستويات الحوض المائي <strong>4 و8 و14 و20 و24</strong>. يؤدي ذلك إلى زيادة المتجر من <strong>خانة واحدة</strong> في البداية إلى الحد الأقصى البالغ <strong>6 خانات</strong>.",
+
+  "shop.p7":
+    "نظرًا لأن الاختيار يتغير كل يومين فقط، لا يستطيع اللاعب شراء أي بذرة يريدها في أي وقت. يعد فحص المتجر بانتظام وإنفاق العملات عندما تظهر بذور مفيدة جزءًا مهمًا من التقدم.",
+
+
+  /*
+  ========================================================
+  DAILY VISITOR
+  ========================================================
+  */
+
+  "visitors.title":
+    "الزائر اليومي",
+
+  "visitors.p1":
+    "يتم ضمان ظهور قنفذ بحر زائر جديد <strong>مرة واحدة يوميًا</strong>. ولا يعتمد ظهوره على الحظ.",
+
+  "visitors.p2":
+    "يمكن تبني قنافذ البحر الزائرة أو تركها. إذا لم تتبنَّ الزائر، فسوف يغادر في اليوم التالي.",
+
+  "visitors.p3":
+    "إذا كان حوضك المائي ممتلئًا بالسعة القصوى، فلا يمكنك تبني قنفذ بحر آخر حتى تنقل بعض قنافذ البحر خارج الحوض وتوفر مساحة فارغة.",
+
+  "visitors.genTitle":
+    "كيفية إنشاء الزائر اليومي",
+
+  "visitors.genP":
+    "يتم إنشاء قطعه الثماني بشكل مستقل. لكل قطعة، تتحقق اللعبة أولًا من درجات الندرة التي فتحتها. كل درجة ندرة مفتوحة تمتلك الاحتمال نفسه تمامًا.",
+
+  "visitors.unlocked":
+    "درجات الندرة المفتوحة",
+
+  "visitors.chance":
+    "الاحتمال لكل ندرة",
+
+  "visitors.commonUncommon":
+    "عادي + غير شائع",
+
+  "visitors.plusRare":
+    "+ نادر",
+
+  "visitors.plusEpic":
+    "+ ملحمي",
+
+  "visitors.plusLegendary":
+    "+ أسطوري",
+
+  "visitors.plusXolotl":
+    "+ زولوتل",
+
+  "visitors.example":
+    "<b>مثال:</b> إذا كانت درجات الندرة الست كلها مفتوحة، فلكل ندرة احتمال 16.67% لكل قطعة. بعد اختيار الندرة، تكون جميع القطع المفتوحة ضمن تلك الندرة متساوية في الاحتمال. قطعتان عاديتان تعنيان 50% لكل منهما؛ خمس قطع نادرة تعني 20% لكل منها؛ عشر قطع ملحمية تعني 10% لكل منها.",
+
+  "visitors.p4":
+    "تتكرر العملية ثماني مرات، مرة لكل قطعة. ومع نمو مجموعتك، يمكن أن تظهر قطع فردية أكثر في الزائر اليومي، بينما تصبح فرصة الحصول على أي قطعة محددة أصغر.",
+
+
+  /*
+  ========================================================
+  ENAMORED AXOLOTL
+  ========================================================
+  */
+
+  "love.title":
+    "قنفذ البحر المُغرم",
+
+  "love.p1":
+    "بعد المعركة، يتحقق كل قنفذ بحر عدو بشكل مستقل مما إذا كان يريد الانضمام إليك. يتم تحديد فرصته وفقًا لندرة كل واحدة من قطعه الثماني.",
+
+  "love.rarity":
+    "ندرة القطعة",
+
+  "love.contribution":
+    "المساهمة",
+
+  "love.p2":
+    "تساهم كل واحدة من القطع الثماني وفقًا لندرتها. يتم حساب الاحتمال النهائي باستخدام جميع المساهمات الثماني.",
+
+  "love.example":
+    "<b>مثال:</b> عدو يمتلك عادي + عادي + نادر + نادر + ملحمي + ملحمي + أسطوري + زولوتل يرسل جميع مساهمات الندرة الثماني إلى الحساب النهائي.",
+
+  "love.multipleTitle":
+    "عندما يقبل عدة أعداء",
+
+  "love.multipleP":
+    "قد لا يقبل أي منهم، أو قد يقبل واحد منهم، أو قد يقبل عدة أعداء. إذا قبل عدة أعداء، يختار المدير <strong>واحدًا</strong> منهم عشوائيًا، مع امتلاك كل قنفذ بحر مقبول الاحتمال نفسه.",
+
+  "love.two":
+    "2 مقبولان<br><strong>50% لكل واحد</strong>",
+
+  "love.three":
+    "3 مقبولون<br><strong>33.33% لكل واحد</strong>",
+
+  "love.four":
+    "4 مقبولون<br><strong>25% لكل واحد</strong>",
+
+
+  /*
+  ========================================================
+  LEVELS
+  ========================================================
+  */
+
+  "levels.title":
+    "مستويات الحوض المائي والتقدم",
+
+  "levels.p":
+    "هناك <strong>25 مستوى للحوض المائي</strong>، تحتوي على 50 مستوى للعب. يفتح كل مستوى من مستويات الحوض قنافذ بحر جديدة ويزيد السعة تدريجيًا.",
+
+
+  /*
+  ========================================================
+  EFFECTS
+  ========================================================
+  */
+
+  "effects.title":
+    "تأثيرات الحالة",
+
+  "effects.p":
+    "تغير تأثيرات الحالة إحصائيات القتال أو احتمالات تنفيذ الأفعال. يمكن تكديس التأثيرات عندما تطبق القدرة عدة شحنات.",
+
+  "effects.effect":
+    "التأثير",
+
+  "effects.result":
+    "النتيجة",
+
+
+  /*
+  ========================================================
+  ABILITIES
+  ========================================================
+  */
+
+  "abilities.title":
+    "قدرات قطع قنفذ البحر",
+
+  "abilities.p":
+    "يتم تفعيل تأثيرات القطع وفقًا لعدد النسخ من القطعة نفسها الموجودة في قنفذ البحر. يتم الوصول إلى القيم التالية عند وجود 2/8 و4/8 و6/8 و8/8 نسخ.",
+
+
+  /*
+  ========================================================
+  WORLDS
+  ========================================================
+  */
+
+  "worlds.title":
+    "مستويات اللعب",
+
+  "worlds.p":
+    "تحتوي اللعبة على خمسة عوالم و50 مستوى. يعرض كل مستوى مجموعات الأعداء التي ستواجهها ومتطلب الحوض المائي.",
+
+
+  /*
+  ========================================================
+  DYNAMIC CONTENT
+  ========================================================
+  */
+
+  "dynamic.gameplayLevels":
+    "مستويات اللعب",
+
+  "dynamic.food":
+    "الطعام",
+
+  "dynamic.capacity":
+    "السعة",
+
+  "dynamic.axolotls":
+    "قنافذ البحر",
+
+
+  /*
+  ========================================================
+  AQUARIUM LEVELS
+  ========================================================
+  */
+
+  "level.1.title":
+    "الحوض 1 — السكان الأوائل",
+
+  "level.2.title":
+    "الحوض 2 — الغرائز الأولى",
+
+  "level.3.title":
+    "الحوض 3 — الاحتمالات الصغيرة",
+
+  "level.4.title":
+    "الحوض 4 — الفوائد الأولى",
+
+  "level.5.title":
+    "الحوض 5 — التعزيز",
+
+  "level.6.title":
+    "الحوض 6 — التأثيرات الأولى",
+
+  "level.7.title":
+    "الحوض 7 — الإضعاف",
+
+  "level.8.title":
+    "الحوض 8 — نقطة الضعف",
+
+  "level.9.title":
+    "الحوض 9 — المواد المتفوقة",
+
+  "level.10.title":
+    "الحوض 10 — القوة والسرعة",
+
+  "level.11.title":
+    "الحوض 11 — الحظ",
+
+  "level.12.title":
+    "الحوض 12 — الضوء والسم",
+
+  "level.13.title":
+    "الحوض 13 — الحالات المُضعفة",
+
+  "level.14.title":
+    "الحوض 14 — قوة البطل",
+
+  "level.15.title":
+    "الحوض 15 — القوة المتفوقة",
+
+  "level.16.title":
+    "الحوض 16 — القوى الاستثنائية",
+
+  "level.17.title":
+    "الحوض 17 — القوة الهجومية",
+
+  "level.18.title":
+    "الحوض 18 — الحد المميت",
+
+  "level.19.title":
+    "الحوض 19 — القوة الأسطورية",
+
+  "level.20.title":
+    "الحوض 20 — القوة الأسطورية",
+
+  "level.21.title":
+    "الحوض 21 — القوة الإلهية",
+
+  "level.22.title":
+    "الحوض 22 — الازدواجية",
+
+  "level.23.title":
+    "الحوض 23 — الانعكاسات",
+
+  "level.24.title":
+    "الحوض 24 — القوة المطلقة",
+
+  "level.25.title":
+    "الحوض 25 — الحوض المائي العظيم",
+
+
+  /*
+  ========================================================
+  ABILITY GROUPS
+  ========================================================
+  */
+
+  "abilityGroup.0.title":
+    "❤️ الحب",
+
+  "abilityGroup.0.piece.0":
+    "الورقة: +1/+2/+3/+5 حب",
+
+  "abilityGroup.0.piece.1":
+    "العسل: 1/2/3/4 شحنات مُنشطة للفريق",
+
+  "abilityGroup.0.piece.2":
+    "التفاحة: +2/+4/+6/+10 حب",
+
+  "abilityGroup.0.piece.3":
+    "Netfil25: 2/3/4/5 شحنات مُنشطة للفريق",
+
+  "abilityGroup.0.piece.4":
+    "القلب: 2/3/4/5 مُنشطة + 5/5/5/10 حب",
+
+
+  "abilityGroup.1.title":
+    "🛡️ الدفاع",
+
+  "abilityGroup.1.piece.0":
+    "الحجر: +1/+2/+3/+5 دفاع",
+
+  "abilityGroup.1.piece.1":
+    "النحاس: 1/2/3/4 شحنات مُحصنة للفريق",
+
+  "abilityGroup.1.piece.2":
+    "الحديد: +2/+4/+6/+10 دفاع",
+
+  "abilityGroup.1.piece.3":
+    "الألماس: 2/3/4/5 شحنات مُحصنة للفريق",
+
+  "abilityGroup.1.piece.4":
+    "Lonsdaleite: 2/3/4/5 مُحصنة + 5/5/5/10 دفاع",
+
+
+  "abilityGroup.2.title":
+    "💨 السرعة",
+
+  "abilityGroup.2.piece.0":
+    "الريشة: +1/+2/+3/+5 سرعة",
+
+  "abilityGroup.2.piece.1":
+    "الرياح: 1/2/3/4 شحنات مُسرعة للفريق",
+
+  "abilityGroup.2.piece.2":
+    "القرمزي: +2/+4/+6/+10 سرعة",
+
+  "abilityGroup.2.piece.3":
+    "الإعصار: 2/3/4/5 شحنات مُسرعة للفريق",
+
+  "abilityGroup.2.piece.4":
+    "النجم: 2/3/4/5 مُسرعة + 5/5/5/10 سرعة",
+
+
+  "abilityGroup.3.title":
+    "⚔️ الهجوم",
+
+  "abilityGroup.3.piece.0":
+    "المخالب: +1/+2/+3/+5 هجوم",
+
+  "abilityGroup.3.piece.1":
+    "الأنياب: 1/2/3/4 شحنات مُعززة للفريق",
+
+  "abilityGroup.3.piece.2":
+    "الأشواك: +2/+4/+6/+10 هجوم",
+
+  "abilityGroup.3.piece.3":
+    "السيوف: 2/3/4/5 شحنات مُعززة للفريق",
+
+  "abilityGroup.3.piece.4":
+    "الشيطان: 2/3/4/5 مُعززة + 5/5/5/10 هجوم",
+
+
+  "abilityGroup.4.title":
+    "🎯 الضربة الحرجة",
+
+  "abilityGroup.4.piece.0":
+    "النرد: +1/+2/+3/+5% فرصة الضربة الحرجة",
+
+  "abilityGroup.4.piece.1":
+    "الحظ: +10/+15/+20/+40% فرصة الضربة الحرجة",
+
+  "abilityGroup.4.piece.2":
+    "النيزك: +2/+4/+6/+10% ضرر الضربة الحرجة",
+
+  "abilityGroup.4.piece.3":
+    "Notter: +10/+30/+60/+100% ضرر الضربة الحرجة",
+
+  "abilityGroup.4.piece.4":
+    "الكوكب: +15/+50/+75/+100% فرصة الضربة الحرجة و +30/+90/+200/+300% ضرر الضربة الحرجة",
+
+
+  "abilityGroup.5.title":
+    "🧪 التأثيرات",
+
+  "abilityGroup.5.piece.0":
+    "النار → 1/2/3/5 اختناق",
+
+  "abilityGroup.5.piece.1":
+    "الجليد → 1/2/3/5 خدر",
+
+  "abilityGroup.5.piece.2":
+    "السم → 1/2/3/5 ارتباك",
+
+  "abilityGroup.5.piece.3":
+    "الكهرباء → 1/2/3/5 صدمة",
+
+  "abilityGroup.5.piece.4":
+    "الضوء → 1/2/3/5 إبهار",
+
+
+  "abilityGroup.6.title":
+    "🧪 التأثيرات",
+
+  "abilityGroup.6.piece.0":
+    "البرد → 1/2/3/5 إضعاف",
+
+  "abilityGroup.6.piece.1":
+    "الفقاعة → 1/2/3/5 عدم حماية",
+
+  "abilityGroup.6.piece.2":
+    "الطين → 1/2/3/5 إبطاء",
+
+  "abilityGroup.6.piece.3":
+    "الهدف → 1/2/3/5 كشف",
+
+  "abilityGroup.6.piece.4":
+    "الحزن → 1/2/3/5 استياء",
+
+
+  "abilityGroup.7.title":
+    "🧪 التأثيرات",
+
+  "abilityGroup.7.piece.0":
+    "النوم → 1/2/3/5 تعب",
+
+  "abilityGroup.7.piece.1":
+    "الظل → 1/2/3/5 تعتيم",
+
+  "abilityGroup.7.piece.2":
+    "الذكاء الاصطناعي → 1/2/3/5 إيقاف",
+
+  "abilityGroup.7.piece.3":
+    "الكسل → 1/2/3/5 إحباط",
+
+  "abilityGroup.7.piece.4":
+    "قنديل البحر → 1/2/3/5 ترنح",
+
+
+  "abilityGroup.8.title":
+    "🧪 التأثيرات",
+
+  "abilityGroup.8.piece.0":
+    "إلهي → 1/2/3/5 افتتان",
+
+
+  "abilityGroup.9.title":
+    "🪄 تأثيرات مزدوجة",
+
+  "abilityGroup.9.piece.0":
+    "الشبح → تعب + عدم حماية (1/2/3/5 لكل منهما)",
+
+  "abilityGroup.9.piece.1":
+    "الصقيع → إضعاف + إبطاء (1/2/3/5 لكل منهما)",
+
+  "abilityGroup.9.piece.2":
+    "الرمال → ترنح + خدر (1/2/3/5 لكل منهما)",
+
+  "abilityGroup.9.piece.3":
+    "المرآة → كشف + إحباط (1/2/3/5 لكل منهما)",
+
+  "abilityGroup.9.piece.4":
+    "الصهارة → اختناق + إبهار (1/2/3/5 لكل منهما)",
+
+
+  "abilityGroup.10.title":
+    "🪄 تأثيرات مزدوجة",
+
+  "abilityGroup.10.piece.0":
+    "مشع → ارتباك + إيقاف (1/2/3/5 لكل منهما)",
+
+  "abilityGroup.10.piece.1":
+    "فلامنغو → افتتان + تنشيط للفريق (1/2/3/5 لكل منهما)",
+
+  "abilityGroup.10.piece.2":
+    "الأركيد → صدمة + تسريع للفريق (1/2/3/5 لكل منهما)",
+
+  "abilityGroup.10.piece.3":
+    "الكسوف → تعتيم + تحصين للفريق (1/2/3/5 لكل منهما)",
+
+  "abilityGroup.10.piece.4":
+    "الجندي → استياء + تعزيز للفريق (1/2/3/5 لكل منهما)",
+
+
+  /*
+  ========================================================
+  WORLDS
+  ========================================================
+  */
+
+  "world.0.title":
+    "العالم 1 — البركة الصغيرة",
+
+  "world.1.title":
+    "العالم 2 — المياه البرية",
+
+  "world.2.title":
+    "العالم 3 — الأعماق",
+
+  "world.3.title":
+    "العالم 4 — المملكة العملاقة",
+
+  "world.4.title":
+    "العالم 5 — الحوض المائي العظيم",
+
+
+  /*
+  ========================================================
+  WORLD 1
+  ========================================================
+  */
+
+  "world.0.level.0.title":
+    "1 — منزل جديد",
+  "world.0.level.0.aquarium":
+    "الحوض 1",
+  "world.0.level.0.enemies":
+    "وردي",
+
+  "world.0.level.1.title":
+    "2 — الحركة الأولى",
+  "world.0.level.1.aquarium":
+    "الحوض 1",
+  "world.0.level.1.enemies":
+    "ورقة",
+
+  "world.0.level.2.title":
+    "3 — الاختلافات الأولى",
+  "world.0.level.2.aquarium":
+    "—",
+  "world.0.level.2.enemies":
+    "ورقة + ريشة",
+
+  "world.0.level.3.title":
+    "4 — المخالب الصغيرة",
+  "world.0.level.3.aquarium":
+    "الحوض 2",
+  "world.0.level.3.enemies":
+    "ريشة + مخالب",
+
+  "world.0.level.4.title":
+    "5 — اثنان ضد اثنين",
+  "world.0.level.4.aquarium":
+    "الحوض 3",
+  "world.0.level.4.enemies":
+    "ورقة + نرد · حجر + نيزك",
+
+  "world.0.level.5.title":
+    "6 — التأثيرات الأولى",
+  "world.0.level.5.aquarium":
+    "الحوض 3",
+  "world.0.level.5.enemies":
+    "نار + مخالب · برد + ريشة",
+
+  "world.0.level.6.title":
+    "7 — الإضعاف",
+  "world.0.level.6.aquarium":
+    "الحوض 4",
+  "world.0.level.6.enemies":
+    "حجر + فقاعة · مخالب + طين",
+
+  "world.0.level.7.title":
+    "8 — نقطة الضعف",
+  "world.0.level.7.aquarium":
+    "الحوض 4",
+  "world.0.level.7.enemies":
+    "ورقة + هدف · حزن + حجر",
+
+  "world.0.level.8.title":
+    "9 — المواد المتفوقة",
+  "world.0.level.8.aquarium":
+    "الحوض 5",
+  "world.0.level.8.enemies":
+    "تفاحة + رياح · حديد + أنياب",
+
+  "world.0.level.9.title":
+    "10 — التحدي الأول",
+  "world.0.level.9.aquarium":
+    "الحوض 5",
+  "world.0.level.9.enemies":
+    "تفاحة + أنياب · رياح + حديد",
+
+
+  /*
+  ========================================================
+  WORLD 2
+  ========================================================
+  */
+
+  "world.1.level.0.title":
+    "11 — استيقاظ الحظ",
+  "world.1.level.0.aquarium":
+    "الحوض 6",
+  "world.1.level.0.enemies":
+    "حظ + نار · برد + كهرباء",
+
+  "world.1.level.1.title":
+    "12 — التفريغات",
+  "world.1.level.1.aquarium":
+    "—",
+  "world.1.level.1.enemies":
+    "كهرباء + مخالب · نار + ريشة",
+
+  "world.1.level.2.title":
+    "13 — السم في الماء",
+  "world.1.level.2.aquarium":
+    "الحوض 7",
+  "world.1.level.2.enemies":
+    "سم + طين · فقاعة + هدف · نار + مخالب",
+
+  "world.1.level.3.title":
+    "14 — النظرة الضائعة",
+  "world.1.level.3.aquarium":
+    "الحوض 7",
+  "world.1.level.3.enemies":
+    "طين + حجر · هدف + ريشة · حزن + مخالب",
+
+  "world.1.level.4.title":
+    "15 — التفاحة السامة",
+  "world.1.level.4.aquarium":
+    "الحوض 8",
+  "world.1.level.4.enemies":
+    "تفاحة + سم · فقاعة + حديد · رياح + أنياب",
+
+  "world.1.level.5.title":
+    "16 — العين الكهربائية",
+  "world.1.level.5.aquarium":
+    "الحوض 8",
+  "world.1.level.5.enemies":
+    "كهرباء + هدف · حزن + طين · فقاعة + مخالب",
+
+  "world.1.level.6.title":
+    "17 — قلب المعركة",
+  "world.1.level.6.aquarium":
+    "الحوض 9",
+  "world.1.level.6.enemies":
+    "تفاحة + حديد · رياح + أشواك · هدف + أنياب",
+
+  "world.1.level.7.title":
+    "18 — الحديد والسم",
+  "world.1.level.7.aquarium":
+    "الحوض 9",
+  "world.1.level.7.enemies":
+    "سم + حديد · تفاحة + أشواك · طين + مخالب",
+
+  "world.1.level.8.title":
+    "19 — السرعة الحرجة",
+  "world.1.level.8.aquarium":
+    "الحوض 10",
+  "world.1.level.8.enemies":
+    "رياح + قرمزي · حظ + أشواك · تفاحة + كهرباء",
+
+  "world.1.level.9.title":
+    "20 — العاصفة",
+  "world.1.level.9.aquarium":
+    "الحوض 10",
+  "world.1.level.9.enemies":
+    "رياح + أشواك · كهرباء + قرمزي · حظ + مخالب",
+
+
+  /*
+  ========================================================
+  WORLD 3
+  ========================================================
+  */
+
+  "world.2.level.0.title":
+    "21 — النوم العميق",
+  "world.2.level.0.aquarium":
+    "الحوض 11",
+  "world.2.level.0.enemies":
+    "نوم + حظ · كهرباء + تفاحة · هدف + حديد",
+
+  "world.2.level.1.title":
+    "22 — الضوء الخطير",
+  "world.2.level.1.aquarium":
+    "الحوض 11",
+  "world.2.level.1.enemies":
+    "ضوء + أشواك · سم + قرمزي · حظ + طين",
+
+  "world.2.level.2.title":
+    "23 — أربعة ظلال",
+  "world.2.level.2.aquarium":
+    "الحوض 12",
+  "world.2.level.2.enemies":
+    "ضوء + مخالب · سم + حديد · نوم + ريشة · كهرباء + أشواك",
+
+  "world.2.level.3.title":
+    "24 — السم والسرعة",
+  "world.2.level.3.aquarium":
+    "الحوض 12",
+  "world.2.level.3.enemies":
+    "سم + قرمزي · ضوء + ريشة · كهرباء + مخالب · نوم + حديد",
+
+  "world.2.level.4.title":
+    "25 — قوة Notter",
+  "world.2.level.4.aquarium":
+    "الحوض 13",
+  "world.2.level.4.enemies":
+    "نوم + Notter · ظل + تفاحة · حظ + أشواك · ضوء + قرمزي",
+
+  "world.2.level.5.title":
+    "26 — الظلال السريعة",
+  "world.2.level.5.aquarium":
+    "الحوض 13",
+  "world.2.level.5.enemies":
+    "ظل + ريشة · نوم + أشواك · ضوء + حديد · سم + مخالب",
+
+  "world.2.level.6.title":
+    "27 — الذكاء الاصطناعي",
+  "world.2.level.6.aquarium":
+    "الحوض 14",
+  "world.2.level.6.enemies":
+    "ذكاء اصطناعي + حظ · ظل + أشواك · نوم + قرمزي · ضوء + حديد",
+
+  "world.2.level.7.title":
+    "28 — المملكة المظلمة",
+  "world.2.level.7.aquarium":
+    "الحوض 14",
+  "world.2.level.7.enemies":
+    "ذكاء اصطناعي + ريشة · ظل + مخالب · سم + أشواك · حظ + حديد",
+
+  "world.2.level.8.title":
+    "29 — العمالقة الأوائل",
+  "world.2.level.8.aquarium":
+    "الحوض 15",
+  "world.2.level.8.enemies":
+    "Netfil25 + حديد · ألماس + أشواك · إعصار + حظ · ذكاء اصطناعي + تفاحة",
+
+  "world.2.level.9.title":
+    "30 — قلب الأعماق",
+  "world.2.level.9.aquarium":
+    "الحوض 15",
+  "world.2.level.9.enemies":
+    "Netfil25 + أشواك · ألماس + قرمزي · إعصار + مخالب · ذكاء اصطناعي + حظ",
+
+
+  /*
+  ========================================================
+  WORLD 4
+  ========================================================
+  */
+
+  "world.3.level.0.title":
+    "31 — الجليد الأبدي",
+  "world.3.level.0.aquarium":
+    "الحوض 16",
+  "world.3.level.0.enemies":
+    "جليد + أشواك · إعصار + حديد · Netfil25 + قرمزي · ذكاء اصطناعي + مخالب",
+
+  "world.3.level.1.title":
+    "32 — العاصفة المتجمدة",
+  "world.3.level.1.aquarium":
+    "الحوض 16",
+  "world.3.level.1.enemies":
+    "جليد + إعصار · ألماس + أشواك · ذكاء اصطناعي + قرمزي · Netfil25 + مخالب",
+
+  "world.3.level.2.title":
+    "33 — السيوف",
+  "world.3.level.2.aquarium":
+    "الحوض 17",
+  "world.3.level.2.enemies":
+    "سيوف + أشواك · كسل + حديد · جليد + حظ · إعصار + قرمزي",
+
+  "world.3.level.3.title":
+    "34 — العدو المثالي",
+  "world.3.level.3.aquarium":
+    "الحوض 17",
+  "world.3.level.3.enemies":
+    "سيوف + حديد · كسل + أشواك · جليد + قرمزي · إعصار + حظ",
+
+  "world.3.level.4.title":
+    "35 — الحد المميت",
+  "world.3.level.4.aquarium":
+    "الحوض 18",
+  "world.3.level.4.enemies":
+    "قنديل البحر + أشواك · قلب + حديد · سيوف + قرمزي · جليد + حظ",
+
+  "world.3.level.5.title":
+    "36 — الحب والدمار",
+  "world.3.level.5.aquarium":
+    "الحوض 18",
+  "world.3.level.5.enemies":
+    "قلب + أشواك · قنديل البحر + حديد · سيوف + حظ · كسل + قرمزي",
+
+  "world.3.level.6.title":
+    "37 — القوة الأسطورية",
+  "world.3.level.6.aquarium":
+    "الحوض 19",
+  "world.3.level.6.enemies":
+    "Lonsdaleite + سيوف · نجم + أشواك · قلب + قرمزي · قنديل البحر + حظ",
+
+  "world.3.level.7.title":
+    "38 — أربع قوى",
+  "world.3.level.7.aquarium":
+    "الحوض 19",
+  "world.3.level.7.enemies":
+    "Lonsdaleite + حديد · نجم + قرمزي · سيوف + أشواك · قلب + تفاحة",
+
+  "world.3.level.8.title":
+    "39 — قوة البطل",
+  "world.3.level.8.aquarium":
+    "الحوض 20",
+  "world.3.level.8.enemies":
+    "شيطان + أشواك · كوكب + حظ · نجم + حديد · قلب + قرمزي",
+
+  "world.3.level.9.title":
+    "40 — العملاق",
+  "world.3.level.9.aquarium":
+    "الحوض 20",
+  "world.3.level.9.enemies":
+    "شيطان + سيوف · كوكب + أشواك · نجم + حديد · قلب + Lonsdaleite",
+
+
+  /*
+  ========================================================
+  WORLD 5
+  ========================================================
+  */
+
+  "world.4.level.0.title":
+    "41 — الحضور الإلهي",
+  "world.4.level.0.aquarium":
+    "الحوض 21",
+  "world.4.level.0.enemies":
+    "إلهي + أشواك · شبح + حديد · كوكب + قرمزي · نجم + حظ",
+
+  "world.4.level.1.title":
+    "42 — اللعنة",
+  "world.4.level.1.aquarium":
+    "الحوض 21",
+  "world.4.level.1.enemies":
+    "شبح + أشواك · إلهي + حديد · شيطان + قرمزي · كوكب + حظ",
+
+  "world.4.level.2.title":
+    "43 — الصقيع",
+  "world.4.level.2.aquarium":
+    "الحوض 22",
+  "world.4.level.2.enemies":
+    "صقيع + أشواك · رمال + حديد · شبح + قرمزي · إلهي + حظ",
+
+  "world.4.level.3.title":
+    "44 — الرمال والجليد",
+  "world.4.level.3.aquarium":
+    "الحوض 22",
+  "world.4.level.3.enemies":
+    "رمال + أشواك · صقيع + قرمزي · إلهي + حديد · كوكب + شيطان",
+
+  "world.4.level.4.title":
+    "45 — المرآة",
+  "world.4.level.4.aquarium":
+    "الحوض 23",
+  "world.4.level.4.enemies":
+    "مرآة + أشواك · صهارة + حديد · صقيع + قرمزي · رمال + حظ",
+
+  "world.4.level.5.title":
+    "46 — انعكاس القوة",
+  "world.4.level.5.aquarium":
+    "الحوض 23",
+  "world.4.level.5.enemies":
+    "مرآة + شيطان · صهارة + نجم · رمال + Lonsdaleite · كوكب + قلب",
+
+  "world.4.level.6.title":
+    "47 — الإشعاع",
+  "world.4.level.6.aquarium":
+    "الحوض 24",
+  "world.4.level.6.enemies":
+    "مشع + أشواك · فلامنغو + حديد · مرآة + قرمزي · صهارة + حظ",
+
+  "world.4.level.7.title":
+    "48 — العنصر الأخير",
+  "world.4.level.7.aquarium":
+    "الحوض 24",
+  "world.4.level.7.enemies":
+    "مشع + شيطان · فلامنغو + نجم · مرآة + Lonsdaleite · صهارة + كوكب",
+
+  "world.4.level.8.title":
+    "49 — الحوض المائي العظيم",
+  "world.4.level.8.aquarium":
+    "الحوض 25",
+  "world.4.level.8.enemies":
+    "أركيد + أشواك · كسوف + حديد · جندي + قرمزي · كوكب + شيطان",
+
+  "world.4.level.9.title":
+    "50 — النهاية",
+  "world.4.level.9.aquarium":
+    "الحوض 25",
+  "world.4.level.9.enemies":
+    "جندي + كوكب · أركيد + نجم · كسوف + Lonsdaleite · فلامنغو + إلهي",
+
+
+  /*
+  ========================================================
+  LEGAL
+  ========================================================
+  */
+
+  "legal.title":
+    "سياسة الخصوصية وحقوق النشر",
+
+  "legal.privacyTitle":
+    "سياسة الخصوصية",
+
+  "legal.privacy1":
+    "تحترم Only Axolotls خصوصيتك. هذا الموقع هو دليل معلوماتي للعبة. ولا يطلب عمدًا معلومات شخصية، ولا ينشئ حسابات للمستخدمين، ولا يتطلب منك إرسال بيانات شخصية.",
+
+  "legal.privacy2":
+    "إذا تم ربط هذا الموقع مستقبلًا بخدمات التحليلات أو الخدمات الخارجية أو النماذج أو ملفات تعريف الارتباط أو غيرها من التقنيات التي تعالج البيانات الشخصية، فسيتم تحديث هذه السياسة قبل تقديم تلك الميزات.",
+
+  "legal.copyTitle":
+    "حقوق النشر والملكية الفكرية",
+
+  "legal.copy1":
+    "<strong>Only Axolotls</strong>، ومحتوى اللعبة وشخصياتها وأعمالها الفنية ورسوماتها وشعاراتها ورسومها المتحركة وموسيقاها وأصواتها ومحتواها المكتوب وبرمجياتها هي ملكية فكرية محمية لأصحاب الحقوق المعنيين، ولا يتم إصدارها لإعادة التوزيع التجاري غير المصرح به.",
+
+  "legal.copy2":
+    "يُقدَّم هذا الدليل فقط لمساعدة اللاعبين على فهم اللعبة والاستمتاع بها. لا يُسمح بإعادة إنتاج أو إعادة توزيع أو استخدام تجاري أو تعديل أصول اللعبة المحمية دون الحصول على تصريح مسبق.",
+
+  "legal.copy3":
+    "© 2026 Notter Animations.",
+
+
+  /*
+  ========================================================
+  RARITIES
+  ========================================================
+  */
+
+  "rarity.common":
+    "عادي",
+
+  "rarity.uncommon":
+    "غير شائع",
+
+  "rarity.rare":
+    "نادر",
+
+  "rarity.epic":
+    "ملحمي",
+
+  "rarity.legendary":
+    "أسطوري",
+
+  "rarity.xolotl":
+    "زولوتل",
+
+
+  /*
+  ========================================================
+  UNITS
+  ========================================================
+  */
+
+  "unit.day":
+    "يوم",
+
+  "unit.days":
+    "أيام",
+
+  "unit.gem":
+    "جوهرة",
+
+  "unit.gems":
+    "جواهر",
+
+
+  /*
+  ========================================================
+  SEEDS
+  ========================================================
+  */
+
+  "seed.algae":
+    "الطحالب",
+
+  "seed.potatoes":
+    "البطاطس",
+
+  "seed.corn":
+    "الذرة",
+
+  "seed.coral":
+    "المرجان",
+
+  "seed.tomatoes":
+    "الطماطم",
+
+  "seed.wheat":
+    "القمح",
+
+  "seed.onions":
+    "البصل",
+
+  "seed.carrots":
+    "الجزر",
+
+  "seed.bananas":
+    "الموز",
+
+  "seed.beans":
+    "الفاصوليا",
+
+  "seed.strawberries":
+    "الفراولة",
+
+  "seed.oranges":
+    "البرتقال",
+
+  "seed.grapes":
+    "العنب",
+
+  "seed.chocolate":
+    "الشوكولاتة",
+
+  "seed.peppers":
+    "الفلفل",
+
+
+  /*
+  ========================================================
+  STATUS EFFECTS
+  ========================================================
+  */
+
+  "effect.suffocated":
+    "مختنق",
+
+  "effect.suffocated.r":
+    "يفقد 2 من نقاط الصحة الأساسية في نهاية الدور.",
+
+
+  "effect.numb":
+    "مخدّر",
+
+  "effect.numb.r":
+    "احتمال أساسي بنسبة 4% لعدم تنفيذ أي فعل في ذلك الدور.",
+
+
+  "effect.confused":
+    "مرتبك",
+
+  "effect.confused.r":
+    "يفقد 1 من نقاط الصحة الأساسية و-1 من الدفاع الأساسي في نهاية الدور.",
+
+
+  "effect.sparkling":
+    "مُصعق",
+
+  "effect.sparkling.r":
+    "احتمال أساسي بنسبة 2% لعدم تنفيذ أي فعل و-1 من السرعة الأساسية.",
+
+
+  "effect.dazzled":
+    "مُبهر",
+
+  "effect.dazzled.r":
+    "احتمال أساسي بنسبة 4% لفشل الهجوم المحدد.",
+
+
+  "effect.weakened":
+    "مُضعف",
+
+  "effect.weakened.r":
+    "-2 هجوم أساسي.",
+
+
+  "effect.unprotected":
+    "غير محمي",
+
+  "effect.unprotected.r":
+    "-2 دفاع أساسي.",
+
+
+  "effect.slow":
+    "بطيء",
+
+  "effect.slow.r":
+    "-2 سرعة أساسية.",
+
+
+  "effect.exposed":
+    "مكشوف",
+
+  "effect.exposed.r":
+    "+4% احتمال أساسي لتلقي ضربة حرجة.",
+
+
+  "effect.resentful":
+    "مستاء",
+
+  "effect.resentful.r":
+    "+10% ضرر أساسي إضافي متلقًى من الضربات الحرجة.",
+
+
+  "effect.tired":
+    "متعب",
+
+  "effect.tired.r":
+    "-1 هجوم أساسي و-1 سرعة أساسية.",
+
+
+  "effect.dimmed":
+    "مُعتّم",
+
+  "effect.dimmed.r":
+    "-1 هجوم أساسي و-1 دفاع أساسي.",
+
+
+  "effect.shutDown":
+    "متوقف",
+
+  "effect.shutDown.r":
+    "-1 سرعة أساسية و-1 دفاع أساسي.",
+
+
+  "effect.discouraged":
+    "مُحبط",
+
+  "effect.discouraged.r":
+    "احتمال أساسي بنسبة 2% لعدم تنفيذ أي فعل و-1 هجوم أساسي.",
+
+
+  "effect.staggering":
+    "مترنح",
+
+  "effect.staggering.r":
+    "احتمال أساسي بنسبة 2% لعدم تنفيذ أي فعل و-1 دفاع أساسي.",
+
+
+  "effect.enamored":
+    "مُغرم",
+
+  "effect.enamored.r":
+    "+2% احتمال أساسي لتلقي ضربة حرجة و+8% ضرر أساسي إضافي متلقًى من الضربات الحرجة.",
+
+
+  "effect.vitalized":
+    "مُنشّط",
+
+  "effect.vitalized.r":
+    "+1 حب.",
+
+
+  "effect.reinforced":
+    "مُحصّن",
+
+  "effect.reinforced.r":
+    "+1 دفاع.",
+
+
+  "effect.accelerated":
+    "مُسرّع",
+
+  "effect.accelerated.r":
+    "+1 سرعة.",
+
+
+  "effect.powered":
+    "مُعزّز",
+
+  "effect.powered.r":
+    "+1 هجوم."
+
 };
